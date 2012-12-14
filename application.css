@@ -236,47 +236,38 @@ strong {
   line-height: 1.2em;
   line-height: 2.4em; }
 
-/* line 6, grids/_grids.sass */
-.grid-a .box-a, .grid-a .box-b, .grid-a .box-c {
+/* line 16, grids/_grids.sass */
+.grid-a > div, .grid-b > div, .grid-c > div, .grid > div {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-/* line 8, grids/_grids.sass */
+
+/* line 6, grids/_grids.sass */
 .grid-a .box-a {
   float: left;
   padding-right: 5%;
   width: 50%; }
-/* line 12, grids/_grids.sass */
+/* line 10, grids/_grids.sass */
 .grid-a .box-b {
   float: right;
   width: 50%; }
 
 /* line 6, grids/_grids.sass */
-.grid-b .box-a, .grid-b .box-b, .grid-b .box-c {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-/* line 8, grids/_grids.sass */
 .grid-b .box-a {
   float: left;
   padding-right: 5%;
   width: 60%; }
-/* line 12, grids/_grids.sass */
+/* line 10, grids/_grids.sass */
 .grid-b .box-b {
   float: right;
   width: 40%; }
 
 /* line 6, grids/_grids.sass */
-.grid-c .box-a, .grid-c .box-b, .grid-c .box-c {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-/* line 8, grids/_grids.sass */
 .grid-c .box-a {
   float: left;
   padding-right: 5%;
   width: 70%; }
-/* line 12, grids/_grids.sass */
+/* line 10, grids/_grids.sass */
 .grid-c .box-b {
   float: right;
   width: 30%; }
