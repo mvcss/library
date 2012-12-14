@@ -1,0 +1,51 @@
+//-------------------------------------
+//  Buttons
+//-------------------------------------
+
+// ----- Variables ----- //
+
+$btn-padding-left: 50px !default
+$btn-padding-right: 50px !default
+
+%btn, .btn
+  border-radius: $border-radius
+  display: inline-block
+  padding-left: $btn-padding-left
+  padding-right: $btn-padding-right
+  text-align: center
+  &:focus,
+  &:hover
+    text-decoration: none
+  @if $vertical-rhythm
+    +adjust-leading-to(2)
+    +trailer
+  @else
+    font-size: 1.6em
+    line-height: 3em
+
+  &.btn-block
+    display: block
+
+.btn-a
+  @extend %btn
+  background: $color-highlight
+  color: #FFF
+  &:focus,
+  &:hover
+    background: darken($color-highlight, 5%)
+
+.btn-b
+  @extend %btn
+  background: $color-base
+  color: #FFF
+  &:focus,
+  &:hover
+    background: lighten($color-base, 5%)
+
+.btn-c
+  @extend %btn
+  background: lighten($color-base, 30%)
+  color: #FFF
+  &:focus,
+  &:hover
+    background: lighten($color-base, 25%)

@@ -58,17 +58,7 @@ html {
 
 /* line 8, _base.sass */
 html {
-  background: white;
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  -webkit-background-size: 100% 1.5em;
-  -moz-background-size: 100% 1.5em;
-  -o-background-size: 100% 1.5em;
-  background-size: 100% 1.5em;
-  background-position: left top; }
+  background: #eeeeee; }
 
 /* line 16, _base.sass */
 body {
@@ -133,6 +123,46 @@ em {
 strong {
   font-weight: bold; }
 
+/* line 10, buttons/_buttons.sass */
+.btn-a, .btn-b, .btn-c, .btn {
+  border-radius: 3px;
+  display: inline-block;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  line-height: 3em;
+  margin-bottom: 1.5em; }
+  /* line 16, buttons/_buttons.sass */
+  .btn-a:focus, .btn-b:focus, .btn-c:focus, .btn-a:hover, .btn-b:hover, .btn-c:hover, .btn:focus, .btn:hover {
+    text-decoration: none; }
+  /* line 26, buttons/_buttons.sass */
+  .btn-block.btn-a, .btn-block.btn-b, .btn-block.btn-c, .btn.btn-block {
+    display: block; }
+
+/* line 29, buttons/_buttons.sass */
+.btn-a {
+  background: #bd4c28;
+  color: white; }
+  /* line 33, buttons/_buttons.sass */
+  .btn-a:focus, .btn-a:hover {
+    background: #a84424; }
+
+/* line 37, buttons/_buttons.sass */
+.btn-b {
+  background: #272829;
+  color: white; }
+  /* line 41, buttons/_buttons.sass */
+  .btn-b:focus, .btn-b:hover {
+    background: #333536; }
+
+/* line 45, buttons/_buttons.sass */
+.btn-c {
+  background: #727477;
+  color: white; }
+  /* line 49, buttons/_buttons.sass */
+  .btn-c:focus, .btn-c:hover {
+    background: #65686a; }
+
 /* line 33, containers/_containers.sass */
 .row-a, .row-b, .row-c, .row {
   padding-top: 1.5em;
@@ -140,23 +170,25 @@ strong {
 
 /* line 40, containers/_containers.sass */
 .row-a {
-  background-color: #b2b4b6; }
+  background-color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 43, containers/_containers.sass */
+/* line 44, containers/_containers.sass */
 .row-b {
-  background-color: #cdcecf; }
-
-/* line 46, containers/_containers.sass */
-.row-c {
   background-color: #e7e7e8; }
 
-/* line 52, containers/_containers.sass */
+/* line 47, containers/_containers.sass */
+.row-c {
+  background-color: white; }
+
+/* line 53, containers/_containers.sass */
 .cell {
+  margin: 0 auto;
   max-width: 980px;
   padding: 0 80px;
   position: relative; }
 
-/* line 59, containers/_containers.sass */
+/* line 61, containers/_containers.sass */
 .card-a, .card {
   margin-top: 1.5em;
   padding-top: 1.5em;
@@ -165,26 +197,26 @@ strong {
   padding-left: 20px;
   padding-right: 20px; }
 
-/* line 67, containers/_containers.sass */
+/* line 69, containers/_containers.sass */
 .card-a {
   background: white;
   border-radius: 3px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 75, containers/_containers.sass */
+/* line 77, containers/_containers.sass */
 .bucket-01, .bucket-02 {
   position: relative; }
-  /* line 77, containers/_containers.sass */
+  /* line 79, containers/_containers.sass */
   .bucket-01 .bucket-media, .bucket-02 .bucket-media {
     left: 0;
     position: absolute;
     top: 0; }
 
-/* line 84, containers/_containers.sass */
+/* line 86, containers/_containers.sass */
 .bucket-01 .bucket-content {
   padding-left: 90px; }
 
-/* line 84, containers/_containers.sass */
+/* line 86, containers/_containers.sass */
 .bucket-02 .bucket-content {
   padding-left: 65px; }
 
