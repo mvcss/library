@@ -1,0 +1,86 @@
+//-------------------------------------
+//  Base
+//-------------------------------------
+
+@if $vertical-rhythm
+  +establish-baseline
+
+html
+  background: $color-bg
+  @if $vertical-rhythm == false
+    font-size: 16px
+  @else
+    @if $development
+      +debug-vertical-alignment
+body
+  color: $color-base
+  @if $vertical-rhythm == false
+    font: 62.5%/1.5 $font-base
+  @else
+    font-family: $font-base
+
+// ----- Block Content ----- //
+
+// Headings
+
+h1, h2, h3,
+h4, h5, h6
+  font-weight: bold
+h1, .h1
+  @if $vertical-rhythm
+    +adjust-font-size-to(40px)
+  @else
+    font-size: 4em
+h2, .h2
+  @if $vertical-rhythm
+    +adjust-font-size-to(35px)
+  @else
+    font-size: 3.5em
+h3, .h3
+  @if $vertical-rhythm
+    +adjust-font-size-to(30px)
+  @else
+    font-size: 3em
+h4, .h4
+  @if $vertical-rhythm
+    +adjust-font-size-to(25px)
+  @else
+    font-size: 2.5em
+h5, .h5
+  @if $vertical-rhythm
+    +adjust-font-size-to(20px)
+  @else
+    font-size: 2em
+h6, .h6
+  @if $vertical-rhythm
+    +adjust-font-size-to(16px)
+  @else
+    font-size: 1.6em
+
+// Paragraphs
+
+p
+  color: lighten($color-base, 15%)
+  @if $vertical-rhythm
+    +adjust-font-size-to(16px)
+  @else
+    font-size: 1.6em
+    margin: 10px 0
+
+// ----- Inline Content ----- //
+
+// Links
+
+a
+  color: $color-highlight
+  text-decoration: none
+  &:hover,
+  &:focus
+    text-decoration: underline
+
+// Formatting
+
+em
+  font-style: italic
+strong
+  font-weight: bold

@@ -1,0 +1,86 @@
+//-------------------------------------
+//  Containers
+//-------------------------------------
+
+// ----- Row Variables ----- //
+
+@if $vertical-rhythm == false
+  $row-margin: 0 !default
+  $row-padding: 20px 0 !default
+
+$color-row-a: lighten($color-base, 55%) !default
+$color-row-b: lighten($color-base, 65%) !default
+$color-row-c: lighten($color-base, 75%) !default
+
+// ----- Cell Variables ----- //
+
+$cell-width: 980px !default
+$cell-padding: 0 80px !default
+
+// ----- Card Variables ----- //
+
+$card-bg: #FFF
+$card-margin: 10px 0 !default
+$card-padding: 20px 0 !default
+$card-padding-left: 20px !default
+$card-padding-right: 20px !default
+
+// ----- Bucket Variables ----- //
+
+$bucket-sizes: 75px, 50px !default
+
+// ----- Rows ----- //
+
+%row, .row
+  @if $vertical-rhythm
+    +padding-leader(1)
+    +padding-trailer(1)
+  @else
+    margin: $row-margin
+    padding: $row-padding
+.row-a
+  @extend %row
+  background-color: $color-row-a
+.row-b
+  @extend %row
+  background-color: $color-row-b
+.row-c
+  @extend %row
+  background-color: $color-row-c
+
+// ----- Cells ----- //
+
+%cell, .cell
+  max-width: $cell-width
+  padding: $cell-padding
+  position: relative
+
+// ----- Cards ----- //
+
+%card, .card
+  @if $vertical-rhythm
+    +rhythm(1, 1, 1, 1)
+    padding-left: $card-padding-left
+    padding-right: $card-padding-right
+  @else
+    margin: $card-margin
+    padding: $card-padding
+.card-a
+  @extend %card
+  background: $card-bg
+  border-radius: $border-radius
+  box-shadow: $box-shadow
+
+// ----- Buckets ----- //
+
+%bucket
+  position: relative
+  .bucket-media
+    left: 0
+    position: absolute
+    top: 0
+@for $i from 1 through length($bucket-sizes)
+  .bucket-0#{$i}
+    @extend %bucket
+    .bucket-content
+      padding-left: nth($bucket-sizes, $i) + 15px
