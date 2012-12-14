@@ -124,7 +124,7 @@ strong {
   font-weight: bold; }
 
 /* line 10, buttons/_buttons.sass */
-.btn-a, .btn-b, .btn-c, .btn {
+.btn-a, .btn {
   border-radius: 3px;
   display: inline-block;
   padding-left: 50px;
@@ -133,10 +133,10 @@ strong {
   line-height: 3em;
   margin-bottom: 1.5em; }
   /* line 16, buttons/_buttons.sass */
-  .btn-a:focus, .btn-b:focus, .btn-c:focus, .btn-a:hover, .btn-b:hover, .btn-c:hover, .btn:focus, .btn:hover {
+  .btn-a:focus, .btn-a:hover, .btn:focus, .btn:hover {
     text-decoration: none; }
   /* line 26, buttons/_buttons.sass */
-  .btn-block.btn-a, .btn-block.btn-b, .btn-block.btn-c, .btn.btn-block {
+  .btn-block.btn-a, .btn.btn-block {
     display: block; }
 
 /* line 29, buttons/_buttons.sass */
@@ -146,22 +146,6 @@ strong {
   /* line 33, buttons/_buttons.sass */
   .btn-a:focus, .btn-a:hover {
     background: #a84424; }
-
-/* line 37, buttons/_buttons.sass */
-.btn-b {
-  background: #272829;
-  color: white; }
-  /* line 41, buttons/_buttons.sass */
-  .btn-b:focus, .btn-b:hover {
-    background: #333536; }
-
-/* line 45, buttons/_buttons.sass */
-.btn-c {
-  background: #727477;
-  color: white; }
-  /* line 49, buttons/_buttons.sass */
-  .btn-c:focus, .btn-c:hover {
-    background: #65686a; }
 
 /* line 33, containers/_containers.sass */
 .row-a, .row-b, .row-c, .row {
