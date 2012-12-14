@@ -47,6 +47,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 42, _settings.sass */
+.grid-b, .grid-c, .grid {
+  zoom: 1; }
+  /* line 44, _settings.sass */
+  .grid-b:before, .grid-c:before, .grid:before, .grid-b:after, .grid-c:after, .grid:after {
+    content: "";
+    display: table; }
+  /* line 48, _settings.sass */
+  .grid-b:after, .grid-c:after, .grid:after {
+    clear: both; }
+
 /* line 61, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 100%; }
@@ -224,3 +235,48 @@ strong {
   font-size: 1.25em;
   line-height: 1.2em;
   line-height: 2.4em; }
+
+/* line 6, grids/_grids.sass */
+.grid-b .box-a, .grid-c .box-a, .grid-b .box-b, .grid-c .box-b, .grid-b .box-c, .grid-c .box-c, .grid .box-a, .grid .box-b, .grid .box-c {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+/* line 8, grids/_grids.sass */
+.grid-b .box-a, .grid-c .box-a, .grid .box-a {
+  float: left;
+  padding-right: 5%;
+  width: 50%; }
+/* line 12, grids/_grids.sass */
+.grid-b .box-b, .grid-c .box-b, .grid .box-b {
+  float: right;
+  width: 50%; }
+
+/* line 6, grids/_grids.sass */
+.grid-b .box-a, .grid-b .box-b, .grid-b .box-c {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+/* line 8, grids/_grids.sass */
+.grid-b .box-a {
+  float: left;
+  padding-right: 5%;
+  width: 60%; }
+/* line 12, grids/_grids.sass */
+.grid-b .box-b {
+  float: right;
+  width: 40%; }
+
+/* line 6, grids/_grids.sass */
+.grid-c .box-a, .grid-c .box-b, .grid-c .box-c {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+/* line 8, grids/_grids.sass */
+.grid-c .box-a {
+  float: left;
+  padding-right: 5%;
+  width: 70%; }
+/* line 12, grids/_grids.sass */
+.grid-c .box-b {
+  float: right;
+  width: 30%; }

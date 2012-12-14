@@ -1,3 +1,25 @@
 //-------------------------------------
 //  Grids
 //-------------------------------------
+
+=grid($col-a: 50%, $col-b: 50%, $gutter: 5%)
+  .box-a, .box-b, .box-c
+    +box-sizing(border-box)
+  .box-a
+    float: left
+    padding-right: $gutter
+    width: $col-a
+  .box-b
+    float: right
+    width: $col-b
+
+%grid, .grid
+  @extend %group
+  +grid
+
+.grid-b
+  @extend %grid
+  +grid(60%, 40%)
+.grid-c
+  @extend %grid
+  +grid(70%, 30%)
