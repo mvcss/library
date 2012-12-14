@@ -221,16 +221,14 @@ strong {
   line-height: 1.8em; }
 /* line 15, content/_content.sass */
 .composition h2 {
-  line-height: 2.05714em;
-  margin-top: 0.68571em; }
-/* line 23, content/_content.sass */
+  line-height: 2.05714em; }
+/* line 21, content/_content.sass */
 .composition h3 {
-  line-height: 1.6em;
-  margin-top: 0.8em; }
-/* line 33, content/_content.sass */
+  line-height: 1.6em; }
+/* line 29, content/_content.sass */
 .composition p {
   margin-bottom: 1.5em; }
-/* line 41, content/_content.sass */
+/* line 37, content/_content.sass */
 .composition blockquote {
   border-left: 5px solid #727477;
   color: #8b8e91;
@@ -238,7 +236,7 @@ strong {
   font-size: 1.25em;
   line-height: 1.2em;
   line-height: 2.4em; }
-/* line 54, content/_content.sass */
+/* line 50, content/_content.sass */
 .composition pre {
   background: white;
   font-family: Monaco, monospace;
