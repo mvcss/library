@@ -15,14 +15,18 @@
   h2
     @if $vertical-rhythm
       +adjust-leading-to(3, 35px)
+      +leader(1, 35px)
     @else
       line-height: 2.05714em
+      margin-top: 0.68571em
 
   h3
     @if $vertical-rhythm
       +adjust-leading-to(2, 30px)
+      +leader(1, 30px)
     @else
       line-height: 2.4em
+      margin-top: 0.8em
 
   // Paragraphs
 
@@ -44,3 +48,22 @@
     @else
       font-size: 2em
       line-height: 2.4em
+
+  // Code Blocks
+
+  pre
+    background: #FFF
+    font-family: $font-monospace
+    padding-left: 20px
+    padding-right: 20px
+    @if $vertical-rhythm
+      +adjust-font-size-to(14px)
+      +adjust-leading-to(1, 14px)
+      +padding-leader(1, 14px)
+      +padding-trailer(1, 14px)
+      +trailer(1, 14px)
+    @else
+      font-size: 1.4em
+      line-height: 1.71429em
+      padding-bottom: 20px
+      padding-top: 20px

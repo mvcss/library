@@ -7,12 +7,10 @@
 
 html
   background: $color-bg
+  @if $development
+    background-image: url(http://basehold.it/i/24)
   @if $vertical-rhythm == false
     font-size: 16px
-  @else
-    @if $development
-      // background-image: url(http://basehold.it/i/24)
-      +debug-vertical-alignment
 body
   color: $color-base
   @if $vertical-rhythm == false

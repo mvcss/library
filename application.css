@@ -69,68 +69,69 @@ html {
 
 /* line 8, _base.sass */
 html {
-  background: #eeeeee; }
+  background: #eeeeee;
+  background-image: url(http://basehold.it/i/24); }
 
-/* line 16, _base.sass */
+/* line 14, _base.sass */
 body {
   color: #272829;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-/* line 27, _base.sass */
+/* line 25, _base.sass */
 h1, h2, h3,
 h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
-/* line 31, _base.sass */
+/* line 29, _base.sass */
 h1, .h1 {
   font-size: 2.5em;
   line-height: 1.2em; }
 
-/* line 36, _base.sass */
+/* line 34, _base.sass */
 h2, .h2 {
   font-size: 2.1875em;
   line-height: 1.37143em; }
 
-/* line 41, _base.sass */
+/* line 39, _base.sass */
 h3, .h3 {
   font-size: 1.875em;
   line-height: 1.6em; }
 
-/* line 46, _base.sass */
+/* line 44, _base.sass */
 h4, .h4 {
   font-size: 1.5625em;
   line-height: 1.92em; }
 
-/* line 51, _base.sass */
+/* line 49, _base.sass */
 h5, .h5 {
   font-size: 1.25em;
   line-height: 1.2em; }
 
-/* line 56, _base.sass */
+/* line 54, _base.sass */
 h6, .h6 {
   font-size: 1em;
   line-height: 1.5em; }
 
-/* line 64, _base.sass */
+/* line 62, _base.sass */
 p {
   color: #4c4e50;
   font-size: 1em;
   line-height: 1.5em; }
 
-/* line 76, _base.sass */
+/* line 74, _base.sass */
 a {
   color: #bd4c28;
   text-decoration: none; }
-  /* line 79, _base.sass */
+  /* line 77, _base.sass */
   a:hover, a:focus {
     text-decoration: underline; }
 
-/* line 85, _base.sass */
+/* line 83, _base.sass */
 em {
   font-style: italic; }
 
-/* line 87, _base.sass */
+/* line 85, _base.sass */
 strong {
   font-weight: bold; }
 
@@ -220,14 +221,16 @@ strong {
   line-height: 1.8em; }
 /* line 15, content/_content.sass */
 .composition h2 {
-  line-height: 2.05714em; }
-/* line 21, content/_content.sass */
+  line-height: 2.05714em;
+  margin-top: 0.68571em; }
+/* line 23, content/_content.sass */
 .composition h3 {
-  line-height: 1.6em; }
-/* line 29, content/_content.sass */
+  line-height: 1.6em;
+  margin-top: 0.8em; }
+/* line 33, content/_content.sass */
 .composition p {
   margin-bottom: 1.5em; }
-/* line 37, content/_content.sass */
+/* line 41, content/_content.sass */
 .composition blockquote {
   border-left: 5px solid #727477;
   color: #8b8e91;
@@ -235,6 +238,18 @@ strong {
   font-size: 1.25em;
   line-height: 1.2em;
   line-height: 2.4em; }
+/* line 54, content/_content.sass */
+.composition pre {
+  background: white;
+  font-family: Monaco, monospace;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  line-height: 1.71429em;
+  padding-top: 1.71429em;
+  padding-bottom: 1.71429em;
+  margin-bottom: 1.71429em; }
 
 /* line 16, grids/_grids.sass */
 .grid-a > div, .grid-b > div, .grid-c > div, .grid > div {
