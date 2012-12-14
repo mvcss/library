@@ -1,0 +1,46 @@
+//-------------------------------------
+//  Content
+//-------------------------------------
+
+.composition
+
+  // Headings
+
+  h1
+    @if $vertical-rhythm
+      +adjust-leading-to(3, 40px)
+    @else
+      line-height: 1.8em
+
+  h2
+    @if $vertical-rhythm
+      +adjust-leading-to(3, 35px)
+    @else
+      line-height: 2.05714em
+
+  h3
+    @if $vertical-rhythm
+      +adjust-leading-to(2, 30px)
+    @else
+      line-height: 2.4em
+
+  // Paragraphs
+
+  p
+    @if $vertical-rhythm
+      +trailer(1)
+    @else
+      margin-bottom: 1.5em
+
+  // Blockquotes
+
+  blockquote
+    border-left: 5px solid $color-border
+    color: lighten($color-base, 40%)
+    padding-left: 20px
+    @if $vertical-rhythm
+      +adjust-font-size-to(20px)
+      +adjust-leading-to(2, 20px)
+    @else
+      font-size: 2em
+      line-height: 2.4em

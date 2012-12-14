@@ -15,13 +15,6 @@ $color-base: #272829
 $color-border: lighten($color-base, 30%)
 $color-highlight: #BD4C28
 
-// Vertical Rhythm
-
-@if $vertical-rhythm
-  $base-font-size: 16px
-  $base-line-height: 24px
-  $default-rhythm-border-style: 1px solid $color-border
-
 // Fonts
 
 $font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif
@@ -31,10 +24,18 @@ $font-monospace: Monaco, monospace
 // Borders
 
 $border-radius: 3px
+$border-style: 2px solid $color-border
 
 // Box Shadows
 
 $box-shadow: 0 1px 1px rgba(#000, 0.2)
+
+// Vertical Rhythm
+
+@if $vertical-rhythm
+  $base-font-size: 16px
+  $base-line-height: 24px
+  $default-rhythm-border-style: $border-style
 
 //-------------------------------------
 //  Containers

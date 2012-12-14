@@ -70,92 +70,93 @@ html {
   background-size: 100% 1.5em;
   background-position: left top; }
 
-/* line 15, _base.sass */
+/* line 16, _base.sass */
 body {
   color: #272829;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-/* line 26, _base.sass */
+/* line 27, _base.sass */
 h1, h2, h3,
 h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
-/* line 29, _base.sass */
+/* line 31, _base.sass */
 h1, .h1 {
   font-size: 2.5em;
   line-height: 1.2em; }
 
-/* line 34, _base.sass */
+/* line 36, _base.sass */
 h2, .h2 {
   font-size: 2.1875em;
   line-height: 1.37143em; }
 
-/* line 39, _base.sass */
+/* line 41, _base.sass */
 h3, .h3 {
   font-size: 1.875em;
   line-height: 1.6em; }
 
-/* line 44, _base.sass */
+/* line 46, _base.sass */
 h4, .h4 {
   font-size: 1.5625em;
   line-height: 1.92em; }
 
-/* line 49, _base.sass */
+/* line 51, _base.sass */
 h5, .h5 {
   font-size: 1.25em;
   line-height: 1.2em; }
 
-/* line 54, _base.sass */
+/* line 56, _base.sass */
 h6, .h6 {
   font-size: 1em;
   line-height: 1.5em; }
 
-/* line 62, _base.sass */
+/* line 64, _base.sass */
 p {
   color: #4c4e50;
   font-size: 1em;
   line-height: 1.5em; }
 
-/* line 74, _base.sass */
+/* line 76, _base.sass */
 a {
   color: #bd4c28;
   text-decoration: none; }
-  /* line 77, _base.sass */
+  /* line 79, _base.sass */
   a:hover, a:focus {
     text-decoration: underline; }
 
-/* line 83, _base.sass */
+/* line 85, _base.sass */
 em {
   font-style: italic; }
 
-/* line 85, _base.sass */
+/* line 87, _base.sass */
 strong {
   font-weight: bold; }
 
-/* line 34, containers/_containers.sass */
+/* line 33, containers/_containers.sass */
 .row-a, .row-b, .row-c, .row {
   padding-top: 1.5em;
   padding-bottom: 1.5em; }
 
-/* line 41, containers/_containers.sass */
+/* line 40, containers/_containers.sass */
 .row-a {
   background-color: #b2b4b6; }
 
-/* line 44, containers/_containers.sass */
+/* line 43, containers/_containers.sass */
 .row-b {
   background-color: #cdcecf; }
 
-/* line 47, containers/_containers.sass */
+/* line 46, containers/_containers.sass */
 .row-c {
   background-color: #e7e7e8; }
 
-/* line 53, containers/_containers.sass */
+/* line 52, containers/_containers.sass */
 .cell {
   max-width: 980px;
   padding: 0 80px;
   position: relative; }
 
-/* line 60, containers/_containers.sass */
+/* line 59, containers/_containers.sass */
 .card-a, .card {
   margin-top: 1.5em;
   padding-top: 1.5em;
@@ -164,25 +165,46 @@ strong {
   padding-left: 20px;
   padding-right: 20px; }
 
-/* line 68, containers/_containers.sass */
+/* line 67, containers/_containers.sass */
 .card-a {
   background: white;
   border-radius: 3px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 76, containers/_containers.sass */
+/* line 75, containers/_containers.sass */
 .bucket-01, .bucket-02 {
   position: relative; }
-  /* line 78, containers/_containers.sass */
+  /* line 77, containers/_containers.sass */
   .bucket-01 .bucket-media, .bucket-02 .bucket-media {
     left: 0;
     position: absolute;
     top: 0; }
 
-/* line 85, containers/_containers.sass */
+/* line 84, containers/_containers.sass */
 .bucket-01 .bucket-content {
   padding-left: 90px; }
 
-/* line 85, containers/_containers.sass */
+/* line 84, containers/_containers.sass */
 .bucket-02 .bucket-content {
   padding-left: 65px; }
+
+/* line 9, content/_content.sass */
+.composition h1 {
+  line-height: 1.8em; }
+/* line 15, content/_content.sass */
+.composition h2 {
+  line-height: 2.05714em; }
+/* line 21, content/_content.sass */
+.composition h3 {
+  line-height: 1.6em; }
+/* line 29, content/_content.sass */
+.composition p {
+  margin-bottom: 1.5em; }
+/* line 37, content/_content.sass */
+.composition blockquote {
+  border-left: 5px solid #727477;
+  color: #8b8e91;
+  padding-left: 20px;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  line-height: 2.4em; }
