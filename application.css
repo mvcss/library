@@ -47,14 +47,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 42, _settings.sass */
+/* Sample usage: +caret(bottom, 8px, #000); */
+/* line 59, _settings.sass */
 .grid-a, .grid-b, .grid-c, .grid {
   zoom: 1; }
-  /* line 44, _settings.sass */
+  /* line 61, _settings.sass */
   .grid-a:before, .grid-b:before, .grid-c:before, .grid:before, .grid-a:after, .grid-b:after, .grid-c:after, .grid:after {
     content: "";
     display: table; }
-  /* line 48, _settings.sass */
+  /* line 65, _settings.sass */
   .grid-a:after, .grid-b:after, .grid-c:after, .grid:after {
     clear: both; }
 

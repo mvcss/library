@@ -23,6 +23,23 @@ $font-monospace: Monaco, monospace !default
 
 // ----- Mixins ----- //
 
+/* Sample usage: +caret(bottom, 8px, #000); */
+
+=caret($side, $size, $color)
+  $opposite: opposite-position($side)
+  +stretch(50%, auto, auto, 50%)
+  border: $size solid transparent
+  border-#{$opposite}: $size solid $color
+  border-#{$side}: 0
+  content: ''
+  display: block
+  height: 0
+  margin: (-$size) 0 0 (-$size)
+  margin-#{$side}: 0
+  width: 0
+  #{$side}: -$size
+  #{$opposite}: auto
+
 =respond-to($val, $query: min-width, $media: screen)
   @media #{$media} and ($query: $val)
     @content
