@@ -48,14 +48,14 @@ table {
   border-spacing: 0; }
 
 /* Sample usage: +caret(bottom, 8px, #000); */
-/* line 59, _settings.sass */
+/* line 68, _settings.sass */
 .grid-a, .grid-b, .grid-c, .grid {
   zoom: 1; }
-  /* line 61, _settings.sass */
+  /* line 70, _settings.sass */
   .grid-a:before, .grid-b:before, .grid-c:before, .grid:before, .grid-a:after, .grid-b:after, .grid-c:after, .grid:after {
     content: "";
     display: table; }
-  /* line 65, _settings.sass */
+  /* line 74, _settings.sass */
   .grid-a:after, .grid-b:after, .grid-c:after, .grid:after {
     clear: both; }
 
@@ -250,38 +250,38 @@ strong {
   padding-bottom: 1.71429em;
   margin-bottom: 1.71429em; }
 
-/* line 16, grids/_grids.sass */
+/* line 7, grids/_grids.sass */
 .grid-a > div, .grid-b > div, .grid-c > div, .grid > div {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 6, grids/_grids.sass */
+/* line 44, _settings.sass */
 .grid-a .box-a {
   float: left;
   padding-right: 5%;
   width: 50%; }
-/* line 10, grids/_grids.sass */
+/* line 48, _settings.sass */
 .grid-a .box-b {
   float: right;
   width: 50%; }
 
-/* line 6, grids/_grids.sass */
+/* line 44, _settings.sass */
 .grid-b .box-a {
   float: left;
   padding-right: 5%;
   width: 60%; }
-/* line 10, grids/_grids.sass */
+/* line 48, _settings.sass */
 .grid-b .box-b {
   float: right;
   width: 40%; }
 
-/* line 6, grids/_grids.sass */
+/* line 44, _settings.sass */
 .grid-c .box-a {
   float: left;
   padding-right: 5%;
   width: 70%; }
-/* line 10, grids/_grids.sass */
+/* line 48, _settings.sass */
 .grid-c .box-b {
   float: right;
   width: 30%; }
