@@ -70,7 +70,8 @@ html {
 
 /* line 8, partials/_base.sass */
 html {
-  background: #eeeeee; }
+  background: #eeeeee;
+  background-image: url(http://basehold.it/i/24); }
 
 /* line 14, partials/_base.sass */
 body {
