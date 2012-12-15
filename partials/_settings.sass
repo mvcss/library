@@ -41,6 +41,8 @@ $font-monospace: Monaco, monospace !default
   #{$opposite}: auto
 
 =grid($col-a: 50%, $col-b: 50%, $gutter: $grid-gutter)
+  .box-a, .box-b
+    +box-sizing(border-box)
   .box-a
     float: left
     padding-right: $gutter
