@@ -201,7 +201,8 @@ strong {
   position: relative; }
 
 /* line 61, partials/_containers.sass */
-.card-a, .card {
+.card-a, .card-b, .card {
+  border-radius: 3px;
   margin-top: 1.5em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
@@ -210,26 +211,29 @@ strong {
   padding-right: 20px;
   position: relative; }
 
-/* line 70, partials/_containers.sass */
+/* line 71, partials/_containers.sass */
 .card-a {
   background: white;
-  border-radius: 3px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 78, partials/_containers.sass */
+/* line 75, partials/_containers.sass */
+.card-b {
+  background: #cdcecf; }
+
+/* line 81, partials/_containers.sass */
 .bucket-01, .bucket-02 {
   position: relative; }
-  /* line 80, partials/_containers.sass */
+  /* line 83, partials/_containers.sass */
   .bucket-01 .bucket-media, .bucket-02 .bucket-media {
     left: 0;
     position: absolute;
     top: 0; }
 
-/* line 87, partials/_containers.sass */
+/* line 90, partials/_containers.sass */
 .bucket-01 .bucket-content {
   padding-left: 90px; }
 
-/* line 87, partials/_containers.sass */
+/* line 90, partials/_containers.sass */
 .bucket-02 .bucket-content {
   padding-left: 65px; }
 
