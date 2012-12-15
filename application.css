@@ -70,8 +70,7 @@ html {
 
 /* line 8, partials/_base.sass */
 html {
-  background: #eeeeee;
-  background-image: url(http://basehold.it/i/24); }
+  background: #eeeeee; }
 
 /* line 14, partials/_base.sass */
 body {
@@ -359,16 +358,27 @@ strong {
   right: 0;
   top: 0; }
 
-/* line 71, application.sass */
+/* line 68, application.sass */
+.example-markup {
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  padding-top: 1.84615em;
+  padding-bottom: 1.84615em;
+  background: #e7e7e8;
+  font-family: Monaco, monospace;
+  padding-left: 24px;
+  padding-right: 24px; }
+
+/* line 79, application.sass */
 .section-list li {
   font-size: 1em;
   line-height: 1.5em;
   line-height: 1.5em; }
-  /* line 74, application.sass */
+  /* line 82, application.sass */
   .section-list li a {
     margin-bottom: 0.75em;
     color: #272829;
     display: block; }
-    /* line 78, application.sass */
+    /* line 86, application.sass */
     .section-list li a.active {
       color: #bd4c28; }
