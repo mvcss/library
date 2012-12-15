@@ -10,8 +10,68 @@
   %title MVCSS Library
   %link(href="application.css" rel="stylesheet")
 %body
-  .row-a
-    .cell
-      %h1 MVCSS Library
+  / Header
+  %header.row-a.site-header
+    .cell.grid-c
+      .box-a
+        %h1 MVCSS Library
+        %h2 Markup Patterns &amp; JavaScript Components
+      .box-b
+        %a.btn-a(href="#") Download Code &rarr;
+
+  / Content
+  %section.row.content
+    .cell.grid
+      %aside.box-a
+        %ul.section-list
+          %li <a class="active" href="#">Buttons</a>
+          %li <a href="#">Containers</a>
+          %li <a href="#">Content</a>
+          %li <a href="#">Dropdowns</a>
+          %li <a href="#">Forms</a>
+          %li <a href="#">Grids</a>
+          %li <a href="#">Icons</a>
+          %li <a href="#">Lists</a>
+          %li <a href="#">Modals</a>
+          %li <a href="#">Popovers</a>
+          %li <a href="#">Tables</a>
+          %li <a href="#">Tabs</a>
+          %li <a href="#">Tooltips</a>
+      .box-b
+        .content-section#buttons
+          %h3 Buttons
+          .card-a.example
+            %h4 Default Button
+            %p.example-label .btn-a
+            .example-output
+              %a.btn-a(href="#") Button
+          .card-a.example
+            %h4 Full-width Button
+            %p.example-label .btn-a.btn-block
+            .example-output
+              %a.btn-a.btn-block(href="#") Button
+          .card-a.example
+            %h4 Multiple Buttons
+            %p.example-label .btn-a
+            .example-output
+              %a.btn-a(href="#") Button
+              %a.btn-a(href="#") Button
+              %a.btn-a(href="#") Button
+              %a.btn-a(href="#") Button
+          .card-a.example
+            %h4 Large Button
+            %p.example-label .btn-a.btn-lrg
+            .example-output
+              %a.btn-a.btn-lrg(href="#") Button
+          .card-a.example
+            %h4 Small Button
+            %p.example-label .btn-a.btn-sm
+            .example-output
+              %a.btn-a.btn-sm(href="#") Button
+          .card-a.example
+            %h4 Mini Button
+            %p.example-label .btn-a.btn-mini
+            .example-output
+              %a.btn-a.btn-mini(href="#") Button
 
 </html>

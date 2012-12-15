@@ -1,0 +1,82 @@
+//-------------------------------------
+//  Global
+//-------------------------------------
+
+// ----- Settings ----- //
+
+$development: true
+$theme: light
+$vertical-rhythm: true
+
+// ----- Colors ----- //
+
+$color-bg: #EEE
+$color-base: #272829
+$color-border: lighten($color-base, 30%)
+$color-highlight: #BD4C28
+
+// ----- Fonts ----- //
+
+$font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif
+$font-header: 'Helvetica Neue', Helvetica, Arial, sans-serif
+$font-monospace: Monaco, monospace
+
+// ----- Borders ----- //
+
+$border-radius: 3px
+$border-style: 2px solid $color-border
+
+// ----- Box Shadows ----- //
+
+$box-shadow: 0 1px 1px rgba(#000, 0.2)
+
+// ----- Vertical Rhythm ----- //
+
+@if $vertical-rhythm
+  $base-font-size: 16px
+  $base-line-height: 24px
+  $default-rhythm-border-style: $border-style
+
+//-------------------------------------
+//  Buttons
+//-------------------------------------
+
+$btn-padding-left: 50px
+$btn-padding-right: 50px
+
+//-------------------------------------
+//  Containers
+//-------------------------------------
+
+// ----- Rows ----- //
+
+@if $vertical-rhythm == false
+  $row-margin: 0
+  $row-padding: 20px 0
+
+$color-row-a: #FFF
+$color-row-b: lighten($color-base, 75%)
+$color-row-c: lighten($color-base, 85%)
+
+// ----- Cells ----- //
+
+$cell-width: 980px
+$cell-padding: 0 80px
+
+// ----- Cards ----- //
+
+$card-bg: #FFF
+$card-margin: 10px 0
+$card-padding: 20px 0
+$card-padding-left: 20px
+$card-padding-right: 20px
+
+// ----- Buckets ----- //
+
+$bucket-sizes: 75px, 50px
+
+//-------------------------------------
+//  Grids
+//-------------------------------------
+
+$grid-gutter: 5%
