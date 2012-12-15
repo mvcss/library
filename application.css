@@ -312,21 +312,21 @@ strong {
   float: right;
   width: 30%; }
 
-/* line 36, application.sass */
+/* line 37, application.sass */
 .site-header {
   background: #272829;
   box-shadow: none; }
-  /* line 39, application.sass */
+  /* line 40, application.sass */
   .site-header h1, .site-header h2 {
     color: white; }
-  /* line 41, application.sass */
+  /* line 42, application.sass */
   .site-header h2 {
     font-size: 1.5em;
     line-height: 2em;
     line-height: 2em;
     color: #8b8e91;
     font-weight: normal; }
-  /* line 46, application.sass */
+  /* line 47, application.sass */
   .site-header .btn-a {
     margin-top: 1.5em;
     float: right;
@@ -347,7 +347,7 @@ strong {
   float: right;
   width: 80%; }
 
-/* line 58, application.sass */
+/* line 59, application.sass */
 .example-label {
   font-size: 0.75em;
   line-height: 2em;
@@ -359,16 +359,16 @@ strong {
   right: 0;
   top: 0; }
 
-/* line 70, application.sass */
+/* line 71, application.sass */
 .section-list li {
   font-size: 1em;
   line-height: 1.5em;
   line-height: 1.5em; }
-  /* line 73, application.sass */
+  /* line 74, application.sass */
   .section-list li a {
     margin-bottom: 0.75em;
     color: #272829;
     display: block; }
-    /* line 77, application.sass */
+    /* line 78, application.sass */
     .section-list li a.active {
       color: #bd4c28; }
