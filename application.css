@@ -1,4 +1,4 @@
-/* line 5, _reset.sass */
+/* line 5, partials/_reset.sass */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,43 +19,43 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
-/* line 24, _reset.sass */
+/* line 24, partials/_reset.sass */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 27, _reset.sass */
+/* line 27, partials/_reset.sass */
 body {
   line-height: 1; }
 
-/* line 29, _reset.sass */
+/* line 29, partials/_reset.sass */
 ol, ul {
   list-style: none; }
 
-/* line 31, _reset.sass */
+/* line 31, partials/_reset.sass */
 blockquote, q {
   quotes: none; }
 
-/* line 33, _reset.sass */
+/* line 33, partials/_reset.sass */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
   content: none; }
 
-/* line 37, _reset.sass */
+/* line 37, partials/_reset.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
 /* Sample usage: +caret(bottom, 8px, #000); */
-/* line 68, _settings.sass */
+/* line 68, partials/_settings.sass */
 .grid-a, .grid-b, .grid-c, .grid {
   zoom: 1; }
-  /* line 70, _settings.sass */
+  /* line 70, partials/_settings.sass */
   .grid-a:before, .grid-b:before, .grid-c:before, .grid:before, .grid-a:after, .grid-b:after, .grid-c:after, .grid:after {
     content: "";
     display: table; }
-  /* line 74, _settings.sass */
+  /* line 74, partials/_settings.sass */
   .grid-a:after, .grid-b:after, .grid-c:after, .grid:after {
     clear: both; }
 
@@ -68,75 +68,75 @@ html {
   font-size: 16px;
   line-height: 1.5em; }
 
-/* line 8, _base.sass */
+/* line 8, partials/_base.sass */
 html {
   background: #eeeeee;
   background-image: url(http://basehold.it/i/24); }
 
-/* line 14, _base.sass */
+/* line 14, partials/_base.sass */
 body {
   color: #272829;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-/* line 25, _base.sass */
+/* line 25, partials/_base.sass */
 h1, h2, h3,
 h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
-/* line 29, _base.sass */
+/* line 29, partials/_base.sass */
 h1, .h1 {
   font-size: 2.5em;
   line-height: 1.2em; }
 
-/* line 34, _base.sass */
+/* line 34, partials/_base.sass */
 h2, .h2 {
   font-size: 2.1875em;
   line-height: 1.37143em; }
 
-/* line 39, _base.sass */
+/* line 39, partials/_base.sass */
 h3, .h3 {
   font-size: 1.875em;
   line-height: 1.6em; }
 
-/* line 44, _base.sass */
+/* line 44, partials/_base.sass */
 h4, .h4 {
   font-size: 1.5625em;
   line-height: 1.92em; }
 
-/* line 49, _base.sass */
+/* line 49, partials/_base.sass */
 h5, .h5 {
   font-size: 1.25em;
   line-height: 1.2em; }
 
-/* line 54, _base.sass */
+/* line 54, partials/_base.sass */
 h6, .h6 {
   font-size: 1em;
   line-height: 1.5em; }
 
-/* line 62, _base.sass */
+/* line 62, partials/_base.sass */
 p {
   color: #4c4e50;
   font-size: 1em;
   line-height: 1.5em; }
 
-/* line 74, _base.sass */
+/* line 74, partials/_base.sass */
 a {
   color: #bd4c28;
   text-decoration: none; }
-  /* line 77, _base.sass */
+  /* line 77, partials/_base.sass */
   a:hover, a:focus {
     text-decoration: underline; }
 
-/* line 83, _base.sass */
+/* line 83, partials/_base.sass */
 em {
   font-style: italic; }
 
-/* line 85, _base.sass */
+/* line 85, partials/_base.sass */
 strong {
   font-weight: bold; }
 
-/* line 10, buttons/_buttons.sass */
+/* line 10, partials/_buttons.sass */
 .btn-a, .btn {
   border-radius: 3px;
   display: inline-block;
@@ -145,47 +145,47 @@ strong {
   text-align: center;
   line-height: 3em;
   margin-bottom: 1.5em; }
-  /* line 16, buttons/_buttons.sass */
+  /* line 16, partials/_buttons.sass */
   .btn-a:focus, .btn-a:hover, .btn:focus, .btn:hover {
     text-decoration: none; }
-  /* line 26, buttons/_buttons.sass */
+  /* line 26, partials/_buttons.sass */
   .btn-block.btn-a, .btn.btn-block {
     display: block; }
 
-/* line 29, buttons/_buttons.sass */
+/* line 29, partials/_buttons.sass */
 .btn-a {
   background: #bd4c28;
   color: white; }
-  /* line 33, buttons/_buttons.sass */
+  /* line 33, partials/_buttons.sass */
   .btn-a:focus, .btn-a:hover {
     background: #a84424; }
 
-/* line 33, containers/_containers.sass */
+/* line 33, partials/_containers.sass */
 .row-a, .row-b, .row-c, .row {
   padding-top: 1.5em;
   padding-bottom: 1.5em; }
 
-/* line 40, containers/_containers.sass */
+/* line 40, partials/_containers.sass */
 .row-a {
   background-color: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 44, containers/_containers.sass */
+/* line 44, partials/_containers.sass */
 .row-b {
   background-color: #e7e7e8; }
 
-/* line 47, containers/_containers.sass */
+/* line 47, partials/_containers.sass */
 .row-c {
   background-color: white; }
 
-/* line 53, containers/_containers.sass */
+/* line 53, partials/_containers.sass */
 .cell {
   margin: 0 auto;
   max-width: 980px;
   padding: 0 80px;
   position: relative; }
 
-/* line 61, containers/_containers.sass */
+/* line 61, partials/_containers.sass */
 .card-a, .card {
   margin-top: 1.5em;
   padding-top: 1.5em;
@@ -194,42 +194,42 @@ strong {
   padding-left: 20px;
   padding-right: 20px; }
 
-/* line 69, containers/_containers.sass */
+/* line 69, partials/_containers.sass */
 .card-a {
   background: white;
   border-radius: 3px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 77, containers/_containers.sass */
+/* line 77, partials/_containers.sass */
 .bucket-01, .bucket-02 {
   position: relative; }
-  /* line 79, containers/_containers.sass */
+  /* line 79, partials/_containers.sass */
   .bucket-01 .bucket-media, .bucket-02 .bucket-media {
     left: 0;
     position: absolute;
     top: 0; }
 
-/* line 86, containers/_containers.sass */
+/* line 86, partials/_containers.sass */
 .bucket-01 .bucket-content {
   padding-left: 90px; }
 
-/* line 86, containers/_containers.sass */
+/* line 86, partials/_containers.sass */
 .bucket-02 .bucket-content {
   padding-left: 65px; }
 
-/* line 9, content/_content.sass */
+/* line 9, partials/_content.sass */
 .composition h1 {
   line-height: 1.8em; }
-/* line 15, content/_content.sass */
+/* line 15, partials/_content.sass */
 .composition h2 {
   line-height: 2.05714em; }
-/* line 21, content/_content.sass */
+/* line 21, partials/_content.sass */
 .composition h3 {
   line-height: 1.6em; }
-/* line 29, content/_content.sass */
+/* line 29, partials/_content.sass */
 .composition p {
   margin-bottom: 1.5em; }
-/* line 37, content/_content.sass */
+/* line 37, partials/_content.sass */
 .composition blockquote {
   border-left: 5px solid #727477;
   color: #8b8e91;
@@ -237,7 +237,7 @@ strong {
   font-size: 1.25em;
   line-height: 1.2em;
   line-height: 2.4em; }
-/* line 50, content/_content.sass */
+/* line 50, partials/_content.sass */
 .composition pre {
   background: white;
   font-family: Monaco, monospace;
@@ -250,38 +250,38 @@ strong {
   padding-bottom: 1.71429em;
   margin-bottom: 1.71429em; }
 
-/* line 9, grids/_grids.sass */
+/* line 9, partials/_grids.sass */
 .grid-a > div, .grid-b > div, .grid-c > div, .grid > div {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 44, _settings.sass */
+/* line 44, partials/_settings.sass */
 .grid-a .box-a {
   float: left;
   padding-right: 5%;
   width: 50%; }
-/* line 48, _settings.sass */
+/* line 48, partials/_settings.sass */
 .grid-a .box-b {
   float: right;
   width: 50%; }
 
-/* line 44, _settings.sass */
+/* line 44, partials/_settings.sass */
 .grid-b .box-a {
   float: left;
   padding-right: 5%;
   width: 60%; }
-/* line 48, _settings.sass */
+/* line 48, partials/_settings.sass */
 .grid-b .box-b {
   float: right;
   width: 40%; }
 
-/* line 44, _settings.sass */
+/* line 44, partials/_settings.sass */
 .grid-c .box-a {
   float: left;
   padding-right: 5%;
   width: 70%; }
-/* line 48, _settings.sass */
+/* line 48, partials/_settings.sass */
 .grid-c .box-b {
   float: right;
   width: 30%; }
