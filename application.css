@@ -320,21 +320,33 @@ strong {
 .site-header {
   background: #272829;
   box-shadow: none; }
-  /* line 40, application.sass */
+  /* line 44, partials/_settings.sass */
+  .site-header .grid .box-a, .site-header .grid .box-b {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  /* line 46, partials/_settings.sass */
+  .site-header .grid .box-a {
+    float: left;
+    padding-right: 5%;
+    width: 65%; }
+  /* line 50, partials/_settings.sass */
+  .site-header .grid .box-b {
+    float: right;
+    width: 35%; }
+  /* line 42, application.sass */
   .site-header h1, .site-header h2 {
     color: white; }
-  /* line 42, application.sass */
+  /* line 44, application.sass */
   .site-header h2 {
     font-size: 1.5em;
     line-height: 2em;
     line-height: 2em;
     color: #8b8e91;
     font-weight: normal; }
-  /* line 47, application.sass */
+  /* line 49, application.sass */
   .site-header .btn-a {
-    margin-top: 1.5em;
-    float: right;
-    width: 80%; }
+    margin-top: 1.5em; }
 
 /* line 44, partials/_settings.sass */
 .content .grid .box-a, .content .grid .box-b {
