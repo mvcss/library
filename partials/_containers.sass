@@ -59,6 +59,7 @@ $bucket-sizes: 75px, 50px !default
 // ----- Cards ----- //
 
 %card, .card
+  border-radius: $border-radius
   @if $vertical-rhythm
     +rhythm(1, 1, 1, 1)
   @else
@@ -70,8 +71,10 @@ $bucket-sizes: 75px, 50px !default
 .card-a
   @extend %card
   background: $card-bg
-  border-radius: $border-radius
   box-shadow: $box-shadow
+.card-b
+  @extend %card
+  background: lighten($color-base, 65%)
 
 // ----- Buckets ----- //
 
