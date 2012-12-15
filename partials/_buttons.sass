@@ -25,6 +25,30 @@ $btn-padding-right: 50px !default
 
   &.btn-block
     display: block
+  &.btn-lrg
+    @if $vertical-rhythm
+      +adjust-font-size-to(20px, 2.5)
+      padding-left: $base-line-height * 3
+      padding-right: $base-line-height * 3
+    @else
+      font-size: 1.25em
+      line-height: 3em
+      padding-left: 72px
+      padding-right: 72px
+  &.btn-sm
+    @if $vertical-rhythm
+      +adjust-font-size-to(14px, 1.5)
+    @else
+      font-size: 0.875em
+      line-height: 2.57143em
+  &.btn-mini
+    @if $vertical-rhythm
+      +adjust-font-size-to(12px, 1)
+      padding-left: $base-line-height
+      padding-right: $base-line-height
+    @else
+      font-size: 0.875em
+      line-height: 2.57143em
 
 .btn-a
   @extend %btn
