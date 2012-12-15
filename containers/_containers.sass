@@ -61,11 +61,11 @@ $bucket-sizes: 75px, 50px !default
 %card, .card
   @if $vertical-rhythm
     +rhythm(1, 1, 1, 1)
-    padding-left: $card-padding-left
-    padding-right: $card-padding-right
   @else
     margin: $card-margin
     padding: $card-padding
+  padding-left: $card-padding-left
+  padding-right: $card-padding-right
 .card-a
   @extend %card
   background: $card-bg
