@@ -11,20 +11,19 @@ $.hashURLs = (options) ->
   if window.location.hash
     hash = window.location.hash
   else
-    hash = $(@).first().attr('href')
+    hash = settings.list.first().attr('href')
 
   settings.content.not(hash).hide()
   $("[data-hash=#{hash}]").addClass('active')
 
-  $.each settings.list, () ->
+  settings.list.on 'click', (e) ->
     el = $(@)
-    el.on 'click', (e) ->
-      e.preventDefault()
-      hash = el.attr('href')
-      window.location.hash = hash
+    e.preventDefault()
+    hash = el.attr('href')
+    window.location.hash = hash
 
-      settings.list.removeClass('active')
-      settings.content.hide()
+    settings.list.removeClass('active')
+    settings.content.hide()
 
-      el.addClass('active')
-      $(hash).show()
+    el.addClass('active')
+    $(hash).show()
