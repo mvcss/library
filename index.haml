@@ -30,6 +30,7 @@
           %li <a href="#dropdowns" data-hash="#dropdowns">Dropdowns</a>
           %li <a href="#forms" data-hash="#forms">Forms</a>
           %li <a href="#grids" data-hash="#grids">Grids</a>
+          %li <a href="#hash-urls" data-hash="#hash-urls">Hash URLs</a>
           %li <a href="#icons" data-hash="#icons">Icons</a>
           %li <a href="#lists" data-hash="#lists">Lists</a>
           %li <a href="#modals" data-hash="#modals">Modals</a>
@@ -122,6 +123,35 @@
         / Grids
         .content-section#grids
           %h3 Grids
+        / Hash URLs
+        .content-section#hash-urls
+          %h3 Hash URLs
+          .card-a.example
+            %h4 Markup
+            %p.example-label Haml
+            .example-markup
+              %pre
+                :preserve
+                  %ul.section-list
+                    %li
+                      %a(href="#example-01" data-hash="#example-01") Example 1
+                    %li
+                      %a(href="#example-02" data-hash="#example-02") Example 2
+
+                  .content-section#example-01
+                    %h2 Example 01
+                  .content-section#example-02
+                    %h2 Example 02
+          .card-a.example
+            %h4 JavaScript Call
+            %p.example-label JavaScript
+            .example-markup
+              %pre
+                :preserve
+                  $.hashURLs({
+                    list: $('.section-list a'),
+                    content: $('.content-section')
+                  });
         / Icons
         .content-section#icons
           %h3 Icons

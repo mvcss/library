@@ -34,6 +34,7 @@
           <li><a href="#dropdowns" data-hash="#dropdowns">Dropdowns</a></li>
           <li><a href="#forms" data-hash="#forms">Forms</a></li>
           <li><a href="#grids" data-hash="#grids">Grids</a></li>
+          <li><a href="#hash-urls" data-hash="#hash-urls">Hash URLs</a></li>
           <li><a href="#icons" data-hash="#icons">Icons</a></li>
           <li><a href="#lists" data-hash="#lists">Lists</a></li>
           <li><a href="#modals" data-hash="#modals">Modals</a></li>
@@ -136,6 +137,24 @@
         <!-- Grids -->
         <div class='content-section' id='grids'>
           <h3>Grids</h3>
+        </div>
+        <!-- Hash URLs -->
+        <div class='content-section' id='hash-urls'>
+          <h3>Hash URLs</h3>
+          <div class='card-a example'>
+            <h4>Markup</h4>
+            <p class='example-label'>Haml</p>
+            <div class='example-markup'>
+              <pre>%ul.section-list&#x000A;  %li&#x000A;    %a(href="#example-01" data-hash="#example-01") Example 1&#x000A;  %li&#x000A;    %a(href="#example-02" data-hash="#example-02") Example 2&#x000A;&#x000A;.content-section#example-01&#x000A;  %h2 Example 01&#x000A;.content-section#example-02&#x000A;  %h2 Example 02</pre>
+            </div>
+          </div>
+          <div class='card-a example'>
+            <h4>JavaScript Call</h4>
+            <p class='example-label'>JavaScript</p>
+            <div class='example-markup'>
+              <pre>$.hashURLs({&#x000A;  list: $('.section-list a'),&#x000A;  content: $('.content-section')&#x000A;});</pre>
+            </div>
+          </div>
         </div>
         <!-- Icons -->
         <div class='content-section' id='icons'>
