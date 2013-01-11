@@ -4,51 +4,33 @@
 
 // ----- Variables ----- //
 
-$btn-padding-left: 50px !default
-$btn-padding-right: 50px !default
+$btn-padding: 10px 30px !default
 
 %btn, .btn
   border-radius: $border-radius
   display: inline-block
-  padding-left: $btn-padding-left
-  padding-right: $btn-padding-right
+  font-size: 1.4em
+  margin-bottom: 10px
+  padding: $btn-padding
   text-align: center
   &:focus,
   &:hover
     text-decoration: none
-  @if $vertical-rhythm
-    +adjust-leading-to(2)
-    +trailer
-  @else
-    font-size: 1.6em
-    line-height: 3em
 
   &.btn-block
     display: block
   &.btn-lrg
-    @if $vertical-rhythm
-      +adjust-font-size-to(20px, 2.5)
-      padding-left: $base-line-height * 3
-      padding-right: $base-line-height * 3
-    @else
-      font-size: 1.25em
-      line-height: 3em
-      padding-left: 72px
-      padding-right: 72px
+    font-size: 2em
+    padding-left: 100px
+    padding-right: 100px
   &.btn-sm
-    @if $vertical-rhythm
-      +adjust-font-size-to(14px, 1.5)
-    @else
-      font-size: 0.875em
-      line-height: 2.57143em
+    font-size: 1.2em
+    letter-spacing: 0.1em
+    text-transform: uppercase
   &.btn-mini
-    @if $vertical-rhythm
-      +adjust-font-size-to(12px, 1)
-      padding-left: $base-line-height
-      padding-right: $base-line-height
-    @else
-      font-size: 0.875em
-      line-height: 2.57143em
+    font-size: 1em
+    letter-spacing: 0.1em
+    text-transform: uppercase
 
 .btn-a
   @extend %btn

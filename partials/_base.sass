@@ -2,21 +2,14 @@
 //  Base
 //-------------------------------------
 
-@if $vertical-rhythm
-  +establish-baseline
-
 html
   background: $color-body
+  font-size: 16px
   @if $development
     background-image: url(http://basehold.it/i/24)
-  @if $vertical-rhythm == false
-    font-size: 16px
 body
   color: $color-base
-  @if $vertical-rhythm == false
-    font: 62.5%/1.5 $font-base
-  @else
-    font-family: $font-base
+  font: 62.5%/1.5 $font-base
 
 // ----- Block Content ----- //
 
@@ -27,45 +20,24 @@ h4, h5, h6
   font-family: $font-header
   font-weight: bold
 h1, .h1
-  @if $vertical-rhythm
-    +adjust-font-size-to(40px)
-  @else
-    font-size: 4em
+  font-size: 4em
 h2, .h2
-  @if $vertical-rhythm
-    +adjust-font-size-to(35px)
-  @else
-    font-size: 3.5em
+  font-size: 3.5em
 h3, .h3
-  @if $vertical-rhythm
-    +adjust-font-size-to(30px)
-  @else
-    font-size: 3em
+  font-size: 3em
 h4, .h4
-  @if $vertical-rhythm
-    +adjust-font-size-to(25px)
-  @else
-    font-size: 2.5em
+  font-size: 2.5em
 h5, .h5
-  @if $vertical-rhythm
-    +adjust-font-size-to(20px)
-  @else
-    font-size: 2em
+  font-size: 2em
 h6, .h6
-  @if $vertical-rhythm
-    +adjust-font-size-to(16px)
-  @else
-    font-size: 1.6em
+  font-size: 1.6em
 
 // Paragraphs
 
 p
   color: lighten($color-base, 15%)
-  @if $vertical-rhythm
-    +adjust-font-size-to(16px)
-  @else
-    font-size: 1.6em
-    margin: 10px 0
+  font-size: 1.6em
+  margin: 10px 0
 
 // ----- Inline Content ----- //
 

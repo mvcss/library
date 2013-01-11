@@ -4,9 +4,8 @@
 
 // ----- Settings ----- //
 
-$development: true
+$development: false
 $theme: light
-$vertical-rhythm: true
 
 // ----- Colors ----- //
 
@@ -34,29 +33,20 @@ $border-style: 2px solid $color-border
 
 $box-shadow: 0 1px 1px rgba(#000, 0.2)
 
-// ----- Vertical Rhythm ----- //
-
-@if $vertical-rhythm
-  $base-font-size: 16px
-  $base-line-height: 24px
-  $default-rhythm-border-style: $border-style
+$base-font-size: 16px
+$base-line-height: 24px
 
 //-------------------------------------
 //  Buttons
 //-------------------------------------
 
-$btn-padding-left: 50px
-$btn-padding-right: 50px
+$btn-padding: 10px 30px
 
 //-------------------------------------
 //  Containers
 //-------------------------------------
 
 // ----- Rows ----- //
-
-@if $vertical-rhythm == false
-  $row-margin: 0
-  $row-padding: 20px 0
 
 $color-row-a: #FFF
 $color-row-b: lighten($color-base, 75%)
@@ -70,10 +60,8 @@ $cell-padding: 0 80px
 // ----- Cards ----- //
 
 $card-bg: #FFF
-$card-margin: 10px 0
-$card-padding: 20px 0
-$card-padding-left: 20px
-$card-padding-right: 20px
+$card-margin: 20px 0
+$card-padding: 15px
 
 // ----- Buckets ----- //
 

@@ -42,12 +42,11 @@
   h1, h2
     color: #FFF
   h2
-    +adjust-font-size-to(24px)
-    +adjust-leading-to(2, 24px)
+    font-size: 2.4em
     color: lighten($color-base, 40%)
     font-weight: normal
   .btn-a
-    +leader
+    margin-top: 25px
 
 // ----- Content ----- //
 
@@ -56,32 +55,30 @@
 
 // Examples
 
+.example h4
+  margin-bottom: 10px
 .example-label
-  +adjust-font-size-to(12px, 1)
   background: lighten($color-base, 75%)
   font-family: $font-monospace
-  padding-left: $base-line-height
-  padding-right: $base-line-height
+  font-size: 1.2em
+  padding: 10px $base-line-height
   position: absolute
   right: 0
-  top: 0
+  top: -10px
 .example-markup
-  +adjust-font-size-to(13px, 1)
-  +padding-leader(1, 13px)
-  +padding-trailer(1, 13px)
   background: lighten($color-base, 75%)
   font-family: $font-monospace
-  padding-left: $base-line-height
-  padding-right: $base-line-height
+  font-size: 1.3em
+  padding: 10px $base-line-height
 
 // ----- Section List ----- //
 
 .section-list li
-  +adjust-font-size-to(16px)
-  +adjust-leading-to(1)
+  font-size: 1.6em
+  margin-top: 15px
   a
-    +trailer(.5)
     color: $color-base
     display: block
+    margin-bottom: 10px
     &.active
       color: $color-highlight

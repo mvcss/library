@@ -19,10 +19,8 @@ $cell-padding: 0 80px !default
 // ----- Card Variables ----- //
 
 $card-bg: #FFF
-$card-margin: 10px 0 !default
-$card-padding: 20px 0 !default
-$card-padding-left: 20px !default
-$card-padding-right: 20px !default
+$card-margin: 20px 0 !default
+$card-padding: 15px !default
 
 // ----- Bucket Variables ----- //
 
@@ -31,12 +29,8 @@ $bucket-sizes: 75px, 50px !default
 // ----- Rows ----- //
 
 %row, .row
-  @if $vertical-rhythm
-    +padding-leader(1)
-    +padding-trailer(1)
-  @else
-    margin: $row-margin
-    padding: $row-padding
+  margin: $row-margin
+  padding: $row-padding
 .row-a
   @extend %row
   background-color: $color-row-a
@@ -60,13 +54,8 @@ $bucket-sizes: 75px, 50px !default
 
 %card, .card
   border-radius: $border-radius
-  @if $vertical-rhythm
-    +rhythm(1, 1, 1, 1)
-  @else
-    margin: $card-margin
-    padding: $card-padding
-  padding-left: $card-padding-left
-  padding-right: $card-padding-right
+  margin: $card-margin
+  padding: $card-padding
   position: relative
 .card-a
   @extend %card

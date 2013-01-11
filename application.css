@@ -59,217 +59,193 @@ table {
   .grid-a:after, .grid-b:after, .grid-c:after, .grid:after {
     clear: both; }
 
-/* line 61, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-* html {
-  font-size: 100%; }
-
-/* line 64, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-html {
-  font-size: 16px;
-  line-height: 1.5em; }
-
-/* line 8, partials/_base.sass */
+/* line 5, partials/_base.sass */
 html {
   background: #eeeeee;
-  background-image: url(http://basehold.it/i/24); }
+  font-size: 16px; }
 
-/* line 14, partials/_base.sass */
+/* line 10, partials/_base.sass */
 body {
   color: #272829;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: 62.5%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-/* line 25, partials/_base.sass */
+/* line 18, partials/_base.sass */
 h1, h2, h3,
 h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
-/* line 29, partials/_base.sass */
+/* line 22, partials/_base.sass */
 h1, .h1 {
-  font-size: 2.5em;
-  line-height: 1.2em; }
+  font-size: 4em; }
 
-/* line 34, partials/_base.sass */
+/* line 24, partials/_base.sass */
 h2, .h2 {
-  font-size: 2.1875em;
-  line-height: 1.37143em; }
+  font-size: 3.5em; }
 
-/* line 39, partials/_base.sass */
+/* line 26, partials/_base.sass */
 h3, .h3 {
-  font-size: 1.875em;
-  line-height: 1.6em; }
+  font-size: 3em; }
 
-/* line 44, partials/_base.sass */
+/* line 28, partials/_base.sass */
 h4, .h4 {
-  font-size: 1.5625em;
-  line-height: 1.92em; }
+  font-size: 2.5em; }
 
-/* line 49, partials/_base.sass */
+/* line 30, partials/_base.sass */
 h5, .h5 {
-  font-size: 1.25em;
-  line-height: 1.2em; }
+  font-size: 2em; }
 
-/* line 54, partials/_base.sass */
+/* line 32, partials/_base.sass */
 h6, .h6 {
-  font-size: 1em;
-  line-height: 1.5em; }
+  font-size: 1.6em; }
 
-/* line 62, partials/_base.sass */
+/* line 37, partials/_base.sass */
 p {
   color: #4c4e50;
-  font-size: 1em;
-  line-height: 1.5em; }
+  font-size: 1.6em;
+  margin: 10px 0; }
 
-/* line 74, partials/_base.sass */
+/* line 46, partials/_base.sass */
 a {
   color: #bd4c28;
   text-decoration: none; }
-  /* line 77, partials/_base.sass */
+  /* line 49, partials/_base.sass */
   a:hover, a:focus {
     text-decoration: underline; }
 
-/* line 83, partials/_base.sass */
+/* line 55, partials/_base.sass */
 em {
   font-style: italic; }
 
-/* line 85, partials/_base.sass */
+/* line 57, partials/_base.sass */
 strong {
   font-weight: bold; }
 
-/* line 10, modules/_buttons.sass */
+/* line 9, modules/_buttons.sass */
 .btn-a, .btn {
   border-radius: 3px;
   display: inline-block;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-align: center;
-  line-height: 3em;
-  margin-bottom: 1.5em; }
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  text-align: center; }
   /* line 16, modules/_buttons.sass */
   .btn-a:focus, .btn-a:hover, .btn:focus, .btn:hover {
     text-decoration: none; }
-  /* line 26, modules/_buttons.sass */
+  /* line 20, modules/_buttons.sass */
   .btn-block.btn-a, .btn.btn-block {
     display: block; }
-  /* line 28, modules/_buttons.sass */
+  /* line 22, modules/_buttons.sass */
   .btn-lrg.btn-a, .btn.btn-lrg {
-    font-size: 1.25em;
-    line-height: 3em;
-    padding-left: 72px;
-    padding-right: 72px; }
-  /* line 38, modules/_buttons.sass */
+    font-size: 2em;
+    padding-left: 100px;
+    padding-right: 100px; }
+  /* line 26, modules/_buttons.sass */
   .btn-sm.btn-a, .btn.btn-sm {
-    font-size: 0.875em;
-    line-height: 2.57143em; }
-  /* line 44, modules/_buttons.sass */
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; }
+  /* line 30, modules/_buttons.sass */
   .btn-mini.btn-a, .btn.btn-mini {
-    font-size: 0.75em;
-    line-height: 2em;
-    padding-left: 24px;
-    padding-right: 24px; }
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; }
 
-/* line 53, modules/_buttons.sass */
+/* line 35, modules/_buttons.sass */
 .btn-a {
   background: #bd4c28;
   color: white; }
-  /* line 57, modules/_buttons.sass */
+  /* line 39, modules/_buttons.sass */
   .btn-a:focus, .btn-a:hover {
     background: #a84424; }
 
-/* line 33, modules/_containers.sass */
+/* line 31, modules/_containers.sass */
 .row-a, .row-b, .row-c, .row {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em; }
+  margin: 0;
+  padding: 20px 0; }
 
-/* line 40, modules/_containers.sass */
+/* line 34, modules/_containers.sass */
 .row-a {
   background-color: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 44, modules/_containers.sass */
+/* line 38, modules/_containers.sass */
 .row-b {
   background-color: #e7e7e8; }
 
-/* line 47, modules/_containers.sass */
+/* line 41, modules/_containers.sass */
 .row-c {
   background-color: white; }
 
-/* line 53, modules/_containers.sass */
+/* line 47, modules/_containers.sass */
 .cell {
   margin: 0 auto;
   max-width: 980px;
   padding: 0 80px;
   position: relative; }
 
-/* line 61, modules/_containers.sass */
+/* line 55, modules/_containers.sass */
 .card-a, .card-b, .card {
   border-radius: 3px;
-  margin-top: 1.5em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  margin-bottom: 1.5em;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 20px 0;
+  padding: 15px;
   position: relative; }
 
-/* line 71, modules/_containers.sass */
+/* line 60, modules/_containers.sass */
 .card-a {
   background: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 75, modules/_containers.sass */
+/* line 64, modules/_containers.sass */
 .card-b {
   background: #cdcecf; }
 
-/* line 81, modules/_containers.sass */
+/* line 70, modules/_containers.sass */
 .bucket-01, .bucket-02 {
   position: relative; }
-  /* line 83, modules/_containers.sass */
+  /* line 72, modules/_containers.sass */
   .bucket-01 .bucket-media, .bucket-02 .bucket-media {
     left: 0;
     position: absolute;
     top: 0; }
 
-/* line 90, modules/_containers.sass */
+/* line 79, modules/_containers.sass */
 .bucket-01 .bucket-content {
   padding-left: 90px; }
 
-/* line 90, modules/_containers.sass */
+/* line 79, modules/_containers.sass */
 .bucket-02 .bucket-content {
   padding-left: 65px; }
 
 /* line 9, modules/_content.sass */
 .composition h1 {
   line-height: 1.8em; }
-/* line 15, modules/_content.sass */
+/* line 12, modules/_content.sass */
 .composition h2 {
   line-height: 2.05714em; }
-/* line 21, modules/_content.sass */
+/* line 15, modules/_content.sass */
 .composition h3 {
-  line-height: 1.6em; }
-/* line 29, modules/_content.sass */
+  line-height: 2.4em; }
+/* line 20, modules/_content.sass */
 .composition p {
   margin-bottom: 1.5em; }
-/* line 37, modules/_content.sass */
+/* line 25, modules/_content.sass */
 .composition blockquote {
   border-left: 5px solid #727477;
   color: #8b8e91;
-  padding-left: 20px;
-  font-size: 1.25em;
-  line-height: 1.2em;
-  line-height: 2.4em; }
-/* line 50, modules/_content.sass */
+  font-size: 2em;
+  line-height: 2.4em;
+  padding-left: 20px; }
+/* line 34, modules/_content.sass */
 .composition pre {
   background: white;
   font-family: Monaco, monospace;
+  font-size: 1.4em;
+  line-height: 1.71429em;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 0.875em;
-  line-height: 1.71429em;
-  line-height: 1.71429em;
-  padding-top: 1.71429em;
-  padding-bottom: 1.71429em;
-  margin-bottom: 1.71429em; }
+  padding-bottom: 20px;
+  padding-top: 20px; }
 
 /* line 48, partials/_settings.sass */
 .grid-a .box-a, .grid-a .box-b {
@@ -339,14 +315,12 @@ strong {
     color: white; }
   /* line 44, application.sass */
   .site-header h2 {
-    font-size: 1.5em;
-    line-height: 2em;
-    line-height: 2em;
+    font-size: 2.4em;
     color: #8b8e91;
     font-weight: normal; }
-  /* line 49, application.sass */
+  /* line 48, application.sass */
   .site-header .btn-a {
-    margin-top: 1.5em; }
+    margin-top: 25px; }
 
 /* line 48, partials/_settings.sass */
 .content .grid .box-a, .content .grid .box-b {
@@ -363,39 +337,36 @@ strong {
   float: right;
   width: 80%; }
 
-/* line 59, application.sass */
+/* line 58, application.sass */
+.example h4 {
+  margin-bottom: 10px; }
+
+/* line 60, application.sass */
 .example-label {
-  font-size: 0.75em;
-  line-height: 2em;
   background: #e7e7e8;
   font-family: Monaco, monospace;
-  padding-left: 24px;
-  padding-right: 24px;
+  font-size: 1.2em;
+  padding: 10px 24px;
   position: absolute;
   right: 0;
-  top: 0; }
+  top: -10px; }
 
 /* line 68, application.sass */
 .example-markup {
-  font-size: 0.8125em;
-  line-height: 1.84615em;
-  padding-top: 1.84615em;
-  padding-bottom: 1.84615em;
   background: #e7e7e8;
   font-family: Monaco, monospace;
-  padding-left: 24px;
-  padding-right: 24px; }
+  font-size: 1.3em;
+  padding: 10px 24px; }
 
-/* line 79, application.sass */
+/* line 76, application.sass */
 .section-list li {
-  font-size: 1em;
-  line-height: 1.5em;
-  line-height: 1.5em; }
-  /* line 82, application.sass */
+  font-size: 1.6em;
+  margin-top: 15px; }
+  /* line 79, application.sass */
   .section-list li a {
-    margin-bottom: 0.75em;
     color: #272829;
-    display: block; }
-    /* line 86, application.sass */
+    display: block;
+    margin-bottom: 10px; }
+    /* line 83, application.sass */
     .section-list li a.active {
       color: #bd4c28; }
