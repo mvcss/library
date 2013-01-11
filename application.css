@@ -320,6 +320,7 @@ strong {
     font-weight: normal; }
   /* line 48, application.sass */
   .site-header .btn-a {
+    font-size: 1.8em;
     margin-top: 25px; }
 
 /* line 48, partials/_settings.sass */
@@ -337,11 +338,11 @@ strong {
   float: right;
   width: 80%; }
 
-/* line 58, application.sass */
+/* line 59, application.sass */
 .example h4 {
   margin-bottom: 10px; }
 
-/* line 60, application.sass */
+/* line 61, application.sass */
 .example-label {
   background: #e7e7e8;
   font-family: Monaco, monospace;
@@ -351,22 +352,22 @@ strong {
   right: 0;
   top: -10px; }
 
-/* line 68, application.sass */
+/* line 69, application.sass */
 .example-markup {
   background: #e7e7e8;
   font-family: Monaco, monospace;
   font-size: 1.3em;
   padding: 10px 24px; }
 
-/* line 76, application.sass */
+/* line 77, application.sass */
 .section-list li {
   font-size: 1.6em;
   margin-top: 15px; }
-  /* line 79, application.sass */
+  /* line 80, application.sass */
   .section-list li a {
     color: #272829;
     display: block;
     margin-bottom: 10px; }
-    /* line 83, application.sass */
+    /* line 84, application.sass */
     .section-list li a.active {
       color: #bd4c28; }
