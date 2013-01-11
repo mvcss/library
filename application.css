@@ -126,36 +126,35 @@ strong {
   border-radius: 3px;
   display: inline-block;
   font-size: 1.4em;
-  margin-bottom: 10px;
   padding: 10px 30px;
   text-align: center; }
-  /* line 16, modules/_buttons.sass */
+  /* line 15, modules/_buttons.sass */
   .btn-a:focus, .btn-a:hover, .btn:focus, .btn:hover {
     text-decoration: none; }
-  /* line 20, modules/_buttons.sass */
+  /* line 19, modules/_buttons.sass */
   .btn-block.btn-a, .btn.btn-block {
     display: block; }
-  /* line 22, modules/_buttons.sass */
+  /* line 21, modules/_buttons.sass */
   .btn-lrg.btn-a, .btn.btn-lrg {
     font-size: 2em;
     padding-left: 100px;
     padding-right: 100px; }
-  /* line 26, modules/_buttons.sass */
+  /* line 25, modules/_buttons.sass */
   .btn-sm.btn-a, .btn.btn-sm {
     font-size: 1.2em;
     letter-spacing: 0.1em;
     text-transform: uppercase; }
-  /* line 30, modules/_buttons.sass */
+  /* line 29, modules/_buttons.sass */
   .btn-mini.btn-a, .btn.btn-mini {
     font-size: 1em;
     letter-spacing: 0.1em;
     text-transform: uppercase; }
 
-/* line 35, modules/_buttons.sass */
+/* line 34, modules/_buttons.sass */
 .btn-a {
   background: #bd4c28;
   color: white; }
-  /* line 39, modules/_buttons.sass */
+  /* line 38, modules/_buttons.sass */
   .btn-a:focus, .btn-a:hover {
     background: #a84424; }
 
@@ -357,17 +356,18 @@ strong {
   background: #e7e7e8;
   font-family: Monaco, monospace;
   font-size: 1.3em;
+  margin-top: 10px;
   padding: 10px 24px; }
 
-/* line 77, application.sass */
+/* line 78, application.sass */
 .section-list li {
   font-size: 1.6em;
   margin-top: 15px; }
-  /* line 80, application.sass */
+  /* line 81, application.sass */
   .section-list li a {
     color: #272829;
     display: block;
     margin-bottom: 10px; }
-    /* line 84, application.sass */
+    /* line 85, application.sass */
     .section-list li a.active {
       color: #bd4c28; }
