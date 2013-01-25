@@ -16,6 +16,15 @@ $btn-padding: 10px 30px !default
   &:hover
     text-decoration: none
 
+// -- Button Modifiers -- //
+
+.btn--a
+  @extend %btn
+  background: $color-highlight
+  color: #FFF
+  &:focus,
+  &:hover
+    background: darken($color-highlight, 5%)
 .btn--block
   display: block
 .btn--large
@@ -30,11 +39,3 @@ $btn-padding: 10px 30px !default
   font-size: 1em
   letter-spacing: 0.1em
   text-transform: uppercase
-
-.btn--a
-  @extend %btn
-  background: $color-highlight
-  color: #FFF
-  &:focus,
-  &:hover
-    background: darken($color-highlight, 5%)
