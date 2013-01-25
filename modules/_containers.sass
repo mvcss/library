@@ -31,14 +31,14 @@ $bucket-sizes: 75px, 50px !default
 %row, .row
   margin: $row-margin
   padding: $row-padding
-.row-a
+.row--a
   @extend %row
   background-color: $color-row-a
   box-shadow: $box-shadow
-.row-b
+.row--b
   @extend %row
   background-color: $color-row-b
-.row-c
+.row--c
   @extend %row
   background-color: $color-row-c
 
@@ -57,11 +57,11 @@ $bucket-sizes: 75px, 50px !default
   margin: $card-margin
   padding: $card-padding
   position: relative
-.card-a
+.card--a
   @extend %card
   background: $card-bg
   box-shadow: $box-shadow
-.card-b
+.card--b
   @extend %card
   background: lighten($color-base, 65%)
 
@@ -69,10 +69,10 @@ $bucket-sizes: 75px, 50px !default
 
 %bucket
   position: relative
-  .bucket-media
-    left: 0
-    position: absolute
-    top: 0
+.bucket-media
+  left: 0
+  position: absolute
+  top: 0
 @for $i from 1 through length($bucket-sizes)
   .bucket-0#{$i}
     @extend %bucket

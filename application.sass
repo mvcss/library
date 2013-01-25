@@ -7,9 +7,10 @@
 
 @import "config"
 
-@import "partials/reset"
-@import "partials/settings"
-@import "partials/base"
+@import "core/reset"
+@import "core/settings"
+@import "core/base"
+// @import "core/states"
 
 //-------------------------------------
 //  Modules
@@ -34,7 +35,7 @@
 
 // ----- Header ----- //
 
-.site-header
+.siteHeader
   background: $color-base
   box-shadow: none
   .grid
@@ -45,7 +46,7 @@
     font-size: 2.4em
     color: lighten($color-base, 40%)
     font-weight: normal
-  .btn-a
+  .btn--a
     font-size: 1.8em
     margin-top: 25px
 
@@ -75,7 +76,7 @@
 
 // ----- Section List ----- //
 
-.section-list li
+.sectionList li
   font-size: 1.6em
   margin-top: 15px
   a

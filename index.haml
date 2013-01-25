@@ -11,19 +11,19 @@
   %link(href="application.css" rel="stylesheet")
 %body
   / Header
-  %header.row-a.site-header
+  %header.row--a.siteHeader
     .cell.grid
-      .box-a
+      .box--a
         %h1 MVCSS Library
         %h2 Markup Patterns &amp; JavaScript Components
-      .box-b
-        %a.btn-a.btn-block(href="#") Download Code &rarr;
+      .box--b
+        %a.btn--a.btn--block(href="#") Download Code &rarr;
 
   / Content
   %section.row.content
     .cell.grid
-      %aside.box-a
-        %ul.section-list
+      %aside.box--a
+        %ul.sectionList
           %li <a href="#buttons" data-hash="#buttons">Buttons</a>
           %li <a href="#containers" data-hash="#containers">Containers</a>
           %li <a href="#content" data-hash="#content">Content</a>
@@ -38,140 +38,140 @@
           %li <a href="#tables" data-hash="#tables">Tables</a>
           %li <a href="#tabs" data-hash="#tabs">Tabs</a>
           %li <a href="#tooltips" data-hash="#tooltips">Tooltips</a>
-      .box-b
+      .box--b
         / Buttons
-        .content-section#buttons
+        .contentSection#buttons
           %h3 Buttons
           / Default Button
-          .card-a.example
+          .card--a.example
             %h4 Default Button
-            %p.example-label .btn-a
+            %p.example-label .btn--a
             .example-output
-              %a.btn-a(href="#") Button
+              %a.btn--a(href="#") Button
             .example-markup
               %pre
                 :preserve
-                  %a.btn-a(href="#") Button
+                  %a.btn--a(href="#") Button
           / Full-width Button
-          .card-a.example
+          .card--a.example
             %h4 Full-width Button
-            %p.example-label .btn-a.btn-block
+            %p.example-label .btn--a.btn--block
             .example-output
-              %a.btn-a.btn-block(href="#") Button
+              %a.btn--a.btn--block(href="#") Button
             .example-markup
               %pre
                 :preserve
-                  %a.btn-a.btn-block(href="#") Button
+                  %a.btn--a.btn--block(href="#") Button
           / Multiple Buttons
-          .card-a.example
+          .card--a.example
             %h4 Multiple Buttons
-            %p.example-label .btn-a
+            %p.example-label .btn--a
             .example-output
-              %a.btn-a(href="#") Button
-              %a.btn-a(href="#") Button
-              %a.btn-a(href="#") Button
-              %a.btn-a(href="#") Button
+              %a.btn--a(href="#") Button
+              %a.btn--a(href="#") Button
+              %a.btn--a(href="#") Button
+              %a.btn--a(href="#") Button
             .example-markup
               %pre
                 :preserve
-                  %a.btn-a(href="#") Button
-                  %a.btn-a(href="#") Button
-                  %a.btn-a(href="#") Button
-                  %a.btn-a(href="#") Button
+                  %a.btn--a(href="#") Button
+                  %a.btn--a(href="#") Button
+                  %a.btn--a(href="#") Button
+                  %a.btn--a(href="#") Button
           / Large Button
-          .card-a.example
+          .card--a.example
             %h4 Large Button
-            %p.example-label .btn-a.btn-lrg
+            %p.example-label .btn--a.btn--large
             .example-output
-              %a.btn-a.btn-lrg(href="#") Button
+              %a.btn--a.btn--large(href="#") Button
             .example-markup
               %pre
                 :preserve
-                  %a.btn-a.btn-lrg(href="#") Button
+                  %a.btn--a.btn--large(href="#") Button
           / Small Button
-          .card-a.example
+          .card--a.example
             %h4 Small Button
-            %p.example-label .btn-a.btn-sm
+            %p.example-label .btn--a.btn--small
             .example-output
-              %a.btn-a.btn-sm(href="#") Button
+              %a.btn--a.btn--small(href="#") Button
             .example-markup
               %pre
                 :preserve
-                  %a.btn-a.btn-sm(href="#") Button
+                  %a.btn--a.btn--small(href="#") Button
           / Mini Button
-          .card-a.example
+          .card--a.example
             %h4 Mini Button
-            %p.example-label .btn-a.btn-mini
+            %p.example-label .btn--a.btn--mini
             .example-output
-              %a.btn-a.btn-mini(href="#") Button
+              %a.btn--a.btn--mini(href="#") Button
             .example-markup
               %pre
                 :preserve
-                  %a.btn-a.btn-mini(href="#") Button
+                  %a.btn--a.btn--mini(href="#") Button
         / Containers
-        .content-section#containers
+        .contentSection#containers
           %h3 Containers
         / Content
-        .content-section#content
+        .contentSection#content
           %h3 Content
         / Dropdowns
-        .content-section#dropdowns
+        .contentSection#dropdowns
           %h3 Dropdowns
         / Forms
-        .content-section#forms
+        .contentSection#forms
           %h3 Forms
         / Grids
-        .content-section#grids
+        .contentSection#grids
           %h3 Grids
         / Hash URLs
-        .content-section#hash-urls
+        .contentSection#hash-urls
           %h3 Hash URLs
-          .card-a.example
+          .card--a.example
             %h4 Markup
             %p.example-label Haml
             .example-markup
               %pre
                 :preserve
-                  %ul.section-list
+                  %ul.sectionList
                     %li
                       %a(href="#example-01" data-hash="#example-01") Example 1
                     %li
                       %a(href="#example-02" data-hash="#example-02") Example 2
 
-                  .content-section#example-01
+                  .contentSection#example-01
                     %h2 Example 01
-                  .content-section#example-02
+                  .contentSection#example-02
                     %h2 Example 02
-          .card-a.example
+          .card--a.example
             %h4 JavaScript
             %p.example-label JavaScript
             .example-markup
               %pre
                 :preserve
                   $.hashURLs({
-                    list: $('.section-list a'),
-                    content: $('.content-section')
+                    list: $('.sectionList a'),
+                    content: $('.contentSection')
                   });
         / Icons
-        .content-section#icons
+        .contentSection#icons
           %h3 Icons
         / Lists
-        .content-section#lists
+        .contentSection#lists
           %h3 Lists
         / Modals
-        .content-section#modals
+        .contentSection#modals
           %h3 Modals
         / Popovers
-        .content-section#popovers
+        .contentSection#popovers
           %h3 Popovers
         / Tables
-        .content-section#tables
+        .contentSection#tables
           %h3 Tables
         / Tabs
-        .content-section#tabs
+        .contentSection#tabs
           %h3 Tabs
         / Tooltips
-        .content-section#tooltips
+        .contentSection#tooltips
           %h3 Tooltips
 
   %script(type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js")
@@ -181,8 +181,8 @@
   :javascript
     $(function() {
       $.hashURLs({
-        list: $('.section-list a'),
-        content: $('.content-section')
+        list: $('.sectionList a'),
+        content: $('.contentSection')
       });
     });
 </html>
