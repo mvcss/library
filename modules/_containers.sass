@@ -18,9 +18,12 @@ $cell-padding: 0 80px !default
 
 // ----- Card Variables ----- //
 
-$card-bg: #FFF
 $card-margin: 20px 0 !default
 $card-padding: 15px !default
+
+$color-card-a: #FFF !default
+$color-card-b: lighten($color-base, 65%) !default
+$color-card-c: lighten($color-base, 75%) !default
 
 // ----- Bucket Variables ----- //
 
@@ -65,11 +68,14 @@ $bucket-sizes: 75px, 50px !default
 
 .card--a
   @extend %card
-  background: $card-bg
+  background: $color-card-a
   box-shadow: $box-shadow
 .card--b
   @extend %card
-  background: lighten($color-base, 65%)
+  background: $color-card-b
+.card--c
+  @extend %card
+  background: $color-card-c
 
 // ----- Buckets ----- //
 

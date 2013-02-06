@@ -162,62 +162,66 @@ strong {
   letter-spacing: 0.1em;
   text-transform: uppercase; }
 
-/* line 31, modules/_containers.sass */
+/* line 34, modules/_containers.sass */
 .row--a, .row--b, .row--c, .row {
   margin: 0;
   padding: 20px 0; }
 
-/* line 37, modules/_containers.sass */
+/* line 40, modules/_containers.sass */
 .row--a {
   background-color: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 41, modules/_containers.sass */
+/* line 44, modules/_containers.sass */
 .row--b {
   background-color: #e7e7e8; }
 
-/* line 44, modules/_containers.sass */
+/* line 47, modules/_containers.sass */
 .row--c {
   background-color: white; }
 
-/* line 50, modules/_containers.sass */
+/* line 53, modules/_containers.sass */
 .cell {
   margin: 0 auto;
   max-width: 980px;
   padding: 0 80px;
   position: relative; }
 
-/* line 58, modules/_containers.sass */
-.card--a, .card--b, .card {
+/* line 61, modules/_containers.sass */
+.card--a, .card--b, .card--c, .card {
   border-radius: 3px;
   margin: 20px 0;
   padding: 15px;
   position: relative; }
 
-/* line 66, modules/_containers.sass */
+/* line 69, modules/_containers.sass */
 .card--a {
   background: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 70, modules/_containers.sass */
+/* line 73, modules/_containers.sass */
 .card--b {
   background: #cdcecf; }
 
 /* line 76, modules/_containers.sass */
+.card--c {
+  background: #e7e7e8; }
+
+/* line 82, modules/_containers.sass */
 .bucket-01, .bucket-02 {
   position: relative; }
 
-/* line 78, modules/_containers.sass */
+/* line 84, modules/_containers.sass */
 .bucket-media {
   left: 0;
   position: absolute;
   top: 0; }
 
-/* line 85, modules/_containers.sass */
+/* line 91, modules/_containers.sass */
 .bucket-01 .bucket-content {
   padding-left: 90px; }
 
-/* line 85, modules/_containers.sass */
+/* line 91, modules/_containers.sass */
 .bucket-02 .bucket-content {
   padding-left: 65px; }
 
