@@ -2,19 +2,31 @@
 //  Grids
 //-------------------------------------
 
+// Grid Variables
+
 $grid-gutter: 5% !default
+
+// ----- Base Grid ----- //
 
 %grid, .grid
   @extend %group
 
-// -- Grid Modifiers -- //
+// Grid Modifiers //
+
+// 50/50
 
 .grid--a
   @extend %grid
   +grid
+
+// 60/40
+
 .grid--b
   @extend %grid
   +grid(60%, 40%)
+
+// 70/30
+
 .grid--c
   @extend %grid
   +grid(70%, 30%)

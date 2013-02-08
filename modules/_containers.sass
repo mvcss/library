@@ -2,7 +2,9 @@
 //  Containers
 //-------------------------------------
 
-// ----- Row Variables ----- //
+// ----- Rows ----- //
+
+// Row Variables
 
 $row-margin: 0 !default
 $row-padding: 20px 0 !default
@@ -11,31 +13,13 @@ $color-row-a: #FFF !default
 $color-row-b: lighten($color-base, 65%) !default
 $color-row-c: lighten($color-base, 75%) !default
 
-// ----- Cell Variables ----- //
-
-$cell-width: 980px !default
-$cell-padding: 0 80px !default
-
-// ----- Card Variables ----- //
-
-$card-margin: 20px 0 !default
-$card-padding: 15px !default
-
-$color-card-a: #FFF !default
-$color-card-b: lighten($color-base, 65%) !default
-$color-card-c: lighten($color-base, 75%) !default
-
-// ----- Bucket Variables ----- //
-
-$bucket-sizes: 75px, 50px !default
-
-// ----- Rows ----- //
+// -- Base Row -- //
 
 %row, .row
   margin: $row-margin
   padding: $row-padding
 
-// -- Row Modifiers -- //
+// Row Modifiers //
 
 .row--a
   @extend %row
@@ -50,6 +34,13 @@ $bucket-sizes: 75px, 50px !default
 
 // ----- Cells ----- //
 
+// Cell Variables
+
+$cell-width: 980px !default
+$cell-padding: 0 80px !default
+
+// -- Cell Base -- //
+
 %cell, .cell
   margin: 0 auto
   max-width: $cell-width
@@ -58,13 +49,24 @@ $bucket-sizes: 75px, 50px !default
 
 // ----- Cards ----- //
 
+// Card Variables
+
+$card-margin: 20px 0 !default
+$card-padding: 15px !default
+
+$color-card-a: #FFF !default
+$color-card-b: lighten($color-base, 65%) !default
+$color-card-c: lighten($color-base, 75%) !default
+
+// -- Card Base -- //
+
 %card, .card
   border-radius: $border-radius
   margin: $card-margin
   padding: $card-padding
   position: relative
 
-// -- Card Modifiers -- //
+// Card Modifiers //
 
 .card--a
   @extend %card
@@ -79,12 +81,24 @@ $bucket-sizes: 75px, 50px !default
 
 // ----- Buckets ----- //
 
+// Bucket Variables
+
+$bucket-sizes: 75px, 50px !default
+
+// -- Base Bucket -- //
+
 %bucket
   position: relative
+
+// -- Bucket Media -- //
+
 .bucket-media
   left: 0
   position: absolute
   top: 0
+
+// Bucket Modifiers //
+
 @for $i from 1 through length($bucket-sizes)
   .bucket--0#{$i}
     @extend %bucket
