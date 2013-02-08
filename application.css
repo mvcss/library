@@ -208,7 +208,7 @@ strong {
   background: #e7e7e8; }
 
 /* line 82, modules/_containers.sass */
-.bucket-01, .bucket-02 {
+.bucket--01, .bucket--02 {
   position: relative; }
 
 /* line 84, modules/_containers.sass */
@@ -218,11 +218,11 @@ strong {
   top: 0; }
 
 /* line 91, modules/_containers.sass */
-.bucket-01 .bucket-content {
+.bucket--01 .bucket-content {
   padding-left: 90px; }
 
 /* line 91, modules/_containers.sass */
-.bucket-02 .bucket-content {
+.bucket--02 .bucket-content {
   padding-left: 65px; }
 
 /* line 9, modules/_content.sass */

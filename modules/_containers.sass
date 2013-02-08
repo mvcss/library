@@ -86,7 +86,7 @@ $bucket-sizes: 75px, 50px !default
   position: absolute
   top: 0
 @for $i from 1 through length($bucket-sizes)
-  .bucket-0#{$i}
+  .bucket--0#{$i}
     @extend %bucket
     .bucket-content
       padding-left: nth($bucket-sizes, $i) + 15px
