@@ -3,8 +3,8 @@ $ = jQuery
 $.hashURLs = (options) ->
 
   settings =
-    list: $('.section-list a')
-    content: $('.content-section')
+    list: $('.sectionList a')
+    content: $('.contentSection')
 
   settings = $.extend settings, options
 
