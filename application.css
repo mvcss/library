@@ -255,68 +255,68 @@ strong {
   padding-top: 20px; }
 
 /* line 48, core/_settings.sass */
-.grid--a .box--a, .grid--a .box--b {
+.grid--a .grid-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-/* line 50, core/_settings.sass */
-.grid--a .box--a {
-  float: left;
-  padding-right: 5%;
-  width: 50%; }
-/* line 54, core/_settings.sass */
-.grid--a .box--b {
-  float: right;
-  width: 50%; }
+  /* line 50, core/_settings.sass */
+  .grid--a .grid-box:first-child {
+    float: left;
+    padding-right: 5%;
+    width: 50%; }
+  /* line 54, core/_settings.sass */
+  .grid--a .grid-box:last-child {
+    float: right;
+    width: 50%; }
 
 /* line 48, core/_settings.sass */
-.grid--b .box--a, .grid--b .box--b {
+.grid--b .grid-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-/* line 50, core/_settings.sass */
-.grid--b .box--a {
-  float: left;
-  padding-right: 5%;
-  width: 60%; }
-/* line 54, core/_settings.sass */
-.grid--b .box--b {
-  float: right;
-  width: 40%; }
+  /* line 50, core/_settings.sass */
+  .grid--b .grid-box:first-child {
+    float: left;
+    padding-right: 5%;
+    width: 60%; }
+  /* line 54, core/_settings.sass */
+  .grid--b .grid-box:last-child {
+    float: right;
+    width: 40%; }
 
 /* line 48, core/_settings.sass */
-.grid--c .box--a, .grid--c .box--b {
+.grid--c .grid-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-/* line 50, core/_settings.sass */
-.grid--c .box--a {
-  float: left;
-  padding-right: 5%;
-  width: 70%; }
-/* line 54, core/_settings.sass */
-.grid--c .box--b {
-  float: right;
-  width: 30%; }
+  /* line 50, core/_settings.sass */
+  .grid--c .grid-box:first-child {
+    float: left;
+    padding-right: 5%;
+    width: 70%; }
+  /* line 54, core/_settings.sass */
+  .grid--c .grid-box:last-child {
+    float: right;
+    width: 30%; }
 
 /* line 44, application.sass */
 .siteHeader {
   background: #272829;
   box-shadow: none; }
   /* line 48, core/_settings.sass */
-  .siteHeader .grid .box--a, .siteHeader .grid .box--b {
+  .siteHeader .grid .grid-box {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-  /* line 50, core/_settings.sass */
-  .siteHeader .grid .box--a {
-    float: left;
-    padding-right: 5%;
-    width: 65%; }
-  /* line 54, core/_settings.sass */
-  .siteHeader .grid .box--b {
-    float: right;
-    width: 35%; }
+    /* line 50, core/_settings.sass */
+    .siteHeader .grid .grid-box:first-child {
+      float: left;
+      padding-right: 5%;
+      width: 65%; }
+    /* line 54, core/_settings.sass */
+    .siteHeader .grid .grid-box:last-child {
+      float: right;
+      width: 35%; }
   /* line 49, application.sass */
   .siteHeader h1, .siteHeader h2 {
     color: white; }
@@ -331,19 +331,19 @@ strong {
     margin-top: 25px; }
 
 /* line 48, core/_settings.sass */
-.content .grid .box--a, .content .grid .box--b {
+.content .grid .grid-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-/* line 50, core/_settings.sass */
-.content .grid .box--a {
-  float: left;
-  padding-right: 5%;
-  width: 20%; }
-/* line 54, core/_settings.sass */
-.content .grid .box--b {
-  float: right;
-  width: 80%; }
+  /* line 50, core/_settings.sass */
+  .content .grid .grid-box:first-child {
+    float: left;
+    padding-right: 5%;
+    width: 20%; }
+  /* line 54, core/_settings.sass */
+  .content .grid .grid-box:last-child {
+    float: right;
+    width: 80%; }
 
 /* line 66, application.sass */
 .example h4 {

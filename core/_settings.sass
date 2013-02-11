@@ -45,15 +45,15 @@ $font-monospace: Monaco, monospace !default
   #{$opposite}: auto
 
 =grid($col-a: 50%, $col-b: 50%, $gutter: $grid-gutter)
-  .box--a, .box--b
+  .grid-box
     +box-sizing(border-box)
-  .box--a
-    float: left
-    padding-right: $gutter
-    width: $col-a
-  .box--b
-    float: right
-    width: $col-b
+    &:first-child
+      float: left
+      padding-right: $gutter
+      width: $col-a
+    &:last-child
+      float: right
+      width: $col-b
 
 =respond-to($val, $query: min-width, $media: screen)
   @media #{$media} and ($query: $val)
