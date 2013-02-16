@@ -4,10 +4,10 @@
 
 // Form Variables
 
-$color-form-input-placeholder: lighten($color-base, 40%) !default
-$color-form-input-bg: #FFF !default
-$color-form-input-border: 1px solid $color-border !default
 $form-font-size: 1.6em !default
+$form-input-placeholder: lighten($color-base, 40%) !default
+$form-input-bg: #FFF !default
+$form-input-border: 1px solid $color-border !default
 $form-input-focus: 0 0 3px rbga($color-border, 0.8) !default
 
 // ----- Form ----- //
@@ -30,14 +30,14 @@ $form-input-focus: 0 0 3px rbga($color-border, 0.8) !default
 
 // ----- Form Placeholder Text ----- //
 
-\::-webkit-input-placeholder
-  color: $color-form-input-placeholder
-\:-moz-placeholder
-  color: $color-form-input-placeholder
-\::-moz-placeholder
-  color: $color-form-input-placeholder
-\:-ms-input-placeholder
-  color: $color-form-input-placeholder
+input::-webkit-input-placeholder
+  color: $form-input-placeholder
+input:-moz-placeholder
+  color: $form-input-placeholder
+input::-moz-placeholder
+  color: $form-input-placeholder
+input:-ms-input-placeholder
+  color: $form-input-placeholder
 
 // ----- Form Header ----- //
 
@@ -82,8 +82,8 @@ $form-input-focus: 0 0 3px rbga($color-border, 0.8) !default
 
 .form-input
   +box-sizing(border-box)
-  background: $color-form-input-bg
-  border: $color-form-input-border
+  background: $form-input-bg
+  border: $form-input-border
   border-radius: $border-radius
   font-family: $font-base
   font-size: 1.4em

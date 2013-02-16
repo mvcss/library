@@ -279,19 +279,19 @@ strong {
   width: 28%; }
 
 /* line 33, modules/_forms.sass */
-::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
   color: #8b8e91; }
 
 /* line 35, modules/_forms.sass */
-:-moz-placeholder {
+input:-moz-placeholder {
   color: #8b8e91; }
 
 /* line 37, modules/_forms.sass */
-::-moz-placeholder {
+input::-moz-placeholder {
   color: #8b8e91; }
 
 /* line 39, modules/_forms.sass */
-:-ms-input-placeholder {
+input:-ms-input-placeholder {
   color: #8b8e91; }
 
 /* line 44, modules/_forms.sass */
