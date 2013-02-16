@@ -15,27 +15,26 @@
 // Table Modifiers //
 
 .table--striped
-  .table-body .table-row:nth-child(odd)
+  .table-body tr:nth-child(odd)
     background: lighten($color-border, 30%)
 
 // ----- Table Row ----- //
 
 .table-row
   border-bottom: 1px solid $color-border
-.table-row th,
-.table-row td
-  padding: 8px
 
-// ----- Table Header ----- //
+  // ----- Table Header ----- //
 
-.table-header
-  font-weight: bold
-  text-align: left
+  th, td
+    padding: 8px
 
-// ----- Table Data ----- //
+  th
+    font-weight: bold
+    text-align: left
 
-.table-data
-  .btn
+  // ----- Table Data ----- //
+
+  td .btn
     font-size: 1em
     padding-bottom: 5px
     padding-top: 5px

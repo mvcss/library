@@ -382,28 +382,24 @@ strong {
   width: 100%; }
 
 /* line 18, modules/_tables.sass */
-.table--striped .table-body .table-row:nth-child(odd) {
+.table--striped .table-body tr:nth-child(odd) {
   background: #f4f4f4; }
 
 /* line 23, modules/_tables.sass */
 .table-row {
   border-bottom: 1px solid #a5a8aa; }
-
-/* line 25, modules/_tables.sass */
-.table-row th,
-.table-row td {
-  padding: 8px; }
-
-/* line 31, modules/_tables.sass */
-.table-header {
-  font-weight: bold;
-  text-align: left; }
-
-/* line 38, modules/_tables.sass */
-.table-data .btn {
-  font-size: 1em;
-  padding-bottom: 5px;
-  padding-top: 5px; }
+  /* line 28, modules/_tables.sass */
+  .table-row th, .table-row td {
+    padding: 8px; }
+  /* line 31, modules/_tables.sass */
+  .table-row th {
+    font-weight: bold;
+    text-align: left; }
+  /* line 37, modules/_tables.sass */
+  .table-row td .btn {
+    font-size: 1em;
+    padding-bottom: 5px;
+    padding-top: 5px; }
 
 /* line 44, application.sass */
 .siteHeader {
