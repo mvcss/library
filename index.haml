@@ -223,7 +223,7 @@
 
           .card--a.example
             %h4 Inline Form
-            %p.example-label .form--inline
+            %p.example-label .form.form--inline
             .example-output
               %form.form.form--inline(methd="post" action="")
                 %fieldset.form-field
@@ -283,6 +283,184 @@
         / Tables
         .contentSection#tables
           %h3 Tables
+          .card--a.example
+            %h4 Standard Table
+            %p.example-label .table
+            .example-output
+              %table.table
+                %thead.table-head
+                  %tr.table-row
+                    %th.table-header #
+                    %th.table-header First Name
+                    %th.table-header Last Name
+                    %th.table-header Email
+                    %th.table-header Controls
+                %tbody.table-body
+                  %tr.table-row
+                    %td.table-data 1
+                    %td.table-data Drew
+                    %td.table-data Barontini
+                    %td.table-data drew@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+                  %tr.table-row
+                    %td.table-data 2
+                    %td.table-data Nick
+                    %td.table-data Walsh
+                    %td.table-data nick@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+                  %tr.table-row
+                    %td.table-data 3
+                    %td.table-data Jason
+                    %td.table-data VanLue
+                    %td.table-data jason@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+                  %tr.table-row
+                    %td.table-data 4
+                    %td.table-data Tim
+                    %td.table-data Dikun
+                    %td.table-data tim@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+                  %tr.table-row
+                    %td.table-data 5
+                    %td.table-data Justin
+                    %td.table-data Mezzell
+                    %td.table-data justin@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+                  %tr.table-row
+                    %td.table-data 6
+                    %td.table-data Dan
+                    %td.table-data Denney
+                    %td.table-data dan@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+                  %tr.table-row
+                    %td.table-data 7
+                    %td.table-data Jordan
+                    %td.table-data Wade
+                    %td.table-data jordanw@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+              .example-markup
+                %pre
+                  :preserve
+                    %table.table
+                      %thead.table-head
+                        %tr.table-row
+                          %th.table-header #
+                          %th.table-header First Name
+                          %th.table-header Last Name
+                          %th.table-header Email
+                          %th.table-header Controls
+                      %tbody.table-body
+                        %tr.table-row
+                          %td.table-data 1
+                          %td.table-data Drew
+                          %td.table-data Barontini
+                          %td.table-data drew@envylabs.com
+                          %td.table-data.table-controls
+                            %a.btn.btn--a(href="#") Edit
+                            %a.btn.btn--a(href="#") Delete
+          .card--a.example
+            %h4 Striped Table
+            %p.example-label .table.table--striped
+            .example-output
+              %table.table.table--striped
+                %thead.table-head
+                  %tr.table-row
+                    %th.table-header #
+                    %th.table-header First Name
+                    %th.table-header Last Name
+                    %th.table-header Email
+                    %th.table-header Controls
+                %tbody.table-body
+                  %tr.table-row
+                    %td.table-data 1
+                    %td.table-data Drew
+                    %td.table-data Barontini
+                    %td.table-data drew@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+                  %tr.table-row
+                    %td.table-data 2
+                    %td.table-data Nick
+                    %td.table-data Walsh
+                    %td.table-data nick@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+                  %tr.table-row
+                    %td.table-data 3
+                    %td.table-data Jason
+                    %td.table-data VanLue
+                    %td.table-data jason@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+                  %tr.table-row
+                    %td.table-data 4
+                    %td.table-data Tim
+                    %td.table-data Dikun
+                    %td.table-data tim@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+                  %tr.table-row
+                    %td.table-data 5
+                    %td.table-data Justin
+                    %td.table-data Mezzell
+                    %td.table-data justin@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+                  %tr.table-row
+                    %td.table-data 6
+                    %td.table-data Dan
+                    %td.table-data Denney
+                    %td.table-data dan@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+                  %tr.table-row
+                    %td.table-data 7
+                    %td.table-data Jordan
+                    %td.table-data Wade
+                    %td.table-data jordanw@envylabs.com
+                    %td.table-data.table-controls
+                      %a.btn.btn--a(href="#") Edit
+                      %a.btn.btn--a(href="#") Delete
+              .example-markup
+                %pre
+                  :preserve
+                    %table.table.table--striped
+                      %thead.table-head
+                        %tr.table-row
+                          %th.table-header #
+                          %th.table-header First Name
+                          %th.table-header Last Name
+                          %th.table-header Email
+                          %th.table-header Controls
+                      %tbody.table-body
+                        %tr.table-row
+                          %td.table-data 1
+                          %td.table-data Drew
+                          %td.table-data Barontini
+                          %td.table-data drew@envylabs.com
+                          %td.table-data.table-controls
+                            %a.btn.btn--a(href="#") Edit
+                            %a.btn.btn--a(href="#") Delete
         / Tabs
         .contentSection#tabs
           %h3 Tabs

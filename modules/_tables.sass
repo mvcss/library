@@ -1,3 +1,41 @@
 //-------------------------------------
 //  Tables
 //-------------------------------------
+
+// ----- Table ----- //
+
+.table
+  +box-sizing(border-box)
+  border-collapse: collapse
+  border-spacing: 0
+  font-size: 1.6em
+  margin: 20px 0
+  width: 100%
+
+// Table Modifiers //
+
+.table--striped
+  .table-body .table-row:nth-child(odd)
+    background: lighten($color-border, 30%)
+
+// ----- Table Row ----- //
+
+.table-row
+  border-bottom: 1px solid $color-border
+.table-row th,
+.table-row td
+  padding: 8px
+
+// ----- Table Header ----- //
+
+.table-header
+  font-weight: bold
+  text-align: left
+
+// ----- Table Data ----- //
+
+.table-data
+  .btn
+    font-size: 1em
+    padding-bottom: 5px
+    padding-top: 5px
