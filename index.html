@@ -133,6 +133,81 @@
         <!-- Forms -->
         <div class='contentSection' id='forms'>
           <h3>Forms</h3>
+          <div class='card--a example'>
+            <h4>Basic Form</h4>
+            <p class='example-label'>.form</p>
+            <div class='example-output'>
+              <form action='' class='form' methd='post'>
+                <fieldset class='form-field'>
+                  <label class='form-label' for='name'>Name: <em>*</em></label>
+                  <input class='form-input' name='name' placeholder='Enter your name' type='text'>
+                  <p class='form-note'>I hope you remember your name, because you need to enter it.</p>
+                </fieldset>
+                <fieldset class='form-field'>
+                  <label class='form-label' for='email'>Email: <em>*</em></label>
+                  <input class='form-input' name='email' placeholder='Enter your email' type='email'>
+                </fieldset>
+                <fieldset class='form-field'>
+                  <label class='form-label' for='password'>Password: <em>*</em></label>
+                  <input class='form-input' name='password' type='password'>
+                  <p class='form-note'><a href="#">Forgot your password?</a></p>
+                </fieldset>
+                <fieldset class='form-field'>
+                  <label class='form-label' for='select'>Select your lunch today:</label>
+                  <select class='form-select'>
+                    <option value='empty'>Choose one:</option>
+                    <option value='item'>Hamburger and fries</option>
+                    <option value='item'>Salad</option>
+                    <option value='item'>Enchilada</option>
+                    <option value='item'>Salmon</option>
+                  </select>
+                </fieldset>
+                <fieldset class='form-field'>
+                  <label class='form-label' for='radio'>Select your gender:</label>
+                  <ul>
+                    <li>
+                      <label class='form-label form-label--radio' for='male'><input type="radio" name="male" /> Male</label>
+                    </li>
+                    <li>
+                      <label class='form-label form-label--radio' for='female'><input type="radio" name="female" /> Female</label>
+                    </li>
+                    <li>
+                      <label class='form-label form-label--radio' for='other'><input type="radio" name="other" /> Other</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class='form-field'>
+                  <label class='form-label' for='notes'>Extra notes:</label>
+                  <textarea class='form-input' name='notes'></textarea>
+                </fieldset>
+                <fieldset class='form-field'>
+                  <label class='form-label' for='select'>Select an option:</label>
+                  <label class='form-label form-label--check' for='check'><input type="checkbox" name="check" /> Yes, I would like to receive tri-daily emails from your service.</label>
+                </fieldset>
+                <fieldset class='form-field form-field--submit'>
+                  <input class='btn--a' type='submit' value='Submit'>
+                </fieldset>
+              </form>
+            </div>
+            <div class='example-markup'>
+              <pre>%form.form(methd="post" action="")&#x000A;  %fieldset.form-field&#x000A;    %label.form-label(for="name") Name: <em>*</em>&#x000A;    %input.form-input(type="text" name="name" placeholder="Enter your name")&#x000A;    %p.form-note I hope you remember your name, because you need to enter it.&#x000A;&#x000A;  %fieldset.form-field&#x000A;    %label.form-label(for="email") Email: <em>*</em>&#x000A;    %input.form-input(type="email" name="email" placeholder="Enter your email")&#x000A;&#x000A;  %fieldset.form-field&#x000A;    %label.form-label(for="password") Password: <em>*</em>&#x000A;    %input.form-input(type="password" name="password")&#x000A;    %p.form-note&#x000A;      %a(href="#") Forgot your password?&#x000A;&#x000A;  %fieldset.form-field&#x000A;    %label.form-label(for="select") Select your lunch today:&#x000A;    %select.form-select&#x000A;      %option(value="empty") Choose one:&#x000A;      %option(value="item") Hamburger and fries&#x000A;      %option(value="item") Salad&#x000A;      %option(value="item") Enchilada&#x000A;      %option(value="item") Salmon&#x000A;&#x000A;  %fieldset.form-field&#x000A;    %label.form-label(for="radio") Select your gender:&#x000A;    %ul&#x000A;      %li&#x000A;        %label.form-label.form-label--radio(for="male")&#x000A;          %input(type="radio" name="male") Male&#x000A;      %li&#x000A;        %label.form-label.form-label--radio(for="female")&#x000A;          %input(type="radio" name="female") Female&#x000A;      %li&#x000A;        %label.form-label.form-label--radio(for="other")&#x000A;          %input(type="radio" name="other") Other&#x000A;&#x000A;  %fieldset.form-field&#x000A;    %label.form-label(for="notes") Extra notes:&#x000A;    %textarea.form-input(name="notes")&#x000A;&#x000A;  %fieldset.form-field&#x000A;    %label.form-label(for="select") Select an option:&#x000A;    %label.form-label.form-label--check(for="check")&#x000A;      %input(type="checkbox" name="check") Yes, I would like to receive tri-daily emails from your service.&#x000A;&#x000A;  %fieldset.form-field.form-field--submit&#x000A;    %input.btn--a(type="submit" value="Submit")&#x000A;</pre>
+            </div>
+          </div>
+          <div class='card--a example'>
+            <h4>Inline Form</h4>
+            <p class='example-label'>.form--inline</p>
+            <div class='example-output'>
+              <form action='' class='form form--inline' methd='post'>
+                <fieldset class='form-field'>
+                  <input class='form-input' placeholder='Enter your search team' type='text'>
+                  <input class='btn--a form-submit' type='submit' value='Search'>
+                </fieldset>
+              </form>
+            </div>
+            <div class='example-markup'>
+              <pre>%form.form.form--inline(methd="post" action="")&#x000A;  %fieldset.form-field&#x000A;    %input.form-input(type="text" placeholder="Enter your search team")&#x000A;    %input.btn--a.form-submit(type="submit" value="Search")</pre>
+            </div>
+          </div>
         </div>
         <!-- Grids -->
         <div class='contentSection' id='grids'>

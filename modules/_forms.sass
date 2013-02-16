@@ -1,3 +1,84 @@
 //-------------------------------------
 //  Forms
 //-------------------------------------
+
+// Form Variables
+
+$form-input-focus: inset 0 2px 1px rbga(#000, 0.15)
+
+// ----- Form ----- //
+
+.form
+  margin-top: 20px
+
+// Form Variants //
+
+.form--inline
+  .form-field
+    @extend %group
+  .form-input
+    float: left
+    margin-right: 2%
+    width: 70%
+  .form-submit
+    float: left
+    width: 28%
+
+// ----- Form Header ----- //
+
+.form-header
+  margin-bottom: 10px
+
+// ----- Form Field ----- //
+
+.form-field
+  margin-bottom: 20px
+
+// Form Field Variants //
+
+.form-field--submit
+  margin-top: 40px
+
+// ----- Form Label ----- //
+
+.form-label
+  display: block
+  font-size: 1.6em
+  font-weight: bold
+  margin-bottom: 5px
+  em
+    color: $color-error
+
+// Form Label Variants //
+
+.form-label--radio,
+.form-label--check
+  font-size: 1.4em
+  font-weight: normal
+
+// ----- Form Note ----- //
+
+.form-note
+  color: lighten($color-base, 40%)
+  font-size: 1.4em
+  margin-top: 5px
+
+// ----- Form Input ----- //
+
+.form-input
+  +box-sizing(border-box)
+  background: #FFF
+  border: 1px solid $color-border
+  border-radius: $border-radius
+  box-shadow: $form-input-focus
+  font-size: 1.4em
+  padding: 10px 8px
+  width: 100%
+  &:focus
+    box-shadow: 0 0 3px rgba($color-border, 0.8)
+    outline: none
+
+// ----- Form Select ----- //
+
+.form-select
+  width: 30%

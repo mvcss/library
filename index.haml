@@ -120,6 +120,122 @@
         / Forms
         .contentSection#forms
           %h3 Forms
+          .card--a.example
+            %h4 Basic Form
+            %p.example-label .form
+            .example-output
+              %form.form(methd="post" action="")
+                %fieldset.form-field
+                  %label.form-label(for="name") Name: <em>*</em>
+                  %input.form-input(type="text" name="name" placeholder="Enter your name")
+                  %p.form-note I hope you remember your name, because you need to enter it.
+
+                %fieldset.form-field
+                  %label.form-label(for="email") Email: <em>*</em>
+                  %input.form-input(type="email" name="email" placeholder="Enter your email")
+
+                %fieldset.form-field
+                  %label.form-label(for="password") Password: <em>*</em>
+                  %input.form-input(type="password" name="password")
+                  %p.form-note <a href="#">Forgot your password?</a>
+
+                %fieldset.form-field
+                  %label.form-label(for="select") Select your lunch today:
+                  %select.form-select
+                    %option(value="empty") Choose one:
+                    %option(value="item") Hamburger and fries
+                    %option(value="item") Salad
+                    %option(value="item") Enchilada
+                    %option(value="item") Salmon
+
+                %fieldset.form-field
+                  %label.form-label(for="radio") Select your gender:
+                  %ul
+                    %li
+                      %label.form-label.form-label--radio(for="male") <input type="radio" name="male" /> Male
+                    %li
+                      %label.form-label.form-label--radio(for="female") <input type="radio" name="female" /> Female
+                    %li
+                      %label.form-label.form-label--radio(for="other") <input type="radio" name="other" /> Other
+
+                %fieldset.form-field
+                  %label.form-label(for="notes") Extra notes:
+                  %textarea.form-input(name="notes")
+
+                %fieldset.form-field
+                  %label.form-label(for="select") Select an option:
+                  %label.form-label.form-label--check(for="check") <input type="checkbox" name="check" /> Yes, I would like to receive tri-daily emails from your service.
+
+                %fieldset.form-field.form-field--submit
+                  %input.btn--a(type="submit" value="Submit")
+            .example-markup
+              %pre
+                :preserve
+                  %form.form(methd="post" action="")
+                    %fieldset.form-field
+                      %label.form-label(for="name") Name: <em>*</em>
+                      %input.form-input(type="text" name="name" placeholder="Enter your name")
+                      %p.form-note I hope you remember your name, because you need to enter it.
+
+                    %fieldset.form-field
+                      %label.form-label(for="email") Email: <em>*</em>
+                      %input.form-input(type="email" name="email" placeholder="Enter your email")
+
+                    %fieldset.form-field
+                      %label.form-label(for="password") Password: <em>*</em>
+                      %input.form-input(type="password" name="password")
+                      %p.form-note
+                        %a(href="#") Forgot your password?
+
+                    %fieldset.form-field
+                      %label.form-label(for="select") Select your lunch today:
+                      %select.form-select
+                        %option(value="empty") Choose one:
+                        %option(value="item") Hamburger and fries
+                        %option(value="item") Salad
+                        %option(value="item") Enchilada
+                        %option(value="item") Salmon
+
+                    %fieldset.form-field
+                      %label.form-label(for="radio") Select your gender:
+                      %ul
+                        %li
+                          %label.form-label.form-label--radio(for="male")
+                            %input(type="radio" name="male") Male
+                        %li
+                          %label.form-label.form-label--radio(for="female")
+                            %input(type="radio" name="female") Female
+                        %li
+                          %label.form-label.form-label--radio(for="other")
+                            %input(type="radio" name="other") Other
+
+                    %fieldset.form-field
+                      %label.form-label(for="notes") Extra notes:
+                      %textarea.form-input(name="notes")
+
+                    %fieldset.form-field
+                      %label.form-label(for="select") Select an option:
+                      %label.form-label.form-label--check(for="check")
+                        %input(type="checkbox" name="check") Yes, I would like to receive tri-daily emails from your service.
+
+                    %fieldset.form-field.form-field--submit
+                      %input.btn--a(type="submit" value="Submit")
+
+          .card--a.example
+            %h4 Inline Form
+            %p.example-label .form--inline
+            .example-output
+              %form.form.form--inline(methd="post" action="")
+                %fieldset.form-field
+                  %input.form-input(type="text" placeholder="Enter your search team")
+                  %input.btn--a.form-submit(type="submit" value="Search")
+            .example-markup
+              %pre
+                :preserve
+                  %form.form.form--inline(methd="post" action="")
+                    %fieldset.form-field
+                      %input.form-input(type="text" placeholder="Enter your search team")
+                      %input.btn--a.form-submit(type="submit" value="Search")
         / Grids
         .contentSection#grids
           %h3 Grids

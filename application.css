@@ -48,14 +48,14 @@ table {
   border-spacing: 0; }
 
 /* line 74, core/_settings.sass */
-.grid--a, .grid--b, .grid--c, .grid {
+.form--inline .form-field, .grid--a, .grid--b, .grid--c, .grid {
   zoom: 1; }
   /* line 76, core/_settings.sass */
-  .grid--a:before, .grid--b:before, .grid--c:before, .grid:before, .grid--a:after, .grid--b:after, .grid--c:after, .grid:after {
+  .form--inline .form-field:before, .grid--a:before, .grid--b:before, .grid--c:before, .grid:before, .form--inline .form-field:after, .grid--a:after, .grid--b:after, .grid--c:after, .grid:after {
     content: "";
     display: table; }
   /* line 80, core/_settings.sass */
-  .grid--a:after, .grid--b:after, .grid--c:after, .grid:after {
+  .form--inline .form-field:after, .grid--a:after, .grid--b:after, .grid--c:after, .grid:after {
     clear: both; }
 
 /* line 5, core/_base.sass */
@@ -123,39 +123,41 @@ strong {
 /* line 11, modules/_buttons.sass */
 .btn--a, .btn {
   border-radius: 3px;
+  border: 0;
+  cursor: pointer;
   display: inline-block;
   font-size: 1.4em;
   padding: 10px 30px;
   text-align: center; }
-  /* line 17, modules/_buttons.sass */
+  /* line 19, modules/_buttons.sass */
   .btn--a:focus, .btn--a:hover, .btn:focus, .btn:hover {
     text-decoration: none; }
 
-/* line 23, modules/_buttons.sass */
+/* line 25, modules/_buttons.sass */
 .btn--a {
   background: #bd4c28;
   color: white; }
-  /* line 27, modules/_buttons.sass */
+  /* line 29, modules/_buttons.sass */
   .btn--a:focus, .btn--a:hover {
     background: #a84424; }
 
-/* line 30, modules/_buttons.sass */
+/* line 32, modules/_buttons.sass */
 .btn--block {
   display: block; }
 
-/* line 32, modules/_buttons.sass */
+/* line 34, modules/_buttons.sass */
 .btn--large {
   font-size: 2em;
   padding-left: 100px;
   padding-right: 100px; }
 
-/* line 36, modules/_buttons.sass */
+/* line 38, modules/_buttons.sass */
 .btn--small {
   font-size: 1.2em;
   letter-spacing: 0.1em;
   text-transform: uppercase; }
 
-/* line 40, modules/_buttons.sass */
+/* line 42, modules/_buttons.sass */
 .btn--mini {
   font-size: 1em;
   letter-spacing: 0.1em;
@@ -238,7 +240,7 @@ strong {
   margin-bottom: 1.5em; }
 /* line 25, modules/_content.sass */
 .composition blockquote {
-  border-left: 5px solid #727477;
+  border-left: 5px solid #a5a8aa;
   color: #8b8e91;
   font-size: 2em;
   line-height: 2.4em;
@@ -253,6 +255,75 @@ strong {
   padding-right: 20px;
   padding-bottom: 20px;
   padding-top: 20px; }
+
+/* line 11, modules/_forms.sass */
+.form {
+  margin-top: 20px; }
+
+/* line 19, modules/_forms.sass */
+.form--inline .form-input {
+  float: left;
+  margin-right: 2%;
+  width: 70%; }
+/* line 23, modules/_forms.sass */
+.form--inline .form-submit {
+  float: left;
+  width: 28%; }
+
+/* line 29, modules/_forms.sass */
+.form-header {
+  margin-bottom: 10px; }
+
+/* line 34, modules/_forms.sass */
+.form-field {
+  margin-bottom: 20px; }
+
+/* line 39, modules/_forms.sass */
+.form-field--submit {
+  margin-top: 40px; }
+
+/* line 44, modules/_forms.sass */
+.form-label {
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 5px; }
+  /* line 49, modules/_forms.sass */
+  .form-label em {
+    color: red; }
+
+/* line 54, modules/_forms.sass */
+.form-label--radio,
+.form-label--check {
+  font-size: 1.4em;
+  font-weight: normal; }
+
+/* line 61, modules/_forms.sass */
+.form-note {
+  color: #8b8e91;
+  font-size: 1.4em;
+  margin-top: 5px; }
+
+/* line 68, modules/_forms.sass */
+.form-input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid #a5a8aa;
+  border-radius: 3px;
+  box-shadow: inset 0 2px 1px rbga(black, 0.15);
+  font-size: 1.4em;
+  padding: 10px 8px;
+  width: 100%; }
+  /* line 77, modules/_forms.sass */
+  .form-input:focus {
+    box-shadow: 0 0 3px rgba(165, 168, 170, 0.8);
+    outline: none; }
+
+/* line 83, modules/_forms.sass */
+.form-select {
+  width: 30%; }
 
 /* line 48, core/_settings.sass */
 .grid--a .grid-box {
@@ -365,17 +436,18 @@ strong {
   font-family: Monaco, monospace;
   font-size: 1.3em;
   margin-top: 10px;
+  overflow-x: scroll;
   padding: 10px 24px; }
 
-/* line 85, application.sass */
+/* line 86, application.sass */
 .sectionList li {
   font-size: 1.6em;
   margin-top: 15px; }
-  /* line 88, application.sass */
+  /* line 89, application.sass */
   .sectionList li a {
     color: #272829;
     display: block;
     margin-bottom: 10px; }
-    /* line 92, application.sass */
+    /* line 93, application.sass */
     .sectionList li a.active {
       color: #bd4c28; }
