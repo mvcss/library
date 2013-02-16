@@ -47,14 +47,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 79, core/_settings.sass */
+/* line 74, core/_settings.sass */
 .form--inline .form-field, .grid--a, .grid--b, .grid--c, .grid, .tabs {
   zoom: 1; }
-  /* line 81, core/_settings.sass */
+  /* line 76, core/_settings.sass */
   .form--inline .form-field:before, .grid--a:before, .grid--b:before, .grid--c:before, .grid:before, .tabs:before, .form--inline .form-field:after, .grid--a:after, .grid--b:after, .grid--c:after, .grid:after, .tabs:after {
     content: "";
     display: table; }
-  /* line 85, core/_settings.sass */
+  /* line 80, core/_settings.sass */
   .form--inline .form-field:after, .grid--a:after, .grid--b:after, .grid--c:after, .grid:after, .tabs:after {
     clear: both; }
 
@@ -66,7 +66,7 @@ html {
 /* line 10, core/_base.sass */
 body {
   color: #272829;
-  font: 100%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: 62.5%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* line 18, core/_base.sass */
 h1, h2, h3,
@@ -76,33 +76,33 @@ h4, h5, h6 {
 
 /* line 22, core/_base.sass */
 h1, .h1 {
-  font-size: 2.5em; }
+  font-size: 4em; }
 
 /* line 24, core/_base.sass */
 h2, .h2 {
-  font-size: 2.1875em; }
+  font-size: 3.5em; }
 
 /* line 26, core/_base.sass */
 h3, .h3 {
-  font-size: 1.875em; }
+  font-size: 3em; }
 
 /* line 28, core/_base.sass */
 h4, .h4 {
-  font-size: 1.5625em; }
+  font-size: 2.5em; }
 
 /* line 30, core/_base.sass */
 h5, .h5 {
-  font-size: 1.25em; }
+  font-size: 2em; }
 
 /* line 32, core/_base.sass */
 h6, .h6 {
-  font-size: 1em; }
+  font-size: 1.6em; }
 
 /* line 37, core/_base.sass */
 p {
   color: #4c4e50;
-  font-size: 1em;
-  margin: 0.625em 0; }
+  font-size: 1.6em;
+  margin: 10px 0; }
 
 /* line 46, core/_base.sass */
 a {
@@ -126,7 +126,7 @@ strong {
   border: 0;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.875em;
+  font-size: 1.4em;
   padding: 10px 30px;
   text-align: center; }
   /* line 24, modules/_buttons.sass */
@@ -155,19 +155,19 @@ strong {
 
 /* line 57, modules/_buttons.sass */
 .btn--large {
-  font-size: 1.25em;
-  padding-left: 5em;
-  padding-right: 5em; }
+  font-size: 2em;
+  padding-left: 100px;
+  padding-right: 100px; }
 
 /* line 64, modules/_buttons.sass */
 .btn--small {
-  font-size: 0.75em;
-  letter-spacing: 0.08333em;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
   text-transform: uppercase; }
 
 /* line 71, modules/_buttons.sass */
 .btn--mini {
-  font-size: 0.625em;
+  font-size: 1em;
   letter-spacing: 0.1em;
   text-transform: uppercase; }
 
@@ -266,7 +266,7 @@ strong {
 
 /* line 15, modules/_forms.sass */
 .form {
-  margin: 1.25em 0; }
+  margin: 20px 0; }
 
 /* line 23, modules/_forms.sass */
 .form--inline .form-input {
@@ -296,22 +296,22 @@ strong {
 
 /* line 44, modules/_forms.sass */
 .form-header {
-  margin-bottom: 0.625em; }
+  margin-bottom: 10px; }
 
 /* line 49, modules/_forms.sass */
 .form-field {
-  margin-bottom: 1.25em; }
+  margin-bottom: 20px; }
 
 /* line 54, modules/_forms.sass */
 .form-field--submit {
-  margin-top: 2.5em; }
+  margin-top: 40px; }
 
 /* line 59, modules/_forms.sass */
 .form-label {
   display: block;
-  font-size: 1em;
+  font-size: 1.6em;
   font-weight: bold;
-  margin-bottom: 0.3125em; }
+  margin-bottom: 5px; }
   /* line 64, modules/_forms.sass */
   .form-label em {
     color: red; }
@@ -319,14 +319,14 @@ strong {
 /* line 69, modules/_forms.sass */
 .form-label--radio,
 .form-label--check {
-  font-size: 0.875em;
+  font-size: 1.4em;
   font-weight: normal; }
 
 /* line 76, modules/_forms.sass */
 .form-note {
   color: #8b8e91;
-  font-size: 0.875em;
-  margin-top: 0.3125em; }
+  font-size: 1.4em;
+  margin-top: 5px; }
 
 /* line 83, modules/_forms.sass */
 .form-input {
@@ -337,8 +337,8 @@ strong {
   border: 1px solid #a5a8aa;
   border-radius: 3px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.875em;
-  padding: 0.71429em 0.57143em;
+  font-size: 1.4em;
+  padding: 10px 8px;
   width: 100%; }
   /* line 92, modules/_forms.sass */
   .form-input:focus {
@@ -401,8 +401,8 @@ strong {
   box-sizing: border-box;
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 0.875em;
-  margin: 1.25em 0;
+  font-size: 1.4em;
+  margin: 20px 0;
   width: 100%; }
 
 /* line 24, modules/_tables.sass */
@@ -414,20 +414,20 @@ strong {
   border-bottom: 1px solid #a5a8aa; }
   /* line 34, modules/_tables.sass */
   .table-row th, .table-row td {
-    padding: 0.5em; }
+    padding: 8px; }
   /* line 37, modules/_tables.sass */
   .table-row th {
     font-weight: bold;
     text-align: left; }
   /* line 43, modules/_tables.sass */
   .table-row td .btn {
-    font-size: 1em;
-    padding-bottom: 0.35714em;
-    padding-top: 0.35714em; }
+    font-size: 14px;
+    padding-bottom: 5px;
+    padding-top: 5px; }
 
 /* line 12, modules/_tabs.sass */
 .tabs {
-  margin: 1.25em 0 0; }
+  margin: 20px 0 0; }
 
 /* line 18, modules/_tabs.sass */
 .tab {
@@ -439,8 +439,8 @@ strong {
     background: #dadbdb;
     color: #272829;
     display: block;
-    margin-right: 0.625em;
-    padding: 0.5em 1.5625em; }
+    margin-right: 10px;
+    padding: 8px 25px; }
     /* line 28, modules/_tabs.sass */
     .tab a.is-active {
       background: white; }
@@ -477,13 +477,13 @@ strong {
     color: white; }
   /* line 52, application.sass */
   .siteHeader h2 {
-    font-size: 1.5em;
+    font-size: 2.4em;
     color: #8b8e91;
     font-weight: normal; }
   /* line 56, application.sass */
   .siteHeader .btn--a {
-    font-size: 1.125em;
-    margin-top: 1.5625em; }
+    font-size: 1.8em;
+    margin-top: 25px; }
 
 /* line 48, core/_settings.sass */
 .content .grid .grid-box {
@@ -502,14 +502,14 @@ strong {
 
 /* line 67, application.sass */
 .example h4 {
-  margin-bottom: 0.625em; }
+  margin-bottom: 10px; }
 
 /* line 72, application.sass */
 .example-label {
   background: #e7e7e8;
   font-family: Monaco, monospace;
-  font-size: 0.75em;
-  padding: 0.625em 1.5em;
+  font-size: 1.2em;
+  padding: 10px 24px;
   position: absolute;
   right: 0;
   top: -10px; }
@@ -522,10 +522,10 @@ strong {
 .example-markup {
   background: #e7e7e8;
   font-family: Monaco, monospace;
-  font-size: 0.8125em;
-  margin-top: 0.625em;
+  font-size: 1.3em;
+  margin-top: 10px;
   overflow-x: scroll;
-  padding: 0.76923em 1.84615em; }
+  padding: 10px 24px; }
 
 /* line 98, application.sass */
 .example-markup--b {
@@ -533,13 +533,13 @@ strong {
 
 /* line 103, application.sass */
 .sectionList li {
-  font-size: 1em;
-  margin-top: 0.9375em; }
+  font-size: 1.6em;
+  margin-top: 15px; }
   /* line 106, application.sass */
   .sectionList li a {
     color: #272829;
     display: block;
-    margin-bottom: 0.625em; }
+    margin-bottom: 10px; }
     /* line 110, application.sass */
     .sectionList li a.active {
       color: #bd4c28; }

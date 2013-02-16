@@ -59,11 +59,6 @@ $font-monospace: Monaco, monospace !default
   @media #{$media} and ($query: $val)
     @content
 
-// ----- Functions ----- //
-
-@function em($target, $context: $base-font-size)
-  @return $target / $context + 0em
-
 // ----- Extends ----- //
 
 %debug
