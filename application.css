@@ -48,14 +48,14 @@ table {
   border-spacing: 0; }
 
 /* line 74, core/_settings.sass */
-.form--inline .form-field, .grid--a, .grid--b, .grid--c, .grid {
+.form--inline .form-field, .grid--a, .grid--b, .grid--c, .grid, .tabs {
   zoom: 1; }
   /* line 76, core/_settings.sass */
-  .form--inline .form-field:before, .grid--a:before, .grid--b:before, .grid--c:before, .grid:before, .form--inline .form-field:after, .grid--a:after, .grid--b:after, .grid--c:after, .grid:after {
+  .form--inline .form-field:before, .grid--a:before, .grid--b:before, .grid--c:before, .grid:before, .tabs:before, .form--inline .form-field:after, .grid--a:after, .grid--b:after, .grid--c:after, .grid:after, .tabs:after {
     content: "";
     display: table; }
   /* line 80, core/_settings.sass */
-  .form--inline .form-field:after, .grid--a:after, .grid--b:after, .grid--c:after, .grid:after {
+  .form--inline .form-field:after, .grid--a:after, .grid--b:after, .grid--c:after, .grid:after, .tabs:after {
     clear: both; }
 
 /* line 5, core/_base.sass */
@@ -120,8 +120,8 @@ em {
 strong {
   font-weight: bold; }
 
-/* line 11, modules/_buttons.sass */
-.btn--a, .btn {
+/* line 16, modules/_buttons.sass */
+.btn--a, .btn--b, .btn {
   border-radius: 3px;
   border: 0;
   cursor: pointer;
@@ -129,35 +129,43 @@ strong {
   font-size: 1.4em;
   padding: 10px 30px;
   text-align: center; }
-  /* line 19, modules/_buttons.sass */
-  .btn--a:focus, .btn--a:hover, .btn:focus, .btn:hover {
+  /* line 24, modules/_buttons.sass */
+  .btn--a:focus, .btn--b:focus, .btn--a:hover, .btn--b:hover, .btn:focus, .btn:hover {
     text-decoration: none; }
 
-/* line 25, modules/_buttons.sass */
+/* line 32, modules/_buttons.sass */
 .btn--a {
   background: #bd4c28;
   color: white; }
-  /* line 29, modules/_buttons.sass */
+  /* line 36, modules/_buttons.sass */
   .btn--a:focus, .btn--a:hover {
     background: #a84424; }
 
-/* line 32, modules/_buttons.sass */
+/* line 42, modules/_buttons.sass */
+.btn--b {
+  background: #a5a8aa;
+  color: #272829; }
+  /* line 46, modules/_buttons.sass */
+  .btn--b:focus, .btn--b:hover {
+    background: #989b9d; }
+
+/* line 52, modules/_buttons.sass */
 .btn--block {
   display: block; }
 
-/* line 34, modules/_buttons.sass */
+/* line 57, modules/_buttons.sass */
 .btn--large {
   font-size: 2em;
   padding-left: 100px;
   padding-right: 100px; }
 
-/* line 38, modules/_buttons.sass */
+/* line 64, modules/_buttons.sass */
 .btn--small {
   font-size: 1.2em;
   letter-spacing: 0.1em;
   text-transform: uppercase; }
 
-/* line 42, modules/_buttons.sass */
+/* line 71, modules/_buttons.sass */
 .btn--mini {
   font-size: 1em;
   letter-spacing: 0.1em;
@@ -175,11 +183,11 @@ strong {
 
 /* line 28, modules/_containers.sass */
 .row--b {
-  background-color: #e7e7e8; }
+  background-color: #cdcecf; }
 
 /* line 31, modules/_containers.sass */
 .row--c {
-  background-color: white; }
+  background-color: #e7e7e8; }
 
 /* line 44, modules/_containers.sass */
 .cell {
@@ -227,26 +235,26 @@ strong {
   padding-left: 65px; }
 
 /* line 9, modules/_content.sass */
-.composition h1 {
+.compose h1 {
   line-height: 1.8em; }
 /* line 12, modules/_content.sass */
-.composition h2 {
+.compose h2 {
   line-height: 2.05714em; }
 /* line 15, modules/_content.sass */
-.composition h3 {
+.compose h3 {
   line-height: 2.4em; }
 /* line 20, modules/_content.sass */
-.composition p {
+.compose p {
   margin-bottom: 1.5em; }
 /* line 25, modules/_content.sass */
-.composition blockquote {
+.compose blockquote {
   border-left: 5px solid #a5a8aa;
   color: #8b8e91;
   font-size: 2em;
   line-height: 2.4em;
   padding-left: 20px; }
 /* line 34, modules/_content.sass */
-.composition pre {
+.compose pre {
   background: white;
   font-family: Monaco, monospace;
   font-size: 1.4em;
@@ -256,55 +264,71 @@ strong {
   padding-bottom: 20px;
   padding-top: 20px; }
 
-/* line 11, modules/_forms.sass */
+/* line 14, modules/_forms.sass */
 .form {
   margin: 20px 0; }
 
-/* line 19, modules/_forms.sass */
+/* line 22, modules/_forms.sass */
 .form--inline .form-input {
   float: left;
   margin-right: 2%;
   width: 70%; }
-/* line 23, modules/_forms.sass */
+/* line 26, modules/_forms.sass */
 .form--inline .form-submit {
   float: left;
   width: 28%; }
 
-/* line 29, modules/_forms.sass */
+/* line 32, modules/_forms.sass */
+::-webkit-input-placeholder {
+  color: #8b8e91; }
+
+/* line 34, modules/_forms.sass */
+:-moz-placeholder {
+  color: #8b8e91; }
+
+/* line 36, modules/_forms.sass */
+::-moz-placeholder {
+  color: #8b8e91; }
+
+/* line 38, modules/_forms.sass */
+:-ms-input-placeholder {
+  color: #8b8e91; }
+
+/* line 43, modules/_forms.sass */
 .form-header {
   margin-bottom: 10px; }
 
-/* line 34, modules/_forms.sass */
+/* line 48, modules/_forms.sass */
 .form-field {
   margin-bottom: 20px; }
 
-/* line 39, modules/_forms.sass */
+/* line 53, modules/_forms.sass */
 .form-field--submit {
   margin-top: 40px; }
 
-/* line 44, modules/_forms.sass */
+/* line 58, modules/_forms.sass */
 .form-label {
   display: block;
   font-size: 1.6em;
   font-weight: bold;
   margin-bottom: 5px; }
-  /* line 49, modules/_forms.sass */
+  /* line 63, modules/_forms.sass */
   .form-label em {
     color: red; }
 
-/* line 54, modules/_forms.sass */
+/* line 68, modules/_forms.sass */
 .form-label--radio,
 .form-label--check {
   font-size: 1.4em;
   font-weight: normal; }
 
-/* line 61, modules/_forms.sass */
+/* line 75, modules/_forms.sass */
 .form-note {
   color: #8b8e91;
   font-size: 1.4em;
   margin-top: 5px; }
 
-/* line 68, modules/_forms.sass */
+/* line 82, modules/_forms.sass */
 .form-input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -312,17 +336,16 @@ strong {
   background: white;
   border: 1px solid #a5a8aa;
   border-radius: 3px;
-  box-shadow: inset 0 2px 1px rbga(black, 0.15);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.4em;
   padding: 10px 8px;
   width: 100%; }
-  /* line 78, modules/_forms.sass */
+  /* line 91, modules/_forms.sass */
   .form-input:focus {
-    box-shadow: 0 0 3px rgba(165, 168, 170, 0.8);
+    box-shadow: 0 0 3px rbga(#bd4c28, 0.8);
     outline: none; }
 
-/* line 84, modules/_forms.sass */
+/* line 97, modules/_forms.sass */
 .form-select {
   width: 30%; }
 
@@ -371,38 +394,67 @@ strong {
     float: right;
     width: 30%; }
 
-/* line 7, modules/_tables.sass */
+/* line 13, modules/_tables.sass */
 .table {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 1.6em;
+  font-size: 1.4em;
   margin: 20px 0;
   width: 100%; }
 
-/* line 18, modules/_tables.sass */
+/* line 24, modules/_tables.sass */
 .table--striped .table-body tr:nth-child(odd) {
   background: #f4f4f4; }
 
-/* line 23, modules/_tables.sass */
+/* line 29, modules/_tables.sass */
 .table-row {
   border-bottom: 1px solid #a5a8aa; }
-  /* line 28, modules/_tables.sass */
+  /* line 34, modules/_tables.sass */
   .table-row th, .table-row td {
     padding: 8px; }
-  /* line 31, modules/_tables.sass */
+  /* line 37, modules/_tables.sass */
   .table-row th {
     font-weight: bold;
     text-align: left; }
-  /* line 37, modules/_tables.sass */
+  /* line 43, modules/_tables.sass */
   .table-row td .btn {
     font-size: 1em;
     padding-bottom: 5px;
     padding-top: 5px; }
 
-/* line 44, application.sass */
+/* line 12, modules/_tabs.sass */
+.tabs {
+  margin: 20px 0 0; }
+
+/* line 18, modules/_tabs.sass */
+.tab {
+  float: left;
+  font-size: 16px; }
+  /* line 21, modules/_tabs.sass */
+  .tab a {
+    border-radius: 3px 3px 0 0;
+    background: #dadbdb;
+    color: #272829;
+    display: block;
+    margin-right: 10px;
+    padding: 8px 25px; }
+    /* line 28, modules/_tabs.sass */
+    .tab a.is-active {
+      background: white; }
+
+/* line 33, modules/_tabs.sass */
+.tabs-content {
+  border-radius: 0 0 3px 3px;
+  display: none;
+  margin-top: 0; }
+  /* line 37, modules/_tabs.sass */
+  .tabs-content.is-visible {
+    display: block; }
+
+/* line 45, application.sass */
 .siteHeader {
   background: #272829;
   box-shadow: none; }
@@ -420,15 +472,15 @@ strong {
     .siteHeader .grid .grid-box:last-child {
       float: right;
       width: 35%; }
-  /* line 49, application.sass */
+  /* line 50, application.sass */
   .siteHeader h1, .siteHeader h2 {
     color: white; }
-  /* line 51, application.sass */
+  /* line 52, application.sass */
   .siteHeader h2 {
     font-size: 2.4em;
     color: #8b8e91;
     font-weight: normal; }
-  /* line 55, application.sass */
+  /* line 56, application.sass */
   .siteHeader .btn--a {
     font-size: 1.8em;
     margin-top: 25px; }
@@ -448,11 +500,11 @@ strong {
     float: right;
     width: 80%; }
 
-/* line 66, application.sass */
+/* line 67, application.sass */
 .example h4 {
   margin-bottom: 10px; }
 
-/* line 68, application.sass */
+/* line 72, application.sass */
 .example-label {
   background: #e7e7e8;
   font-family: Monaco, monospace;
@@ -462,7 +514,11 @@ strong {
   right: 0;
   top: -10px; }
 
-/* line 76, application.sass */
+/* line 83, application.sass */
+.example-label--b {
+  top: 0; }
+
+/* line 88, application.sass */
 .example-markup {
   background: #e7e7e8;
   font-family: Monaco, monospace;
@@ -471,15 +527,19 @@ strong {
   overflow-x: scroll;
   padding: 10px 24px; }
 
-/* line 86, application.sass */
+/* line 98, application.sass */
+.example-markup--b {
+  background: white; }
+
+/* line 103, application.sass */
 .sectionList li {
   font-size: 1.6em;
   margin-top: 15px; }
-  /* line 89, application.sass */
+  /* line 106, application.sass */
   .sectionList li a {
     color: #272829;
     display: block;
     margin-bottom: 10px; }
-    /* line 93, application.sass */
+    /* line 110, application.sass */
     .sectionList li a.active {
       color: #bd4c28; }

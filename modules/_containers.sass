@@ -9,9 +9,9 @@
 $row-margin: 0 !default
 $row-padding: 20px 0 !default
 
-$color-row-a: #FFF !default
-$color-row-b: lighten($color-base, 65%) !default
-$color-row-c: lighten($color-base, 75%) !default
+$color-row--a: #FFF !default
+$color-row--b: lighten($color-base, 65%) !default
+$color-row--c: lighten($color-base, 75%) !default
 
 // -- Base Row -- //
 
@@ -23,14 +23,14 @@ $color-row-c: lighten($color-base, 75%) !default
 
 .row--a
   @extend %row
-  background-color: $color-row-a
+  background-color: $color-row--a
   box-shadow: $box-shadow
 .row--b
   @extend %row
-  background-color: $color-row-b
+  background-color: $color-row--b
 .row--c
   @extend %row
-  background-color: $color-row-c
+  background-color: $color-row--c
 
 // ----- Cells ----- //
 
@@ -54,9 +54,9 @@ $cell-padding: 0 80px !default
 $card-margin: 20px 0 !default
 $card-padding: 15px !default
 
-$color-card-a: #FFF !default
-$color-card-b: lighten($color-base, 65%) !default
-$color-card-c: lighten($color-base, 75%) !default
+$color-card--a: #FFF !default
+$color-card--b: lighten($color-base, 65%) !default
+$color-card--c: lighten($color-base, 75%) !default
 
 // -- Card Base -- //
 
@@ -70,14 +70,14 @@ $color-card-c: lighten($color-base, 75%) !default
 
 .card--a
   @extend %card
-  background: $color-card-a
+  background: $color-card--a
   box-shadow: $box-shadow
 .card--b
   @extend %card
-  background: $color-card-b
+  background: $color-card--b
 .card--c
   @extend %card
-  background: $color-card-c
+  background: $color-card--c
 
 // ----- Buckets ----- //
 

@@ -4,7 +4,10 @@
 
 // Form Variables
 
-$form-input-focus: inset 0 2px 1px rbga(#000, 0.15)
+$color-form-input-placeholder: lighten($color-base, 40%) !default
+$color-form-input-bg: #FFF !default
+$color-form-input-border: 1px solid $color-border !default
+$form-input-focus: 0 0 3px rbga($color-border, 0.8) !default
 
 // ----- Form ----- //
 
@@ -23,6 +26,17 @@ $form-input-focus: inset 0 2px 1px rbga(#000, 0.15)
   .form-submit
     float: left
     width: 28%
+
+// ----- Form Placeholder Text ----- //
+
+\::-webkit-input-placeholder
+  color: $color-form-input-placeholder
+\:-moz-placeholder
+  color: $color-form-input-placeholder
+\::-moz-placeholder
+  color: $color-form-input-placeholder
+\:-ms-input-placeholder
+  color: $color-form-input-placeholder
 
 // ----- Form Header ----- //
 
@@ -67,16 +81,15 @@ $form-input-focus: inset 0 2px 1px rbga(#000, 0.15)
 
 .form-input
   +box-sizing(border-box)
-  background: #FFF
-  border: 1px solid $color-border
+  background: $color-form-input-bg
+  border: $color-form-input-border
   border-radius: $border-radius
-  box-shadow: $form-input-focus
   font-family: $font-base
   font-size: 1.4em
   padding: 10px 8px
   width: 100%
   &:focus
-    box-shadow: 0 0 3px rgba($color-border, 0.8)
+    box-shadow: $form-input-focus
     outline: none
 
 // ----- Form Select ----- //

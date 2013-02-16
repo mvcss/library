@@ -6,6 +6,11 @@
 
 $btn-padding: 10px 30px !default
 
+$color-btn--a-bg: $color-highlight
+$color-btn--a: #FFF
+$color-btn--b-bg: $color-border
+$color-btn--b: $color-base
+
 // ----- Base Button ----- //
 
 %btn, .btn
@@ -22,23 +27,47 @@ $btn-padding: 10px 30px !default
 
 // Modifiers //
 
+// Button A
+
 .btn--a
   @extend %btn
-  background: $color-highlight
-  color: #FFF
+  background: $color-btn--a-bg
+  color: $color-btn--a
   &:focus,
   &:hover
-    background: darken($color-highlight, 5%)
+    background: darken($color-btn--a-bg, 5%)
+
+// Button B
+
+.btn--b
+  @extend %btn
+  background: $color-btn--b-bg
+  color: $color-btn--b
+  &:focus,
+  &:hover
+    background: darken($color-btn--b-bg, 5%)
+
+// Button Block
+
 .btn--block
   display: block
+
+// Button Large
+
 .btn--large
   font-size: 2em
   padding-left: 100px
   padding-right: 100px
+
+// Button Small
+
 .btn--small
   font-size: 1.2em
   letter-spacing: 0.1em
   text-transform: uppercase
+
+// Button Mini
+
 .btn--mini
   font-size: 1em
   letter-spacing: 0.1em

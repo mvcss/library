@@ -1,3 +1,38 @@
 //-------------------------------------
 //  Tabs
 //-------------------------------------
+
+// Tabs Variables
+
+$color-tab-bg: lighten($color-border, 20%)
+$color-tab-bg-active: #FFF
+
+// ----- Tabs ----- //
+
+.tabs
+  @extend %group
+  margin: 20px 0 0
+
+// ----- Tab ----- //
+
+.tab
+  float: left
+  font-size: $base-font-size
+  a
+    border-radius: $border-radius $border-radius 0 0
+    background: $color-tab-bg
+    color: $color-base
+    display: block
+    margin-right: 10px
+    padding: 8px 25px
+    &.is-active
+      background: $color-tab-bg-active
+
+// ----- Tabs Content ----- //
+
+.tabs-content
+  border-radius: 0 0 $border-radius $border-radius
+  display: none
+  margin-top: 0
+  &.is-visible
+    display: block

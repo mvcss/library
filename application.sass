@@ -33,6 +33,7 @@
 @import "modules/modals"
 @import "modules/popovers"
 @import "modules/tables"
+@import "modules/tabs"
 @import "modules/tooltips"
 
 //-------------------------------------
@@ -61,10 +62,13 @@
 .content .grid
   +grid(20%, 80%)
 
-// Examples
+// ----- Example ----- //
 
 .example h4
   margin-bottom: 10px
+
+// -- Example Label -- //
+
 .example-label
   background: lighten($color-base, 75%)
   font-family: $font-monospace
@@ -73,6 +77,14 @@
   position: absolute
   right: 0
   top: -10px
+
+// Example Label Modifiers //
+
+.example-label--b
+  top: 0
+
+// -- Example Markup -- //
+
 .example-markup
   background: lighten($color-base, 75%)
   font-family: $font-monospace
@@ -80,6 +92,11 @@
   margin-top: 10px
   overflow-x: scroll
   padding: 10px $base-line-height
+
+// Example Markup Modifiers //
+
+.example-markup--b
+  background: #FFF
 
 // ----- Section List ----- //
 

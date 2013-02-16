@@ -2,13 +2,19 @@
 //  Tables
 //-------------------------------------
 
+// Table Variables
+
+$color-table--striped-bg: lighten($color-border, 30%) !default
+$color-table-row-border: 1px solid $color-border !default
+$font-table: 1.4em !default
+
 // ----- Table ----- //
 
 .table
   +box-sizing(border-box)
   border-collapse: collapse
   border-spacing: 0
-  font-size: 1.6em
+  font-size: $font-table
   margin: 20px 0
   width: 100%
 
@@ -16,12 +22,12 @@
 
 .table--striped
   .table-body tr:nth-child(odd)
-    background: lighten($color-border, 30%)
+    background: $color-table--striped-bg
 
 // ----- Table Row ----- //
 
 .table-row
-  border-bottom: 1px solid $color-border
+  border-bottom: $color-table-row-border
 
   // Table Header
 
