@@ -228,10 +228,12 @@ strong {
 
 /* line 105, modules/_containers.sass */
 .bucket--01 .bucket-content {
+  min-height: 75px;
   padding-left: 90px; }
 
 /* line 105, modules/_containers.sass */
 .bucket--02 .bucket-content {
+  min-height: 50px;
   padding-left: 65px; }
 
 /* line 9, modules/_content.sass */

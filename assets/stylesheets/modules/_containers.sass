@@ -103,4 +103,5 @@ $bucket-sizes: 75px, 50px !default
   .bucket--0#{$i}
     @extend %bucket
     .bucket-content
+      min-height: nth($bucket-sizes, $i)
       padding-left: nth($bucket-sizes, $i) + 15px
