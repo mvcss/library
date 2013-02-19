@@ -50,7 +50,7 @@ $font-monospace: Monaco, monospace !default
 
 // ----- Functions ----- //
 
-@function em($target, $context: 10px)
+@function em($target, $context: $base-font-size)
   @return #{$target / $context}em
 
 // ----- Extends ----- //

@@ -67,58 +67,57 @@ html {
 body {
   color: #272829;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 62.5%;
   line-height: 1.5; }
 
-/* line 18, core/_base.sass */
+/* line 17, core/_base.sass */
 h1, h2, h3,
 h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
-/* line 22, core/_base.sass */
+/* line 21, core/_base.sass */
 h1, .h1 {
-  font-size: 4em; }
-
-/* line 24, core/_base.sass */
-h2, .h2 {
-  font-size: 3.5em; }
-
-/* line 26, core/_base.sass */
-h3, .h3 {
-  font-size: 3em; }
-
-/* line 28, core/_base.sass */
-h4, .h4 {
   font-size: 2.5em; }
 
-/* line 30, core/_base.sass */
+/* line 23, core/_base.sass */
+h2, .h2 {
+  font-size: 2.1875em; }
+
+/* line 25, core/_base.sass */
+h3, .h3 {
+  font-size: 1.875em; }
+
+/* line 27, core/_base.sass */
+h4, .h4 {
+  font-size: 1.5625em; }
+
+/* line 29, core/_base.sass */
 h5, .h5 {
-  font-size: 2em; }
+  font-size: 1.25em; }
 
-/* line 32, core/_base.sass */
+/* line 31, core/_base.sass */
 h6, .h6 {
-  font-size: 1.6em; }
+  font-size: 1em; }
 
-/* line 37, core/_base.sass */
+/* line 36, core/_base.sass */
 p {
   color: #4c4e50;
-  font-size: 1.6em;
+  font-size: 1em;
   margin: 0.625em 0; }
 
-/* line 46, core/_base.sass */
+/* line 45, core/_base.sass */
 a {
   color: #bd4c28;
   text-decoration: none; }
-  /* line 49, core/_base.sass */
+  /* line 48, core/_base.sass */
   a:hover, a:focus {
     text-decoration: underline; }
 
-/* line 55, core/_base.sass */
+/* line 54, core/_base.sass */
 em {
   font-style: italic; }
 
-/* line 57, core/_base.sass */
+/* line 56, core/_base.sass */
 strong {
   font-weight: bold; }
 
@@ -128,7 +127,7 @@ strong {
   border: 0;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.4em;
+  font-size: 0.875em;
   padding: 0.71429em 2.14286em;
   text-align: center; }
   /* line 22, modules/_buttons.sass */
@@ -157,26 +156,26 @@ strong {
 
 /* line 55, modules/_buttons.sass */
 .btn--large {
-  font-size: 2em;
+  font-size: 1.25em;
   padding-left: 5em;
   padding-right: 5em; }
 
 /* line 62, modules/_buttons.sass */
 .btn--small {
-  font-size: 1.2em;
+  font-size: 0.75em;
   letter-spacing: 0.08333em;
   text-transform: uppercase; }
 
 /* line 69, modules/_buttons.sass */
 .btn--mini {
-  font-size: 1em;
+  font-size: 0.625em;
   letter-spacing: 0.1em;
   text-transform: uppercase; }
 
 /* line 18, modules/_containers.sass */
 .row--a, .row--b, .row--c, .row {
   margin: 0;
-  padding: 2em 0; }
+  padding: 1.25em 0; }
 
 /* line 24, modules/_containers.sass */
 .row--a {
@@ -194,15 +193,15 @@ strong {
 /* line 44, modules/_containers.sass */
 .cell {
   margin: 0 auto;
-  max-width: 98em;
-  padding: 0 8em;
+  max-width: 61.25em;
+  padding: 0 5em;
   position: relative; }
 
 /* line 63, modules/_containers.sass */
 .card--a, .card--b, .card--c, .card {
   border-radius: 3px;
-  margin: 2em 0;
-  padding: 1.5em;
+  margin: 1.25em 0;
+  padding: 0.9375em;
   position: relative; }
 
 /* line 71, modules/_containers.sass */
@@ -270,7 +269,7 @@ strong {
 
 /* line 15, modules/_forms.sass */
 .form {
-  margin: 2em 0; }
+  margin: 1.25em 0; }
 
 /* line 23, modules/_forms.sass */
 .form--inline .form-input {
@@ -300,22 +299,22 @@ input:-ms-input-placeholder {
 
 /* line 44, modules/_forms.sass */
 .form-header {
-  margin-bottom: 1em; }
+  margin-bottom: 0.625em; }
 
 /* line 49, modules/_forms.sass */
 .form-field {
-  margin-bottom: 2em; }
+  margin-bottom: 1.25em; }
 
 /* line 54, modules/_forms.sass */
 .form-field--submit {
-  margin-top: 2em; }
+  margin-top: 1.25em; }
 
 /* line 59, modules/_forms.sass */
 .form-label {
   display: block;
-  font-size: 1.6em;
+  font-size: 1em;
   font-weight: bold;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.3125em; }
   /* line 64, modules/_forms.sass */
   .form-label em {
     color: red; }
@@ -323,13 +322,13 @@ input:-ms-input-placeholder {
 /* line 69, modules/_forms.sass */
 .form-label--radio,
 .form-label--check {
-  font-size: 1.4em;
+  font-size: 0.875em;
   font-weight: normal; }
 
 /* line 76, modules/_forms.sass */
 .form-note {
   color: #8b8e91;
-  font-size: 1.4em;
+  font-size: 0.875em;
   margin-top: 0.35714em; }
 
 /* line 83, modules/_forms.sass */
@@ -341,7 +340,7 @@ input:-ms-input-placeholder {
   border: 1px solid #a5a8aa;
   border-radius: 3px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.4em;
+  font-size: 0.875em;
   padding: 0.71429em 0.57143em;
   width: 100%; }
   /* line 92, modules/_forms.sass */
@@ -680,7 +679,7 @@ input:-ms-input-placeholder {
   box-sizing: border-box;
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 1.4em;
+  font-size: 0.875em;
   margin: 1.42857em 0;
   width: 100%; }
 
@@ -700,18 +699,18 @@ input:-ms-input-placeholder {
     text-align: left; }
   /* line 43, modules/_tables.sass */
   .table-row td .btn {
-    font-size: 1.4em;
+    font-size: 0.875em;
     padding-bottom: 0.35714em;
     padding-top: 0.35714em; }
 
 /* line 12, modules/_tabs.sass */
 .tabs {
-  margin: 2em 0 0; }
+  margin: 1.25em 0 0; }
 
 /* line 18, modules/_tabs.sass */
 .tab {
   float: left;
-  font-size: 1.6em; }
+  font-size: 1em; }
   /* line 21, modules/_tabs.sass */
   .tab a {
     border-radius: 3px 3px 0 0;
