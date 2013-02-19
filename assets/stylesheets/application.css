@@ -121,7 +121,7 @@ em {
 strong {
   font-weight: bold; }
 
-/* line 14, modules/_buttons.sass */
+/* line 19, modules/_buttons.sass */
 .btn--a, .btn--b, .btn {
   border-radius: 3px;
   border: 0;
@@ -130,109 +130,110 @@ strong {
   font-size: 0.875em;
   padding: 0.71429em 2.14286em;
   text-align: center; }
-  /* line 22, modules/_buttons.sass */
+  /* line 27, modules/_buttons.sass */
   .btn--a:focus, .btn--b:focus, .btn--a:hover, .btn--b:hover, .btn:focus, .btn:hover {
     text-decoration: none; }
 
-/* line 30, modules/_buttons.sass */
+/* line 35, modules/_buttons.sass */
 .btn--a {
   background: #bd4c28;
   color: white; }
-  /* line 34, modules/_buttons.sass */
+  /* line 39, modules/_buttons.sass */
   .btn--a:focus, .btn--a:hover {
     background: #a84424; }
 
-/* line 40, modules/_buttons.sass */
+/* line 45, modules/_buttons.sass */
 .btn--b {
   background: #a5a8aa;
   color: #272829; }
-  /* line 44, modules/_buttons.sass */
+  /* line 49, modules/_buttons.sass */
   .btn--b:focus, .btn--b:hover {
     background: #989b9d; }
 
-/* line 50, modules/_buttons.sass */
+/* line 55, modules/_buttons.sass */
 .btn--block {
   display: block; }
 
-/* line 55, modules/_buttons.sass */
+/* line 60, modules/_buttons.sass */
 .btn--large {
   font-size: 1.25em;
   padding-left: 5em;
   padding-right: 5em; }
 
-/* line 62, modules/_buttons.sass */
+/* line 67, modules/_buttons.sass */
 .btn--small {
   font-size: 0.75em;
   letter-spacing: 0.08333em;
   text-transform: uppercase; }
 
-/* line 69, modules/_buttons.sass */
+/* line 74, modules/_buttons.sass */
 .btn--mini {
   font-size: 0.625em;
   letter-spacing: 0.1em;
   text-transform: uppercase; }
 
-/* line 18, modules/_containers.sass */
+/* line 19, modules/_containers.sass */
 .row--a, .row--b, .row--c, .row {
   margin: 0;
-  padding: 1.25em 0; }
+  padding: 1.25em 0 1.25em; }
 
-/* line 24, modules/_containers.sass */
+/* line 25, modules/_containers.sass */
 .row--a {
   background-color: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 28, modules/_containers.sass */
+/* line 29, modules/_containers.sass */
 .row--b {
   background-color: #cdcecf; }
 
-/* line 31, modules/_containers.sass */
+/* line 32, modules/_containers.sass */
 .row--c {
   background-color: #e7e7e8; }
 
-/* line 44, modules/_containers.sass */
+/* line 46, modules/_containers.sass */
 .cell {
   margin: 0 auto;
   max-width: 61.25em;
-  padding: 0 5em;
+  padding-left: 5em;
+  padding-right: 5em;
   position: relative; }
 
-/* line 63, modules/_containers.sass */
+/* line 70, modules/_containers.sass */
 .card--a, .card--b, .card--c, .card {
   border-radius: 3px;
-  margin: 1.25em 0;
-  padding: 0.9375em;
+  margin: 1.25em 0 1.25em;
+  padding: 0.9375em 0.9375em 0.9375em 0.9375em;
   position: relative; }
 
-/* line 71, modules/_containers.sass */
+/* line 78, modules/_containers.sass */
 .card--a {
   background: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 75, modules/_containers.sass */
+/* line 82, modules/_containers.sass */
 .card--b {
   background: #cdcecf; }
 
-/* line 78, modules/_containers.sass */
+/* line 85, modules/_containers.sass */
 .card--c {
   background: #e7e7e8; }
 
-/* line 90, modules/_containers.sass */
+/* line 97, modules/_containers.sass */
 .bucket--01, .bucket--02 {
   position: relative; }
 
-/* line 95, modules/_containers.sass */
+/* line 102, modules/_containers.sass */
 .bucket-media {
   left: 0;
   position: absolute;
   top: 0; }
 
-/* line 105, modules/_containers.sass */
+/* line 112, modules/_containers.sass */
 .bucket--01 .bucket-content {
   min-height: 75px;
   padding-left: 90px; }
 
-/* line 105, modules/_containers.sass */
+/* line 112, modules/_containers.sass */
 .bucket--02 .bucket-content {
   min-height: 50px;
   padding-left: 65px; }
@@ -312,7 +313,7 @@ input:-ms-input-placeholder {
 /* line 59, modules/_forms.sass */
 .form-label {
   display: block;
-  font-size: 1em;
+  font-size: 0.875em;
   font-weight: bold;
   margin-bottom: 0.3125em; }
   /* line 64, modules/_forms.sass */
@@ -703,15 +704,15 @@ input:-ms-input-placeholder {
     padding-bottom: 0.35714em;
     padding-top: 0.35714em; }
 
-/* line 12, modules/_tabs.sass */
+/* line 13, modules/_tabs.sass */
 .tabs {
   margin: 1.25em 0 0; }
 
-/* line 18, modules/_tabs.sass */
+/* line 19, modules/_tabs.sass */
 .tab {
   float: left;
   font-size: 1em; }
-  /* line 21, modules/_tabs.sass */
+  /* line 22, modules/_tabs.sass */
   .tab a {
     border-radius: 3px 3px 0 0;
     background: #dadbdb;
@@ -719,15 +720,15 @@ input:-ms-input-placeholder {
     display: block;
     margin-right: 0.625em;
     padding: 0.5em 1.5625em; }
-    /* line 28, modules/_tabs.sass */
+    /* line 29, modules/_tabs.sass */
     .tab a.is-active {
       background: white; }
 
-/* line 33, modules/_tabs.sass */
+/* line 34, modules/_tabs.sass */
 .tabs-content {
   border-radius: 0 0 3px 3px;
   display: none;
   margin-top: 0; }
-  /* line 37, modules/_tabs.sass */
+  /* line 38, modules/_tabs.sass */
   .tabs-content.is-visible {
     display: block; }

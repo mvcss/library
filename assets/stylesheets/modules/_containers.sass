@@ -7,7 +7,8 @@
 // Row Variables
 
 $row-margin: 0 !default
-$row-padding: em(20px) 0 !default
+$row-padding-bottom: 20px !default
+$row-padding-top: 20px !default
 
 $row--a-bg: #FFF !default
 $row--b-bg: lighten($color-base, 65%) !default
@@ -17,7 +18,7 @@ $row--c-bg: lighten($color-base, 75%) !default
 
 %row, .row
   margin: $row-margin
-  padding: $row-padding
+  padding: em($row-padding-top) 0 em($row-padding-bottom)
 
 // Row Modifiers //
 
@@ -36,23 +37,29 @@ $row--c-bg: lighten($color-base, 75%) !default
 
 // Cell Variables
 
-$cell-width: em(980px) !default
-$cell-padding: 0 em(80px) !default
+$cell-width: 980px !default
+$cell-padding-left: 80px !default
+$cell-padding-right: 80px !default
 
 // -- Cell Base -- //
 
 %cell, .cell
   margin: 0 auto
-  max-width: $cell-width
-  padding: $cell-padding
+  max-width: em($cell-width)
+  padding-left: em($cell-padding-left)
+  padding-right: em($cell-padding-right)
   position: relative
 
 // ----- Cards ----- //
 
 // Card Variables
 
-$card-margin: em(20px) 0 !default
-$card-padding: em(15px) !default
+$card-margin-bottom: 20px !default
+$card-margin-top: 20px !default
+$card-padding-top: 15px !default
+$card-padding-right: 15px !default
+$card-padding-bottom: 15px !default
+$card-padding-left: 15px !default
 
 $card--a-bg: #FFF !default
 $card--b-bg: lighten($color-base, 65%) !default
@@ -62,8 +69,8 @@ $card--c-bg: lighten($color-base, 75%) !default
 
 %card, .card
   border-radius: $border-radius
-  margin: $card-margin
-  padding: $card-padding
+  margin: em($card-margin-top) 0 em($card-margin-bottom)
+  padding: em($card-padding-top) em($card-padding-right) em($card-padding-bottom) em($card-padding-left)
   position: relative
 
 // Card Modifiers //

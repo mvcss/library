@@ -4,7 +4,7 @@
 
 // Form Variables
 
-$form-font-size: em($base-font-size) !default
+$form-font-size: 14px !default
 $form-input-placeholder: lighten($color-base, 40%) !default
 $form-input-bg: #FFF !default
 $form-input-border: 1px solid $color-border !default
@@ -58,7 +58,7 @@ input:-ms-input-placeholder
 
 .form-label
   display: block
-  font-size: em($base-font-size)
+  font-size: em($form-font-size)
   font-weight: bold
   margin-bottom: em(5px)
   em
@@ -68,15 +68,15 @@ input:-ms-input-placeholder
 
 .form-label--radio,
 .form-label--check
-  font-size: em(14px)
+  font-size: em($form-font-size)
   font-weight: normal
 
 // ----- Form Note ----- //
 
 .form-note
   color: lighten($color-base, 40%)
-  font-size: em(14px)
-  margin-top: em(5px, 14px)
+  font-size: em($form-font-size)
+  margin-top: em(5px, $form-font-size)
 
 // ----- Form Input ----- //
 
@@ -86,8 +86,8 @@ input:-ms-input-placeholder
   border: $form-input-border
   border-radius: $border-radius
   font-family: $font-base
-  font-size: em(14px)
-  padding: em(10px, 14px) em(8px, 14px)
+  font-size: em($form-font-size)
+  padding: em(10px, $form-font-size) em(8px, $form-font-size)
   width: 100%
   &:focus
     box-shadow: $form-input-focus
