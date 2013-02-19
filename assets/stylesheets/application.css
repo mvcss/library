@@ -48,14 +48,14 @@ table {
   border-spacing: 0; }
 
 /* line 68, core/_settings.sass */
-.form--inline .form-field, .tabs {
+.tabs {
   zoom: 1; }
   /* line 70, core/_settings.sass */
-  .form--inline .form-field:before, .tabs:before, .form--inline .form-field:after, .tabs:after {
+  .tabs:before, .tabs:after {
     content: "";
     display: table; }
   /* line 74, core/_settings.sass */
-  .form--inline .form-field:after, .tabs:after {
+  .tabs:after {
     clear: both; }
 
 /* line 5, core/_base.sass */
@@ -152,21 +152,25 @@ strong {
 
 /* line 55, modules/_buttons.sass */
 .btn--block {
-  display: block; }
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%; }
 
-/* line 60, modules/_buttons.sass */
+/* line 62, modules/_buttons.sass */
 .btn--large {
   font-size: 1.25em;
   padding-left: 5em;
   padding-right: 5em; }
 
-/* line 67, modules/_buttons.sass */
+/* line 69, modules/_buttons.sass */
 .btn--small {
   font-size: 0.75em;
   letter-spacing: 0.08333em;
   text-transform: uppercase; }
 
-/* line 74, modules/_buttons.sass */
+/* line 76, modules/_buttons.sass */
 .btn--mini {
   font-size: 0.625em;
   letter-spacing: 0.1em;
@@ -272,67 +276,57 @@ strong {
 .form {
   margin: 1.25em 0; }
 
-/* line 23, modules/_forms.sass */
-.form--inline .form-input {
-  float: left;
-  margin-right: 2%;
-  width: 70%; }
-/* line 27, modules/_forms.sass */
-.form--inline .form-submit {
-  float: left;
-  width: 28%; }
-
-/* line 33, modules/_forms.sass */
+/* line 20, modules/_forms.sass */
 input::-webkit-input-placeholder {
   color: #8b8e91; }
 
-/* line 35, modules/_forms.sass */
+/* line 22, modules/_forms.sass */
 input:-moz-placeholder {
   color: #8b8e91; }
 
-/* line 37, modules/_forms.sass */
+/* line 24, modules/_forms.sass */
 input::-moz-placeholder {
   color: #8b8e91; }
 
-/* line 39, modules/_forms.sass */
+/* line 26, modules/_forms.sass */
 input:-ms-input-placeholder {
   color: #8b8e91; }
 
-/* line 44, modules/_forms.sass */
+/* line 31, modules/_forms.sass */
 .form-header {
   margin-bottom: 0.625em; }
 
-/* line 49, modules/_forms.sass */
+/* line 36, modules/_forms.sass */
 .form-field {
   margin-bottom: 1.25em; }
 
-/* line 54, modules/_forms.sass */
+/* line 41, modules/_forms.sass */
 .form-field--submit {
   margin-top: 1.25em; }
 
-/* line 59, modules/_forms.sass */
+/* line 46, modules/_forms.sass */
 .form-label {
   display: block;
   font-size: 0.875em;
   font-weight: bold;
   margin-bottom: 0.3125em; }
-  /* line 64, modules/_forms.sass */
+  /* line 51, modules/_forms.sass */
   .form-label em {
     color: red; }
 
-/* line 69, modules/_forms.sass */
+/* line 56, modules/_forms.sass */
 .form-label--radio,
 .form-label--check {
   font-size: 0.875em;
   font-weight: normal; }
 
-/* line 76, modules/_forms.sass */
+/* line 63, modules/_forms.sass */
 .form-note {
   color: #8b8e91;
   font-size: 0.875em;
   margin-top: 0.35714em; }
 
-/* line 83, modules/_forms.sass */
+/* line 70, modules/_forms.sass */
 .form-input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -344,12 +338,12 @@ input:-ms-input-placeholder {
   font-size: 0.875em;
   padding: 0.71429em 0.57143em;
   width: 100%; }
-  /* line 92, modules/_forms.sass */
+  /* line 79, modules/_forms.sass */
   .form-input:focus {
     box-shadow: 0 0 3px rbga(#bd4c28, 0.8);
     outline: none; }
 
-/* line 98, modules/_forms.sass */
+/* line 85, modules/_forms.sass */
 .form-select {
   width: 30%; }
 
