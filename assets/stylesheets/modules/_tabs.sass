@@ -11,20 +11,20 @@ $tab-bg-active: #FFF !default
 
 .tabs
   @extend %group
-  margin: 20px 0 0
+  margin: em(20px) 0 0
 
 // ----- Tab ----- //
 
 .tab
   float: left
-  font-size: $base-font-size
+  font-size: em($base-font-size)
   a
     border-radius: $border-radius $border-radius 0 0
     background: $tab-bg
     color: $color-base
     display: block
-    margin-right: 10px
-    padding: 8px 25px
+    margin-right: em(10px, $base-font-size)
+    padding: em(8px, $base-font-size) em(25px, $base-font-size)
     &.is-active
       background: $tab-bg-active
 

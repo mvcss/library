@@ -4,8 +4,6 @@
 
 // Button Variables
 
-$btn-padding: 10px 30px !default
-
 $btn--a-bg: $color-highlight !default
 $btn--a-text: #FFF !default
 $btn--b-bg: $color-border !default
@@ -18,8 +16,8 @@ $btn--b-text: $color-base !default
   border: 0
   cursor: pointer
   display: inline-block
-  font-size: 1.4em
-  padding: $btn-padding
+  font-size: em(14px)
+  padding: em(10px, 14px) em(30px, 14px)
   text-align: center
   &:focus,
   &:hover
@@ -55,20 +53,20 @@ $btn--b-text: $color-base !default
 // Button Large
 
 .btn--large
-  font-size: 2em
-  padding-left: 100px
-  padding-right: 100px
+  font-size: em(20px)
+  padding-left: em(100px, 20px)
+  padding-right: em(100px, 20px)
 
 // Button Small
 
 .btn--small
-  font-size: 1.2em
-  letter-spacing: 0.1em
+  font-size: em(12px)
+  letter-spacing: em(1px, 12px)
   text-transform: uppercase
 
 // Button Mini
 
 .btn--mini
-  font-size: 1em
-  letter-spacing: 0.1em
+  font-size: em(10px)
+  letter-spacing: em(1px, 10px)
   text-transform: uppercase

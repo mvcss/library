@@ -4,7 +4,7 @@
 
 // Form Variables
 
-$form-font-size: 1.6em !default
+$form-font-size: em($base-font-size) !default
 $form-input-placeholder: lighten($color-base, 40%) !default
 $form-input-bg: #FFF !default
 $form-input-border: 1px solid $color-border !default
@@ -13,7 +13,7 @@ $form-input-focus: 0 0 3px rbga($color-border, 0.8) !default
 // ----- Form ----- //
 
 .form
-  margin: 20px 0
+  margin: em(20px) 0
 
 // Form Modifiers //
 
@@ -42,25 +42,25 @@ input:-ms-input-placeholder
 // ----- Form Header ----- //
 
 .form-header
-  margin-bottom: 10px
+  margin-bottom: em(10px)
 
 // ----- Form Field ----- //
 
 .form-field
-  margin-bottom: 20px
+  margin-bottom: em(20px)
 
 // Form Field Modifiers //
 
 .form-field--submit
-  margin-top: 20px
+  margin-top: em(20px)
 
 // ----- Form Label ----- //
 
 .form-label
   display: block
-  font-size: 1.6em
+  font-size: em($base-font-size)
   font-weight: bold
-  margin-bottom: 5px
+  margin-bottom: em(5px)
   em
     color: $color-error
 
@@ -68,15 +68,15 @@ input:-ms-input-placeholder
 
 .form-label--radio,
 .form-label--check
-  font-size: 1.4em
+  font-size: em(14px)
   font-weight: normal
 
 // ----- Form Note ----- //
 
 .form-note
   color: lighten($color-base, 40%)
-  font-size: 1.4em
-  margin-top: 5px
+  font-size: em(14px)
+  margin-top: em(5px, 14px)
 
 // ----- Form Input ----- //
 
@@ -86,8 +86,8 @@ input:-ms-input-placeholder
   border: $form-input-border
   border-radius: $border-radius
   font-family: $font-base
-  font-size: 1.4em
-  padding: 10px 8px
+  font-size: em(14px)
+  padding: em(10px, 14px) em(8px, 14px)
   width: 100%
   &:focus
     box-shadow: $form-input-focus

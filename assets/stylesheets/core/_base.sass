@@ -4,12 +4,12 @@
 
 html
   background: $color-body
-  font-size: 16px
-  @if $development
-    background-image: url(http://basehold.it/i/24)
+  font-size: $base-font-size
 body
   color: $color-base
-  font: 62.5%/1.5 $font-base
+  font-family: $font-base
+  font-size: 62.5%
+  line-height: $base-line-height
 
 // ----- Block Content ----- //
 
@@ -20,24 +20,24 @@ h4, h5, h6
   font-family: $font-header
   font-weight: bold
 h1, .h1
-  font-size: 4em
+  font-size: em(40px)
 h2, .h2
-  font-size: 3.5em
+  font-size: em(35px)
 h3, .h3
-  font-size: 3em
+  font-size: em(30px)
 h4, .h4
-  font-size: 2.5em
+  font-size: em(25px)
 h5, .h5
-  font-size: 2em
+  font-size: em(20px)
 h6, .h6
-  font-size: 1.6em
+  font-size: em(16px)
 
 // Paragraphs
 
 p
   color: lighten($color-base, 15%)
-  font-size: 1.6em
-  margin: 10px 0
+  font-size: em($base-font-size)
+  margin: em(10px, $base-font-size) 0
 
 // ----- Inline Content ----- //
 
