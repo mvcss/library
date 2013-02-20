@@ -197,42 +197,38 @@ strong {
   padding-right: 5em;
   position: relative; }
 
-/* line 65, modules/_containers.sass */
-.card--a, .card--b, .card--c, .card {
+/* line 64, modules/_containers.sass */
+.card--a, .card--b, .card {
   border-radius: 3px;
   margin: 1.25em 0 1.25em;
   padding: 0.9375em 0.9375em 0.9375em 0.9375em;
   position: relative; }
 
-/* line 73, modules/_containers.sass */
+/* line 72, modules/_containers.sass */
 .card--a {
   background: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 77, modules/_containers.sass */
+/* line 76, modules/_containers.sass */
 .card--b {
   background: #cdcecf; }
 
-/* line 80, modules/_containers.sass */
-.card--c {
-  background: #e7e7e8; }
-
-/* line 92, modules/_containers.sass */
+/* line 88, modules/_containers.sass */
 .bucket--01, .bucket--02 {
   position: relative; }
 
-/* line 97, modules/_containers.sass */
+/* line 93, modules/_containers.sass */
 .bucket-media {
   left: 0;
   position: absolute;
   top: 0; }
 
-/* line 107, modules/_containers.sass */
+/* line 103, modules/_containers.sass */
 .bucket--01 .bucket-content {
   min-height: 75px;
   padding-left: 90px; }
 
-/* line 107, modules/_containers.sass */
+/* line 103, modules/_containers.sass */
 .bucket--02 .bucket-content {
   min-height: 50px;
   padding-left: 65px; }
