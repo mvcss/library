@@ -47,14 +47,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 68, core/_settings.sass */
+/* line 69, core/_settings.sass */
 .tabs {
   zoom: 1; }
-  /* line 70, core/_settings.sass */
+  /* line 71, core/_settings.sass */
   .tabs:before, .tabs:after {
     content: "";
     display: table; }
-  /* line 74, core/_settings.sass */
+  /* line 75, core/_settings.sass */
   .tabs:after {
     clear: both; }
 
