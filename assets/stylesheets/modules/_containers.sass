@@ -76,30 +76,3 @@ $card--b-bg: lighten($color-base, 65%) !default
 .card--b
   @extend %card
   background: $card--b-bg
-
-// ----- Buckets ----- //
-
-// Bucket Variables
-
-$bucket-sizes: 75px, 50px !default
-
-// -- Base Bucket -- //
-
-%bucket
-  position: relative
-
-// -- Bucket Media -- //
-
-.bucket-media
-  left: 0
-  position: absolute
-  top: 0
-
-// Bucket Modifiers //
-
-@for $i from 1 through length($bucket-sizes)
-  .bucket--0#{$i}
-    @extend %bucket
-    .bucket-content
-      min-height: nth($bucket-sizes, $i)
-      padding-left: nth($bucket-sizes, $i) + 15px
