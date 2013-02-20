@@ -104,20 +104,26 @@ p {
   color: #4c4e50;
   font-size: 1em;
   margin: 0 0 0.625em; }
+  /* line 40, core/_base.sass */
+  p a {
+    text-decoration: underline; }
+    /* line 42, core/_base.sass */
+    p a:hover {
+      color: #933b1f; }
 
-/* line 45, core/_base.sass */
+/* line 49, core/_base.sass */
 a {
   color: #bd4c28;
   text-decoration: none; }
-  /* line 48, core/_base.sass */
+  /* line 52, core/_base.sass */
   a:hover, a:focus {
     text-decoration: underline; }
 
-/* line 54, core/_base.sass */
+/* line 58, core/_base.sass */
 em {
   font-style: italic; }
 
-/* line 56, core/_base.sass */
+/* line 60, core/_base.sass */
 strong {
   font-weight: bold; }
 
