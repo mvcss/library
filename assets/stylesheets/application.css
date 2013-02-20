@@ -176,25 +176,20 @@ strong {
   letter-spacing: 0.1em;
   text-transform: uppercase; }
 
-/* line 19, modules/_containers.sass */
-.row--a, .row--b, .row--c, .row {
+/* line 18, modules/_containers.sass */
+.row--a, .row--b, .row {
   margin: 0;
   padding: 1.25em 0 1.25em; }
 
-/* line 25, modules/_containers.sass */
+/* line 24, modules/_containers.sass */
 .row--a {
-  background-color: white;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+  background-color: #272829; }
 
-/* line 29, modules/_containers.sass */
+/* line 27, modules/_containers.sass */
 .row--b {
   background-color: #cdcecf; }
 
-/* line 32, modules/_containers.sass */
-.row--c {
-  background-color: #e7e7e8; }
-
-/* line 46, modules/_containers.sass */
+/* line 41, modules/_containers.sass */
 .cell {
   margin: 0 auto;
   max-width: 61.25em;
@@ -202,42 +197,42 @@ strong {
   padding-right: 5em;
   position: relative; }
 
-/* line 70, modules/_containers.sass */
+/* line 65, modules/_containers.sass */
 .card--a, .card--b, .card--c, .card {
   border-radius: 3px;
   margin: 1.25em 0 1.25em;
   padding: 0.9375em 0.9375em 0.9375em 0.9375em;
   position: relative; }
 
-/* line 78, modules/_containers.sass */
+/* line 73, modules/_containers.sass */
 .card--a {
   background: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 82, modules/_containers.sass */
+/* line 77, modules/_containers.sass */
 .card--b {
   background: #cdcecf; }
 
-/* line 85, modules/_containers.sass */
+/* line 80, modules/_containers.sass */
 .card--c {
   background: #e7e7e8; }
 
-/* line 97, modules/_containers.sass */
+/* line 92, modules/_containers.sass */
 .bucket--01, .bucket--02 {
   position: relative; }
 
-/* line 102, modules/_containers.sass */
+/* line 97, modules/_containers.sass */
 .bucket-media {
   left: 0;
   position: absolute;
   top: 0; }
 
-/* line 112, modules/_containers.sass */
+/* line 107, modules/_containers.sass */
 .bucket--01 .bucket-content {
   min-height: 75px;
   padding-left: 90px; }
 
-/* line 112, modules/_containers.sass */
+/* line 107, modules/_containers.sass */
 .bucket--02 .bucket-content {
   min-height: 50px;
   padding-left: 65px; }

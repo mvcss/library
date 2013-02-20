@@ -10,9 +10,8 @@ $row-margin: 0 !default
 $row-padding-bottom: 20px !default
 $row-padding-top: 20px !default
 
-$row--a-bg: #FFF !default
+$row--a-bg: $color-base !default
 $row--b-bg: lighten($color-base, 65%) !default
-$row--c-bg: lighten($color-base, 75%) !default
 
 // -- Base Row -- //
 
@@ -25,13 +24,9 @@ $row--c-bg: lighten($color-base, 75%) !default
 .row--a
   @extend %row
   background-color: $row--a-bg
-  box-shadow: $box-shadow
 .row--b
   @extend %row
   background-color: $row--b-bg
-.row--c
-  @extend %row
-  background-color: $row--c-bg
 
 // ----- Cells ----- //
 
