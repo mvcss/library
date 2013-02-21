@@ -49,15 +49,15 @@ table {
 
 @font-face {
   font-family: "OpenSansRegular";
-  src: url('/assets/fonts/OpenSans-Regular-webfont.eot');
-  src: url('/assets/fonts/OpenSans-Regular-webfont.eot?#iefix') format("embedded-opentype"), url('/assets/fonts/OpenSans-Regular-webfont.woff') format("woff"), url('/assets/fonts/OpenSans-Regular-webfont.ttf') format("truetype"), url('/assets/fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format("svg");
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "OpenSansRegular";
-  src: url('/assets/fonts/OpenSans-Bold-webfont.eot');
-  src: url('/assets/fonts/OpenSans-Bold-webfont.eot?#iefix') format("embedded-opentype"), url('/assets/fonts/OpenSans-Bold-webfont.woff') format("woff"), url('/assets/fonts/OpenSans-Bold-webfont.ttf') format("truetype"), url('/assets/fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format("svg");
+  src: url("../fonts/OpenSans-Bold-webfont.eot");
+  src: url("../fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
