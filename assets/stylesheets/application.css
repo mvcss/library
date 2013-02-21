@@ -61,14 +61,14 @@ table {
   font-weight: bold;
   font-style: normal; }
 
-/* line 86, core/_settings.sass */
+/* line 93, core/_settings.sass */
 .tabs {
   zoom: 1; }
-  /* line 88, core/_settings.sass */
+  /* line 95, core/_settings.sass */
   .tabs:before, .tabs:after {
     content: "";
     display: table; }
-  /* line 92, core/_settings.sass */
+  /* line 99, core/_settings.sass */
   .tabs:after {
     clear: both; }
 
@@ -139,6 +139,16 @@ em {
 /* line 59, core/_base.sass */
 strong {
   font-weight: bold; }
+
+/* line 64, core/_base.sass */
+::selection {
+  background: #bd4c28;
+  color: white; }
+
+/* line 67, core/_base.sass */
+::-moz-selection {
+  background: #bd4c28;
+  color: white; }
 
 /* line 19, modules/_buttons.sass */
 .btn--a, .btn--b, .btn {
@@ -302,7 +312,7 @@ input:-ms-input-placeholder {
   margin-bottom: 0.3125em; }
   /* line 51, modules/_forms.sass */
   .form-label em {
-    color: red; }
+    color: #d43322; }
 
 /* line 56, modules/_forms.sass */
 .form-label--radio,
