@@ -47,14 +47,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 69, core/_settings.sass */
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url('/assets/fonts/OpenSans-Regular-webfont.eot');
+  src: url('/assets/fonts/OpenSans-Regular-webfont.eot?#iefix') format("embedded-opentype"), url('/assets/fonts/OpenSans-Regular-webfont.woff') format("woff"), url('/assets/fonts/OpenSans-Regular-webfont.ttf') format("truetype"), url('/assets/fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url('/assets/fonts/OpenSans-Bold-webfont.eot');
+  src: url('/assets/fonts/OpenSans-Bold-webfont.eot?#iefix') format("embedded-opentype"), url('/assets/fonts/OpenSans-Bold-webfont.woff') format("woff"), url('/assets/fonts/OpenSans-Bold-webfont.ttf') format("truetype"), url('/assets/fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+/* line 86, core/_settings.sass */
 .tabs {
   zoom: 1; }
-  /* line 71, core/_settings.sass */
+  /* line 88, core/_settings.sass */
   .tabs:before, .tabs:after {
     content: "";
     display: table; }
-  /* line 75, core/_settings.sass */
+  /* line 92, core/_settings.sass */
   .tabs:after {
     clear: both; }
 
@@ -66,64 +80,63 @@ html {
 /* line 8, core/_base.sass */
 body {
   color: #272829;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5; }
 
 /* line 17, core/_base.sass */
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
-/* line 21, core/_base.sass */
+/* line 20, core/_base.sass */
 h1, .h1 {
   font-size: 2.5em; }
 
-/* line 23, core/_base.sass */
+/* line 22, core/_base.sass */
 h2, .h2 {
   font-size: 2.1875em; }
 
-/* line 25, core/_base.sass */
+/* line 24, core/_base.sass */
 h3, .h3 {
   font-size: 1.875em; }
 
-/* line 27, core/_base.sass */
+/* line 26, core/_base.sass */
 h4, .h4 {
   font-size: 1.5625em; }
 
-/* line 29, core/_base.sass */
+/* line 28, core/_base.sass */
 h5, .h5 {
   font-size: 1.25em; }
 
-/* line 31, core/_base.sass */
+/* line 30, core/_base.sass */
 h6, .h6 {
   font-size: 1em; }
 
-/* line 36, core/_base.sass */
+/* line 35, core/_base.sass */
 p {
   color: #4c4e50;
   font-size: 1em;
   margin: 0 0 0.625em; }
-  /* line 40, core/_base.sass */
+  /* line 39, core/_base.sass */
   p a {
     text-decoration: underline; }
-    /* line 42, core/_base.sass */
+    /* line 41, core/_base.sass */
     p a:hover {
       color: #933b1f; }
 
-/* line 49, core/_base.sass */
+/* line 48, core/_base.sass */
 a {
   color: #bd4c28;
   text-decoration: none; }
-  /* line 52, core/_base.sass */
+  /* line 51, core/_base.sass */
   a:hover, a:focus {
     text-decoration: underline; }
 
-/* line 58, core/_base.sass */
+/* line 57, core/_base.sass */
 em {
   font-style: italic; }
 
-/* line 60, core/_base.sass */
+/* line 59, core/_base.sass */
 strong {
   font-weight: bold; }
 
@@ -311,7 +324,7 @@ input:-ms-input-placeholder {
   background: white;
   border: 1px solid #a5a8aa;
   border-radius: 3px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.875em;
   padding: 0.71429em 0.57143em;
   width: 100%; }
