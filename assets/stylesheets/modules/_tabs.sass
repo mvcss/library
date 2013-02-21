@@ -2,7 +2,7 @@
 //  Tabs
 //-------------------------------------
 
-// Tabs Variables
+// ----- Tab Default Variables ----- //
 
 $tab-bg: lighten($color-border, 20%) !default
 $tab-bg-active: #FFF !default
@@ -26,6 +26,9 @@ $tab-font-size: $base-font-size !default
     display: block
     margin-right: em(10px, $tab-font-size)
     padding: em(8px, $tab-font-size) em(25px, $tab-font-size)
+
+    // Tab Active State
+
     &.is-active
       background: $tab-bg-active
 
@@ -35,5 +38,8 @@ $tab-font-size: $base-font-size !default
   border-radius: 0 0 em($border-radius) em($border-radius)
   display: none
   margin-top: 0
+
+  // Tabs Content Visible State
+
   &.is-visible
     display: block

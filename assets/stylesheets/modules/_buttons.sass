@@ -2,12 +2,14 @@
 //  Buttons
 //-------------------------------------
 
-// Button Variables
+// ----- Button Default Variables ----- //
 
 $btn-font-size: 14px !default
 $btn--large-font-size: 20px !default
 $btn--small-font-size: 12px !default
 $btn--mini-font-size: 10px !default
+
+// ----- Button Default Modifier Variables ----- //
 
 $btn--a-bg: $color-highlight !default
 $btn--a-text: #FFF !default
@@ -28,9 +30,7 @@ $btn--b-text: $color-base !default
   &:hover
     text-decoration: none
 
-// Modifiers //
-
-// Button A
+// ----- Button A ----- //
 
 .btn--a
   @extend %btn
@@ -40,7 +40,7 @@ $btn--b-text: $color-base !default
   &:hover
     background: darken($btn--a-bg, 5%)
 
-// Button B
+// ----- Button B ----- //
 
 .btn--b
   @extend %btn
@@ -50,28 +50,28 @@ $btn--b-text: $color-base !default
   &:hover
     background: darken($btn--b-bg, 5%)
 
-// Button Block
+// ----- Button Block ----- //
 
 .btn--block
   +box-sizing(border-box)
   display: block
   width: 100%
 
-// Button Large
+// ----- Button Large ----- //
 
 .btn--large
   font-size: em($btn--large-font-size)
   padding-left: em(100px, $btn--large-font-size)
   padding-right: em(100px, $btn--large-font-size)
 
-// Button Small
+// ----- Button Small ----- //
 
 .btn--small
   font-size: em($btn--small-font-size)
   letter-spacing: em(1px, $btn--small-font-size)
   text-transform: uppercase
 
-// Button Mini
+// ----- Button Mini ----- //
 
 .btn--mini
   font-size: em($btn--mini-font-size)
