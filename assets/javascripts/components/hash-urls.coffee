@@ -14,7 +14,7 @@ $.hashURLs = (options) ->
     hash = settings.list.first().attr('href')
 
   settings.content.not(hash).hide()
-  $("[data-hash=#{hash}]").addClass('active')
+  $("[data-hash=#{hash}]").addClass('is-active')
 
   settings.list.on 'click', (e) ->
     el = $(@)
@@ -22,8 +22,8 @@ $.hashURLs = (options) ->
     hash = el.attr('href')
     window.location.hash = hash
 
-    settings.list.removeClass('active')
+    settings.list.removeClass('is-active')
     settings.content.hide()
 
-    el.addClass('active')
+    el.addClass('is-active')
     $(hash).show()
