@@ -61,14 +61,14 @@ table {
   font-weight: bold;
   font-style: normal; }
 
-/* line 93, core/_settings.sass */
+/* line 95, core/_settings.sass */
 .tabs {
   zoom: 1; }
-  /* line 95, core/_settings.sass */
+  /* line 97, core/_settings.sass */
   .tabs:before, .tabs:after {
     content: "";
     display: table; }
-  /* line 99, core/_settings.sass */
+  /* line 101, core/_settings.sass */
   .tabs:after {
     clear: both; }
 
