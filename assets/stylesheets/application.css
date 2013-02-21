@@ -61,14 +61,14 @@ table {
   font-weight: bold;
   font-style: normal; }
 
-/* line 95, core/_settings.sass */
+/* line 110, core/_settings.sass */
 .tabs {
   zoom: 1; }
-  /* line 97, core/_settings.sass */
+  /* line 112, core/_settings.sass */
   .tabs:before, .tabs:after {
     content: "";
     display: table; }
-  /* line 101, core/_settings.sass */
+  /* line 116, core/_settings.sass */
   .tabs:after {
     clear: both; }
 
@@ -152,7 +152,7 @@ strong {
 
 /* line 19, modules/_buttons.sass */
 .btn--a, .btn--b, .btn {
-  border-radius: 3px;
+  border-radius: 0.1875em;
   border: 0;
   cursor: pointer;
   display: inline-block;
@@ -228,7 +228,7 @@ strong {
 
 /* line 64, modules/_containers.sass */
 .card--a, .card--b, .card {
-  border-radius: 3px;
+  border-radius: 0.1875em;
   margin: 1.25em 0 1.25em;
   padding: 0.9375em 0.9375em 0.9375em 0.9375em;
   position: relative; }
@@ -333,7 +333,7 @@ input:-ms-input-placeholder {
   box-sizing: border-box;
   background: white;
   border: 1px solid #a5a8aa;
-  border-radius: 3px;
+  border-radius: 0.1875em;
   font-family: "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.875em;
   padding: 0.71429em 0.57143em;
@@ -707,7 +707,7 @@ input:-ms-input-placeholder {
   font-size: 1em; }
   /* line 22, modules/_tabs.sass */
   .tab a {
-    border-radius: 3px 3px 0 0;
+    border-radius: 0.1875em 0.1875em 0 0;
     background: #dadbdb;
     color: #272829;
     display: block;
@@ -719,7 +719,7 @@ input:-ms-input-placeholder {
 
 /* line 34, modules/_tabs.sass */
 .tabs-content {
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 0.1875em 0.1875em;
   display: none;
   margin-top: 0; }
   /* line 38, modules/_tabs.sass */
