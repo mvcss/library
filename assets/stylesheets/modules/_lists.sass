@@ -8,6 +8,7 @@ $list-font-size: $base-font-size !default
 $list--bulleted-style-type: square !default
 $list--numbered-style-type: decimal !default
 $list-item-margin-bottom: 10px !default
+$list--nav-item-margin-right: 25px !default
 
 // ----- List ----- //
 
@@ -36,7 +37,7 @@ $list-item-margin-bottom: 10px !default
 .list--nav
   li
     display: inline
-    margin-right: em(25px)
+    margin-right: em($list--nav-item-margin-right)
     &:last-child
       margin-right: 0
 
