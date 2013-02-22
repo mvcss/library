@@ -141,11 +141,20 @@ strong {
   font-weight: bold; }
 
 /* line 64, core/_base.sass */
+code {
+  background: #dadbdb;
+  border-radius: 3px;
+  color: #272829;
+  font-family: Monaco, monospace;
+  font-size: 0.875em;
+  padding: 0.14286em 0.5em; }
+
+/* line 74, core/_base.sass */
 ::selection {
   background: #bd4c28;
   color: white; }
 
-/* line 67, core/_base.sass */
+/* line 77, core/_base.sass */
 ::-moz-selection {
   background: #bd4c28;
   color: white; }
