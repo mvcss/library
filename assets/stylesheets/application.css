@@ -340,7 +340,7 @@ input:-ms-input-placeholder {
   width: 100%; }
   /* line 78, modules/_forms.sass */
   .form-input:focus {
-    border: 1px solid #bd4c28;
+    border-color: #bd4c28;
     outline: none; }
 
 /* line 84, modules/_forms.sass */
