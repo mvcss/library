@@ -1,6 +1,4 @@
-MVCSS
-=============
+# [MVCSS Library v0.7.0](http://mvcss.github.com/library)
 
-More information coming soon. For the time being, visit [the GitHub page](http://mvcss.github.com/MVCSS) for the low down.
-
+## License
 MVCSS is licensed under the MIT License.
