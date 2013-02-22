@@ -272,61 +272,61 @@ strong {
   padding-bottom: 20px;
   padding-top: 20px; }
 
-/* line 15, modules/_forms.sass */
+/* line 14, modules/_forms.sass */
 .form {
   margin: 1.25em 0; }
 
-/* line 20, modules/_forms.sass */
+/* line 19, modules/_forms.sass */
 input::-webkit-input-placeholder {
   color: #8b8e91; }
 
-/* line 22, modules/_forms.sass */
+/* line 21, modules/_forms.sass */
 input:-moz-placeholder {
   color: #8b8e91; }
 
-/* line 24, modules/_forms.sass */
+/* line 23, modules/_forms.sass */
 input::-moz-placeholder {
   color: #8b8e91; }
 
-/* line 26, modules/_forms.sass */
+/* line 25, modules/_forms.sass */
 input:-ms-input-placeholder {
   color: #8b8e91; }
 
-/* line 31, modules/_forms.sass */
+/* line 30, modules/_forms.sass */
 .form-header {
   margin-bottom: 0.625em; }
 
-/* line 36, modules/_forms.sass */
+/* line 35, modules/_forms.sass */
 .form-field {
   margin-bottom: 1.25em; }
 
-/* line 41, modules/_forms.sass */
+/* line 40, modules/_forms.sass */
 .form-field--submit {
   margin-top: 1.25em; }
 
-/* line 46, modules/_forms.sass */
+/* line 45, modules/_forms.sass */
 .form-label {
   display: block;
   font-size: 0.875em;
   font-weight: bold;
   margin-bottom: 0.3125em; }
-  /* line 51, modules/_forms.sass */
+  /* line 50, modules/_forms.sass */
   .form-label em {
     color: #d43322; }
 
-/* line 56, modules/_forms.sass */
+/* line 55, modules/_forms.sass */
 .form-label--radio,
 .form-label--check {
   font-size: 0.875em;
   font-weight: normal; }
 
-/* line 63, modules/_forms.sass */
+/* line 62, modules/_forms.sass */
 .form-note {
   color: #8b8e91;
   font-size: 0.875em;
   margin-top: 0.35714em; }
 
-/* line 70, modules/_forms.sass */
+/* line 69, modules/_forms.sass */
 .form-input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -338,12 +338,12 @@ input:-ms-input-placeholder {
   font-size: 0.875em;
   padding: 0.71429em 0.57143em;
   width: 100%; }
-  /* line 79, modules/_forms.sass */
+  /* line 78, modules/_forms.sass */
   .form-input:focus {
-    box-shadow: 0 0 3px rbga(#bd4c28, 0.8);
+    border: 1px solid #bd4c28;
     outline: none; }
 
-/* line 85, modules/_forms.sass */
+/* line 84, modules/_forms.sass */
 .form-select {
   width: 30%; }
 
