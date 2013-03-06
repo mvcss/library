@@ -1,4 +1,4 @@
-## 0.8.0 (March 1, 2013)
+## 0.8.0 (March 6, 2013)
 
 - Add a **Block List** to the **Lists** module
 - Add a **Typography** module
