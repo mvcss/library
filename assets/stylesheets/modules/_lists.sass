@@ -9,6 +9,8 @@ $list--bulleted-style-type: square !default
 $list--numbered-style-type: decimal !default
 $list-item-margin-bottom: 10px !default
 $list--nav-item-margin-right: 25px !default
+$list--block-bg: $color-highlight !default
+$list--block-color: #FFF !default
 
 // ----- List ----- //
 
@@ -32,7 +34,7 @@ $list--nav-item-margin-right: 25px !default
   li
     list-style-type: $list--numbered-style-type
 
-// ----- Numbered List ----- //
+// ----- Nav List ----- //
 
 .list--nav
   li
@@ -48,3 +50,16 @@ $list--nav-item-margin-right: 25px !default
       color: $color-base
       font-weight: bold
       text-decoration: none
+
+// ----- Block List ----- //
+
+.list--block
+  li
+    margin-bottom: em($list-item-margin-bottom / 2)
+  a
+    background: $list--block-bg
+    border-radius: $border-radius
+    color: $list--block-color
+    display: block
+    padding: em(8px) em(20px)
+
