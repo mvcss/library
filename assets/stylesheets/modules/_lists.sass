@@ -4,13 +4,26 @@
 
 // ----- List Default Variables ----- //
 
-$list-font-size: $base-font-size !default
-$list--bulleted-style-type: square !default
-$list--numbered-style-type: decimal !default
-$list-item-margin-bottom: 10px !default
-$list--nav-item-margin-right: 25px !default
-$list--block-bg: $color-highlight !default
-$list--block-color: #FFF !default
+$list-font-size: $base-font-size
+$list-item-margin-bottom: 10px
+
+// Bulleted List
+
+$list--bulleted-style-type: square
+
+// Numbered List
+
+$list--numbered-style-type: decimal
+
+// Nav List
+
+$list--nav-item-margin-right: 25px
+
+// Block List
+
+$list--block-bg: lighten($color-base, 40%)
+$list--block-bg-active: $color-base !default
+$list--block-color: #FFF
 
 // ----- List ----- //
 
@@ -63,3 +76,7 @@ $list--block-color: #FFF !default
     display: block
     padding: em(8px) em(20px)
 
+  // Active State
+
+  .is-active a
+    background: $list--block-bg-active
