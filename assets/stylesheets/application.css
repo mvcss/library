@@ -47,21 +47,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@font-face {
-  font-family: "OpenSansRegular";
-  src: url("../fonts/OpenSans-Regular-webfont.eot");
-  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "OpenSansRegular";
-  src: url("../fonts/OpenSans-Bold-webfont.eot");
-  src: url("../fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-
-/* line 105, core/_settings.sass */
+/* line 37, core/_settings.sass */
 .grid:after, .tabs:after {
   clear: both;
   content: "";
@@ -69,99 +55,71 @@ table {
 
 /* line 5, core/_base.sass */
 html {
-  background: #eeeeee;
+  background: white;
   font-size: 16px; }
 
 /* line 8, core/_base.sass */
 body {
-  color: #272829;
-  font-family: "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5; }
+  color: #222222;
+  font: 62.5%/1.5 sans-serif; }
 
-/* line 17, core/_base.sass */
+/* line 16, core/_base.sass */
 h1, h2, h3,
 h4, h5, h6 {
   font-weight: bold; }
 
-/* line 20, core/_base.sass */
-h1, .h1 {
+/* line 19, core/_base.sass */
+h1 {
+  font-size: 4em; }
+
+/* line 21, core/_base.sass */
+h2 {
+  font-size: 3.5em; }
+
+/* line 23, core/_base.sass */
+h3 {
+  font-size: 3em; }
+
+/* line 25, core/_base.sass */
+h4 {
   font-size: 2.5em; }
 
-/* line 22, core/_base.sass */
-h2, .h2 {
-  font-size: 2.1875em; }
+/* line 27, core/_base.sass */
+h5 {
+  font-size: 2em; }
 
-/* line 24, core/_base.sass */
-h3, .h3 {
-  font-size: 1.875em; }
+/* line 29, core/_base.sass */
+h6 {
+  font-size: 1.6em; }
 
-/* line 26, core/_base.sass */
-h4, .h4 {
-  font-size: 1.5625em; }
-
-/* line 28, core/_base.sass */
-h5, .h5 {
-  font-size: 1.25em; }
-
-/* line 30, core/_base.sass */
-h6, .h6 {
-  font-size: 1em; }
-
-/* line 35, core/_base.sass */
+/* line 34, core/_base.sass */
 p {
-  color: #4c4e50;
-  font-size: 1em;
-  margin: 0 0 0.625em; }
-  /* line 39, core/_base.sass */
-  p a {
-    text-decoration: underline; }
-    /* line 41, core/_base.sass */
-    p a:hover {
-      color: #933b1f; }
+  font-size: 1.6em; }
 
-/* line 48, core/_base.sass */
+/* line 41, core/_base.sass */
 a {
-  color: #bd4c28;
+  color: #0053c9;
   text-decoration: none; }
-  /* line 51, core/_base.sass */
+  /* line 44, core/_base.sass */
   a:hover, a:focus {
     text-decoration: underline; }
 
-/* line 57, core/_base.sass */
+/* line 50, core/_base.sass */
 em {
   font-style: italic; }
 
-/* line 59, core/_base.sass */
+/* line 52, core/_base.sass */
 strong {
   font-weight: bold; }
 
-/* line 64, core/_base.sass */
-code {
-  background: #dadbdb;
-  border-radius: 3px;
-  color: #272829;
-  font-family: Monaco, monospace;
-  font-size: 0.875em;
-  padding: 0.14286em 0.5em; }
-
-/* line 74, core/_base.sass */
-::selection {
-  background: #bd4c28;
-  color: white; }
-
-/* line 77, core/_base.sass */
-::-moz-selection {
-  background: #bd4c28;
-  color: white; }
-
 /* line 21, modules/_buttons.sass */
 .btn--a, .btn--b, .btn {
-  border-radius: 0.1875em;
+  border-radius: em(3px);
   border: 0;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.875em;
-  padding: 0.71429em 2.14286em;
+  font-size: em(14px);
+  padding: em(10px, 14px) em(30px, 14px);
   text-align: center; }
   /* line 29, modules/_buttons.sass */
   .btn--a:focus, .btn--b:focus, .btn--a:hover, .btn--b:hover, .btn:focus, .btn:hover {
@@ -193,26 +151,26 @@ code {
 
 /* line 62, modules/_buttons.sass */
 .btn--large {
-  font-size: 1.25em;
-  padding-left: 5em;
-  padding-right: 5em; }
+  font-size: em(20px);
+  padding-left: em(100px, 20px);
+  padding-right: em(100px, 20px); }
 
 /* line 69, modules/_buttons.sass */
 .btn--small {
-  font-size: 0.75em;
-  letter-spacing: 0.08333em;
+  font-size: em(12px);
+  letter-spacing: em(1px, 12px);
   text-transform: uppercase; }
 
 /* line 76, modules/_buttons.sass */
 .btn--mini {
-  font-size: 0.625em;
-  letter-spacing: 0.1em;
+  font-size: em(10px);
+  letter-spacing: em(1px, 10px);
   text-transform: uppercase; }
 
 /* line 20, modules/_containers.sass */
 .row--a, .row--b, .row {
   margin: 0;
-  padding: 1.25em 0 1.25em; }
+  padding: em(20px) 0 em(20px); }
 
 /* line 26, modules/_containers.sass */
 .row--a {
@@ -225,16 +183,16 @@ code {
 /* line 43, modules/_containers.sass */
 .cell {
   margin: 0 auto;
-  max-width: 61.25em;
-  padding-left: 5em;
-  padding-right: 5em;
+  max-width: em(980px);
+  padding-left: em(80px);
+  padding-right: em(80px);
   position: relative; }
 
 /* line 68, modules/_containers.sass */
 .card--a, .card--b, .card {
-  border-radius: 0.1875em;
-  margin: 1.25em 0 1.25em;
-  padding: 0.9375em 0.9375em 0.9375em 0.9375em;
+  border-radius: em(3px);
+  margin: em(20px) 0 em(20px);
+  padding: em(15px) em(15px) em(15px) em(15px);
   position: relative; }
 
 /* line 76, modules/_containers.sass */
@@ -248,42 +206,42 @@ code {
 
 /* line 14, modules/_forms.sass */
 .form {
-  margin: 1.25em 0; }
+  margin: em(20px) 0; }
 
 /* line 19, modules/_forms.sass */
 input::-webkit-input-placeholder {
-  color: #8b8e91; }
+  color: #888888; }
 
 /* line 21, modules/_forms.sass */
 input:-moz-placeholder {
-  color: #8b8e91; }
+  color: #888888; }
 
 /* line 23, modules/_forms.sass */
 input::-moz-placeholder {
-  color: #8b8e91; }
+  color: #888888; }
 
 /* line 25, modules/_forms.sass */
 input:-ms-input-placeholder {
-  color: #8b8e91; }
+  color: #888888; }
 
 /* line 30, modules/_forms.sass */
 .form-header {
-  margin-bottom: 0.625em; }
+  margin-bottom: em(10px); }
 
 /* line 35, modules/_forms.sass */
 .form-field {
-  margin-bottom: 1.25em; }
+  margin-bottom: em(20px); }
 
 /* line 40, modules/_forms.sass */
 .form-field--submit {
-  margin-top: 1.25em; }
+  margin-top: em(20px); }
 
 /* line 45, modules/_forms.sass */
 .form-label {
   display: block;
-  font-size: 0.875em;
+  font-size: em(14px);
   font-weight: bold;
-  margin-bottom: 0.3125em; }
+  margin-bottom: em(5px); }
   /* line 50, modules/_forms.sass */
   .form-label em {
     color: #d43322; }
@@ -291,14 +249,14 @@ input:-ms-input-placeholder {
 /* line 55, modules/_forms.sass */
 .form-label--radio,
 .form-label--check {
-  font-size: 0.875em;
+  font-size: em(14px);
   font-weight: normal; }
 
 /* line 62, modules/_forms.sass */
 .form-note {
-  color: #8b8e91;
-  font-size: 0.875em;
-  margin-top: 0.35714em; }
+  color: #888888;
+  font-size: em(14px);
+  margin-top: em(5px, 14px); }
 
 /* line 69, modules/_forms.sass */
 .form-input {
@@ -307,14 +265,14 @@ input:-ms-input-placeholder {
   box-sizing: border-box;
   background: white;
   border: 1px solid #a5a8aa;
-  border-radius: 0.1875em;
-  font-family: "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.875em;
-  padding: 0.71429em 0.57143em;
+  border-radius: em(3px);
+  font-family: sans-serif;
+  font-size: em(14px);
+  padding: em(10px, 14px) em(8px, 14px);
   width: 100%; }
   /* line 78, modules/_forms.sass */
   .form-input:focus {
-    border-color: #bd4c28;
+    border-color: #0053c9;
     outline: none; }
 
 /* line 84, modules/_forms.sass */
@@ -633,22 +591,22 @@ input:-ms-input-placeholder {
     width: 91.666%; } }
 /* line 17, modules/_lists.sass */
 .list {
-  margin: 0.9375em 0 1.25em; }
+  margin: em(15px) 0 em(20px); }
   /* line 19, modules/_lists.sass */
   .list li {
     font-size: 16px;
-    margin-bottom: 0.625em; }
+    margin-bottom: em(10px); }
 
 /* line 25, modules/_lists.sass */
 .list--bulleted {
-  padding-left: 1.25em; }
+  padding-left: em(20px); }
   /* line 27, modules/_lists.sass */
   .list--bulleted li {
     list-style-type: square; }
 
 /* line 32, modules/_lists.sass */
 .list--numbered {
-  padding-left: 1.25em; }
+  padding-left: em(20px); }
   /* line 34, modules/_lists.sass */
   .list--numbered li {
     list-style-type: decimal; }
@@ -656,27 +614,27 @@ input:-ms-input-placeholder {
 /* line 40, modules/_lists.sass */
 .list--nav li {
   display: inline;
-  margin-right: 1.5625em; }
+  margin-right: em(25px); }
   /* line 43, modules/_lists.sass */
   .list--nav li:last-child {
     margin-right: 0; }
   /* line 48, modules/_lists.sass */
   .list--nav li.is-active a {
     border-bottom: 2px solid #a5a8aa;
-    color: #272829;
+    color: #222222;
     font-weight: bold;
     text-decoration: none; }
 
 /* line 57, modules/_lists.sass */
 .list--block li {
-  margin-bottom: 0.3125em; }
+  margin-bottom: em(5px); }
 /* line 59, modules/_lists.sass */
 .list--block a {
-  background: #bd4c28;
+  background: #0053c9;
   border-radius: 3px;
   color: white;
   display: block;
-  padding: 0.5em 1.25em; }
+  padding: em(8px) em(20px); }
 
 /* line 13, modules/_tables.sass */
 .table {
@@ -685,8 +643,8 @@ input:-ms-input-placeholder {
   box-sizing: border-box;
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 0.875em;
-  margin: 1.42857em 0;
+  font-size: em(14px);
+  margin: em(20px, 14px) 0;
   width: 100%; }
 
 /* line 24, modules/_tables.sass */
@@ -698,40 +656,40 @@ input:-ms-input-placeholder {
   border-bottom: 1px solid #a5a8aa; }
   /* line 34, modules/_tables.sass */
   .table-row th, .table-row td {
-    padding: 0.57143em; }
+    padding: em(8px, 14px); }
   /* line 37, modules/_tables.sass */
   .table-row th {
     font-weight: bold;
     text-align: left; }
   /* line 43, modules/_tables.sass */
   .table-row td .btn {
-    font-size: 0.875em;
-    padding-bottom: 0.35714em;
-    padding-top: 0.35714em; }
+    font-size: em(14px);
+    padding-bottom: em(5px, 14px);
+    padding-top: em(5px, 14px); }
 
 /* line 13, modules/_tabs.sass */
 .tabs {
-  margin: 1.25em 0 0; }
+  margin: em(20px) 0 0; }
 
 /* line 19, modules/_tabs.sass */
 .tab {
   float: left;
-  font-size: 1em; }
+  font-size: em(16px); }
   /* line 22, modules/_tabs.sass */
   .tab a {
-    border-radius: 0.1875em 0.1875em 0 0;
+    border-radius: em(3px) em(3px) 0 0;
     background: #dadbdb;
-    color: #272829;
+    color: #222222;
     display: block;
-    margin-right: 0.625em;
-    padding: 0.5em 1.5625em; }
+    margin-right: em(10px, 16px);
+    padding: em(8px, 16px) em(25px, 16px); }
     /* line 32, modules/_tabs.sass */
     .tab a.is-active {
       background: white; }
 
 /* line 37, modules/_tabs.sass */
 .tabs-content {
-  border-radius: 0 0 0.1875em 0.1875em;
+  border-radius: 0 0 em(3px) em(3px);
   display: none;
   margin-top: 0; }
   /* line 44, modules/_tabs.sass */
