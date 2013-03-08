@@ -1,3 +1,9 @@
+## 0.8.2 (March 8, 2013)
+
+- Add `retina-image` mixin
+- Comment headings for the mixins
+- Remove unnecessary context font size on the base paragraphs
+
 ## 0.8.1 (March 6, 2013)
 
 - Add `.is-active` state to `.list--block` modifier
