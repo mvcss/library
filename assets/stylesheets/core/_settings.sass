@@ -63,6 +63,7 @@ $base-line-height: 1.5 !default
 
 // ----- Mixins ----- //
 
+// +caret
 // Sample usage: +caret(bottom, 8px, #000); //
 
 =caret($side, $size, $color)
@@ -80,9 +81,18 @@ $base-line-height: 1.5 !default
   #{$side}: -$size
   #{$opposite}: auto
 
+// +respond-to
+
 =respond-to($val, $query: min-width, $media: screen)
   @media #{$media} and ($query: $val)
     @content
+
+// +retina-image
+
+=retina-image($img)
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)
+    background-image: image-url($img)
+    background-size: image-width($img) / 2 image-height($img) / 2
 
 // ----- Functions ----- //
 
