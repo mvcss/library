@@ -1,3 +1,7 @@
+## 0.9.0 (March 8, 2013)
+
+- Fix incorrect version
+
 ## 0.8.2 (March 8, 2013)
 
 - Add `retina-image` mixin
