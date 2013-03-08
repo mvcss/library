@@ -8,11 +8,11 @@ App.setup = ->
   # ...
 
 #-------------------------------------
-# Tabs
+#  Tabs
 #-------------------------------------
 #
-# @tab - The tab
-# @content - The tab content
+#   @tab - The tab
+#   @content - The tab content
 #
 #-------------------------------------
 
