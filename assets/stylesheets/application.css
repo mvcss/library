@@ -61,7 +61,7 @@ table {
   font-weight: bold;
   font-style: normal; }
 
-/* line 105, core/_settings.sass */
+/* line 115, core/_settings.sass */
 .grid:after, .tabs:after {
   clear: both;
   content: "";
