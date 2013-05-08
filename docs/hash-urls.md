@@ -2,7 +2,6 @@
 
 ## Markup
 
-`index.haml`
 ```haml
 %ul.sectionList
   %li
@@ -16,7 +15,8 @@
   %h2 Example 02
 ```
 
-`domready.js`
+## How to call
+
 ```javascript
 $.hashURLs({
   list: $('.sectionList a'),
