@@ -1,0 +1,70 @@
+//-------------------------------------
+//  Lists
+//-------------------------------------
+
+// ----- List Variables ----- //
+
+$list-border: 1px solid #999
+$list-borderRadius: 2px
+$list-color: #444
+$list-error-color: red
+$list-fontFamily: sans-serif
+$list-fontSize: 16px
+$list-link-color: blue
+$list-whitespace: 20px
+
+// ----- List ----- //
+
+.list
+  margin: 0 0 rem($list-whitespace)
+  li
+    font-size: $list-fontSize
+    margin-bottom: rem($list-whitespace / 2)
+
+// ----- Standard List ----- //
+
+.list--bulleted
+  padding-left: rem($list-whitespace)
+  li
+    list-style-type: square
+
+// ----- Numbered List ----- //
+
+.list--numbered
+  padding-left: rem($list-whitespace)
+  li
+    list-style-type: decimal
+
+// ----- Nav List ----- //
+
+.list--nav
+  li
+    display: inline
+    margin-right: rem($list-whitespace)
+    &:last-child
+      margin-right: 0
+
+    // Active State
+
+    &.is-active a
+      border-bottom: $list-border
+      color: $list-color
+      font-weight: bold
+      text-decoration: none
+
+// ----- Block List ----- //
+
+.list--block
+  li
+    margin-bottom: rem($list-whitespace / 2)
+  a
+    background: lighten($list-color, 40%)
+    border-radius: $list-borderRadius
+    color: #fff
+    display: block
+    padding: rem(8px) rem($list-whitespace)
+
+  // Active State
+
+  .is-active a
+    background: $list-color

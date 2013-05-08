@@ -1,0 +1,73 @@
+//-------------------------------------
+//  Forms
+//-------------------------------------
+
+// ----- Form Variables ----- //
+
+$form-border: 1px solid #999
+$form-borderRadius: 2px
+$form-color: #444
+$form-error-color: red
+$form-fontFamily: sans-serif
+$form-fontSize: 16px
+$form-link-color: blue
+$form-whitespace: 20px
+
+// ----- Form ----- //
+
+.form
+  margin: 0 0 rem($form-whitespace)
+
+// ----- Form Header ----- //
+
+.form-header
+  margin-bottom: rem($form-whitespace / 2)
+
+// ----- Form Field ----- //
+
+.form-field
+  margin-bottom: rem($form-whitespace)
+
+// ----- Form Label ----- //
+
+.form-label
+  display: block
+  font-size: rem($form-fontSize)
+  font-weight: bold
+  margin-bottom: rem(5px)
+  em
+    color: $form-error-color
+
+// Form Label Modifiers
+
+.form-label--radio,
+.form-label--check
+  font-size: 90%
+  font-weight: normal
+
+// ----- Form Note ----- //
+
+.form-note
+  color: lighten($form-color, 40%)
+  font-size: 90%
+  margin-top: rem(5px)
+
+// ----- Form Input ----- //
+
+.form-input
+  +box-sizing(border-box)
+  background: #fff
+  border: $form-border
+  border-radius: rem($form-borderRadius)
+  font-family: $form-fontFamily
+  font-size: rem($form-fontSize)
+  padding: rem($form-whitespace / 2) rem(5px)
+  width: 100%
+  &:focus
+    border-color: $form-link-color
+    outline: none
+
+// ----- Form Select ----- //
+
+.form-select
+  width: 30%

@@ -1,0 +1,76 @@
+//-------------------------------------
+//  Buttons
+//-------------------------------------
+
+// ----- Button Variables ----- //
+
+$btn-border: 1px solid #999
+$btn-borderRadius: 2px
+$btn-color: #444
+$btn-error-color: red
+$btn-fontFamily: sans-serif
+$btn-fontSize: 16px
+$btn-link-color: blue
+$btn-whitespace: 20px
+
+// ----- Base Button ----- //
+
+%btn, .btn
+  border-radius: rem($btn-borderRadius)
+  border: 0
+  cursor: pointer
+  display: inline-block
+  font-size: rem($btn-fontSize)
+  padding: rem($btn-whitespace / 2) rem($btn-whitespace + 10)
+  text-align: center
+  &:focus,
+  &:hover
+    text-decoration: none
+
+// ----- Button A ----- //
+
+.btn--a
+  @extend %btn
+  background: $btn-color
+  color: #fff
+  &:focus,
+  &:hover
+    background: lighten($btn-color, 10%)
+
+// ----- Button B ----- //
+
+.btn--b
+  @extend %btn
+  background: #fff
+  color: $btn-color
+  &:focus,
+  &:hover
+    background: darken(#fff, 10%)
+
+// ----- Button Block ----- //
+
+.btn--block
+  +box-sizing(border-box)
+  display: block
+  width: 100%
+
+// ----- Button Large ----- //
+
+.btn--large
+  font-size: 150%
+  padding-left: rem(100px)
+  padding-right: rem(100px)
+
+// ----- Button Small ----- //
+
+.btn--small
+  font-size: 90%
+  letter-spacing: rem(1px)
+  text-transform: uppercase
+
+// ----- Button Mini ----- //
+
+.btn--mini
+  font-size: 80%
+  letter-spacing: rem(1px)
+  text-transform: uppercase

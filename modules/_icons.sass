@@ -2,12 +2,18 @@
 //  Icons
 //-------------------------------------
 
-// ----- Icon Default Variables ----- //
+// ----- Icon Variables ----- //
+
+// Image Icons
 
 // $icons: sprite-map("icons/*.png")
 // $icons-hd: sprite-map("icons-hd/*.png")
 
-// ----- Base Icon ----- //
+// Font Icons
+
+// $icon-fontFamily: "Icon"
+
+// ----- Image Icons ----- //
 
 // i
 //   background: $icons
@@ -16,8 +22,6 @@
 //     +background-size(image-width(sprite-path($icons)) auto)
 //     background: $icons-hd
 
-// -- Icon Generation -- //
-
 // @each $icon in sprite_names($icons)
 //   .icn-#{$icon}
 //     +sprite-dimensions($icons, $icon)
@@ -25,3 +29,21 @@
 //     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)
 //       $offset: nth(sprite-position($icons-hd, $icon), 2) / 2
 //       background-position: 0 $offset
+
+// ----- Font Icons ----- //
+
+// .srt
+//   left: -9999px
+//   position: absolute
+//   top: -9999px
+
+// %icon
+//   display: inline-block
+//   font-family: $icon-fontFamily
+//   speak: none
+//   vertical-align: baseline
+
+// %icon--arrow,
+// .icon--arrow
+//   @extend %icon
+//   content: ""

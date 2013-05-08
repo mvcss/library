@@ -1,0 +1,51 @@
+//-------------------------------------
+//  Tables
+//-------------------------------------
+
+// ----- Table Variables ----- //
+
+$table-border: 1px solid #999
+$table-borderRadius: 2px
+$table-color: #444
+$table-error-color: red
+$table-fontFamily: sans-serif
+$table-fontSize: 14px
+$table-link-color: blue
+$table-whitespace: 20px
+
+// ----- Table ----- //
+
+.table
+  +box-sizing(border-box)
+  border-collapse: collapse
+  border-spacing: 0
+  font-size: rem($table-fontSize)
+  margin: 0 0 rem($table-whitespace)
+  width: 100%
+
+// Table Modifiers
+
+.table--striped
+  .table-body tr:nth-child(odd)
+    background: lighten($table-color, 30%)
+
+// ----- Table Row ----- //
+
+.table-row
+  border-bottom: $table-border
+
+  // Table Header
+
+  th, td
+    padding: rem($table-whitespace / 2)
+
+  th
+    font-weight: bold
+    text-align: left
+
+  // Table Data
+
+  td .btn
+    font-size: rem($table-fontSize)
+    padding-bottom: rem(5px)
+    padding-top: rem(5px)

@@ -1,0 +1,50 @@
+//-------------------------------------
+//  Tabs
+//-------------------------------------
+
+// ----- Tab Variables ----- //
+
+$tab-border: 1px solid #999
+$tab-borderRadius: 2px
+$tab-color: #444
+$tab-error-color: red
+$tab-fontFamily: sans-serif
+$tab-fontSize: 16px
+$tab-link-color: blue
+$tab-whitespace: 20px
+
+// ----- Tabs ----- //
+
+.tabs
+  @extend %group
+  margin: 0 0 rem($tab-whitespace)
+
+// ----- Tab ----- //
+
+.tab
+  float: left
+  font-size: rem($tab-fontSize)
+  a
+    border-radius: rem($tab-borderRadius) rem($tab-borderRadius) 0 0
+    background: lighten($tab-color, 20%)
+    color: $tab-color
+    display: block
+    margin-right: rem($tab-whitespace / 2)
+    padding: rem(8px) rem($tab-whitespace)
+
+    // Tab Active State
+
+    &.is-active
+      background: #fff
+
+// ----- Tabs Content ----- //
+
+.tabs-content
+  border-radius: 0 0 rem($tab-borderRadius) rem($tab-borderRadius)
+  display: none
+  margin-top: 0
+
+  // Tabs Content Visible State
+
+  &.is-visible
+    display: block
