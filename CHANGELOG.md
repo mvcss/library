@@ -1,6 +1,9 @@
 ## 1.0.0
 
 - Strip full application down to `modules` and `components`
+- Remove placeholder modules
+- Add default variables to all modules
+- Add new flag module
 
 ## 0.9.0
 
