@@ -5,6 +5,12 @@
 //  * http://csswizardry.com/2013/05/the-flag-object/
 //-------------------------------------
 
+// ----- Flag Variables ----- //
+
+$flag-img-padding: 10px
+
+// ----- Base Flag ----- //
+
 .flag
   display: table
   width: 100%
@@ -27,7 +33,7 @@
 // Flag Image
 
 .flag-img
-  padding-right: rem(10px)
+  padding-right: rem($flag-img-padding)
   > img
     display: block
 
@@ -35,7 +41,7 @@
 
   .flag--rev &
     padding-right: 0
-    padding-left: rem(10px)
+    padding-left: rem($flag-img-padding)
 
 // Flag Body
 
