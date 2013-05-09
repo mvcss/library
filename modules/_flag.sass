@@ -1,0 +1,38 @@
+//-------------------------------------
+//  Flag
+//  Based on the following:
+//  * http://csswizardry.com/2013/05/the-flag-object/
+//-------------------------------------
+
+.flag
+  display: table
+  width: 100%
+
+// ----- Submodules ----- //
+
+.flag-img,
+.flag-body
+  display: table-cell
+  vertical-align: middle
+
+  // Modifiers
+
+  .flag--top &
+    vertical-align: top
+
+  .flag--bottom &
+    vertical-align: bottom
+
+.flag-img
+  padding-right: rem(10px)
+  > img
+    display: block
+
+  // Modifiers
+
+  .flag--rev &
+    padding-right: 0
+    padding-left: rem(10px)
+
+.flag-body
+  width: 100%
