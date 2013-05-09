@@ -1,4 +1,4 @@
-# Hash URLs
+# Component - Hash URLs
 
 ## Markup
 
