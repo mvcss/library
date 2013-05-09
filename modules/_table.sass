@@ -2,28 +2,25 @@
 //  Table
 //-------------------------------------
 
-// ----- Table Variables ----- //
+// ----- Table Default Variables ----- //
 
 $table-border: 1px solid #999 !default
-$table-borderRadius: 2px !default
 $table-color: #444 !default
-$table-error-color: red !default
-$table-fontFamily: sans-serif !default
 $table-fontSize: 14px !default
-$table-link-color: blue !default
 $table-whitespace: 20px !default
 
-// ----- Table ----- //
+// ----- Base Table ----- //
 
 .table
-  +box-sizing(border-box)
   border-collapse: collapse
   border-spacing: 0
-  font-size: rem($table-fontSize)
-  margin: 0 0 rem($table-whitespace)
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  font-size: $table-fontSize
+  margin: 0 0 $table-whitespace
   width: 100%
 
-// Table Modifiers
+// ----- Striped Table ----- //
 
 .table--striped
   .table-body tr:nth-child(odd)
@@ -37,7 +34,7 @@ $table-whitespace: 20px !default
   // Table Header
 
   th, td
-    padding: rem($table-whitespace / 2)
+    padding: ($table-whitespace / 2)
 
   th
     font-weight: bold
@@ -46,6 +43,6 @@ $table-whitespace: 20px !default
   // Table Data
 
   td .btn
-    font-size: rem($table-fontSize)
-    padding-bottom: rem(5px)
-    padding-top: rem(5px)
+    font-size: $table-fontSize
+    padding-bottom: 5px
+    padding-top: 5px

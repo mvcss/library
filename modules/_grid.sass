@@ -13,11 +13,11 @@ $grid-defaults: "lap" 480px, "desk" 800px !default
 $grid-gutter: 20px !default
 $grid-silent: false !default
 
-// ----- Selector Type ----- //
+// ----- Grid Selector Type ----- //
 
 $grid-selector: if($grid-silent, unquote("%"), unquote("."))
 
-// ----- Base ----- //
+// ----- Grid Base ----- //
 
 #{$grid-selector}grid
   @extend %group
@@ -34,14 +34,14 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
   padding-right: $grid-gutter / 2
   width: 100%
 
-// ----- Modifiers ----- //
+// ----- Grid Modifiers ----- //
 
 #{$grid-selector}grid-box--center
   display: block
   float: none
   margin: 0 auto
 
-// ----- Grid ----- //
+// ----- Grid Setup ----- //
 
 =device-type($namespace: '')
 
@@ -165,7 +165,7 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
     #{$grid-selector}grid-box--#{$namespace}11of12
       width: 91.666%
 
-// ----- Create ----- //
+// ----- Grid Creation ----- //
 
 +device-type()
 

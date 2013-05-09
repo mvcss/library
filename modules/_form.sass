@@ -1,8 +1,12 @@
 //-------------------------------------
 //  Form
+//
+//  Requirements:
+//  * Compass
+//  * rem() function
 //-------------------------------------
 
-// ----- Form Variables ----- //
+// ----- Form Default Variables ----- //
 
 $form-border: 1px solid #999 !default
 $form-borderRadius: 2px !default
@@ -10,35 +14,35 @@ $form-color: #444 !default
 $form-error-color: red !default
 $form-fontFamily: sans-serif !default
 $form-fontSize: 16px !default
-$form-link-color: blue !default
+$form-highlight-color: blue !default
 $form-whitespace: 20px !default
 
-// ----- Form ----- //
+// ----- Base Form ----- //
 
 .form
-  margin: 0 0 rem($form-whitespace)
+  margin: 0 0 $form-whitespace
 
 // ----- Form Header ----- //
 
 .form-header
-  margin-bottom: rem($form-whitespace / 2)
+  margin-bottom: ($form-whitespace / 2)
 
 // ----- Form Field ----- //
 
 .form-field
-  margin-bottom: rem($form-whitespace)
+  margin-bottom: $form-whitespace
 
 // ----- Form Label ----- //
 
 .form-label
   display: block
-  font-size: rem($form-fontSize)
+  font-size: $form-fontSize
   font-weight: bold
-  margin-bottom: rem(5px)
+  margin-bottom: 5px
   em
     color: $form-error-color
 
-// Form Label Modifiers
+// Modifiers
 
 .form-label--radio,
 .form-label--check
@@ -50,21 +54,22 @@ $form-whitespace: 20px !default
 .form-note
   color: lighten($form-color, 40%)
   font-size: 90%
-  margin-top: rem(5px)
+  margin-top: 5px
 
 // ----- Form Input ----- //
 
 .form-input
-  +box-sizing(border-box)
   background: #fff
   border: $form-border
-  border-radius: rem($form-borderRadius)
+  border-radius: $form-borderRadius
+  -moz-box-sizing: border-box
+  box-sizing: border-box
   font-family: $form-fontFamily
-  font-size: rem($form-fontSize)
-  padding: rem($form-whitespace / 2) rem(5px)
+  font-size: $form-fontSize
+  padding: ($form-whitespace / 2) 5px
   width: 100%
   &:focus
-    border-color: $form-link-color
+    border-color: $form-highlight-color
     outline: none
 
 // ----- Form Select ----- //

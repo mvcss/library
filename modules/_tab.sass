@@ -1,38 +1,41 @@
 //-------------------------------------
 //  Tab
+//
+//  Note:
+//  * Replace the '.tabs:after' with
+//    your preferred clearfix
 //-------------------------------------
 
-// ----- Tab Variables ----- //
+// ----- Tab Default Variables ----- //
 
-$tab-border: 1px solid #999 !default
 $tab-borderRadius: 2px !default
 $tab-color: #444 !default
-$tab-error-color: red !default
-$tab-fontFamily: sans-serif !default
 $tab-fontSize: 16px !default
-$tab-link-color: blue !default
 $tab-whitespace: 20px !default
 
 // ----- Tabs ----- //
 
 .tabs
-  @extend %group
-  margin: 0 0 rem($tab-whitespace)
+  margin: 0 0 $tab-whitespace
+  &:after
+    clear: both
+    content: ''
+    display: table
 
 // ----- Tab ----- //
 
 .tab
   float: left
-  font-size: rem($tab-fontSize)
+  font-size: $tab-fontSize
   a
-    border-radius: rem($tab-borderRadius) rem($tab-borderRadius) 0 0
+    border-radius: $tab-borderRadius $tab-borderRadius 0 0
     background: lighten($tab-color, 20%)
     color: $tab-color
     display: block
-    margin-right: rem($tab-whitespace / 2)
-    padding: rem(8px) rem($tab-whitespace)
+    margin-right: ($tab-whitespace / 2)
+    padding: 8px $tab-whitespace
 
-    // Tab Active State
+    // States
 
     &.is-active
       background: #fff
@@ -40,11 +43,11 @@ $tab-whitespace: 20px !default
 // ----- Tabs Content ----- //
 
 .tabs-content
-  border-radius: 0 0 rem($tab-borderRadius) rem($tab-borderRadius)
+  border-radius: 0 0 $tab-borderRadius $tab-borderRadius
   display: none
   margin-top: 0
 
-  // Tabs Content Visible State
+  // States
 
   &.is-visible
     display: block

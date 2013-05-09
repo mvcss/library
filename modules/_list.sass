@@ -7,31 +7,28 @@
 $list-border: 1px solid #999 !default
 $list-borderRadius: 2px !default
 $list-color: #444 !default
-$list-error-color: red !default
-$list-fontFamily: sans-serif !default
 $list-fontSize: 16px !default
-$list-link-color: blue !default
 $list-whitespace: 20px !default
 
-// ----- List ----- //
+// ----- Base List ----- //
 
 .list
-  margin: 0 0 rem($list-whitespace)
+  margin: 0 0 $list-whitespace
   li
     font-size: $list-fontSize
-    margin-bottom: rem($list-whitespace / 2)
+    margin-bottom: ($list-whitespace / 2)
 
 // ----- Standard List ----- //
 
 .list--bulleted
-  padding-left: rem($list-whitespace)
+  padding-left: $list-whitespace
   li
     list-style-type: square
 
 // ----- Numbered List ----- //
 
 .list--numbered
-  padding-left: rem($list-whitespace)
+  padding-left: $list-whitespace
   li
     list-style-type: decimal
 
@@ -40,11 +37,11 @@ $list-whitespace: 20px !default
 .list--nav
   li
     display: inline
-    margin-right: rem($list-whitespace)
+    margin-right: $list-whitespace
     &:last-child
       margin-right: 0
 
-    // Active State
+    // States
 
     &.is-active a
       border-bottom: $list-border
@@ -56,15 +53,15 @@ $list-whitespace: 20px !default
 
 .list--block
   li
-    margin-bottom: rem($list-whitespace / 2)
+    margin-bottom: ($list-whitespace / 2)
   a
     background: lighten($list-color, 40%)
     border-radius: $list-borderRadius
     color: #fff
     display: block
-    padding: rem(8px) rem($list-whitespace)
+    padding: 8px $list-whitespace
 
-  // Active State
+  // States
 
   .is-active a
     background: $list-color

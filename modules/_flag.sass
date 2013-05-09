@@ -5,7 +5,7 @@
 //  * http://csswizardry.com/2013/05/the-flag-object/
 //-------------------------------------
 
-// ----- Flag Variables ----- //
+// ----- Flag Default Variables ----- //
 
 $flag-img-padding: 10px !default
 
@@ -15,7 +15,7 @@ $flag-img-padding: 10px !default
   display: table
   width: 100%
 
-// ----- Submodules ----- //
+// ----- Flag Submodules Base ----- //
 
 .flag-img,
 .flag-body
@@ -30,20 +30,20 @@ $flag-img-padding: 10px !default
   .flag--bottom &
     vertical-align: bottom
 
-// Flag Image
+// ----- Flag Image ----- //
 
 .flag-img
-  padding-right: rem($flag-img-padding)
+  padding-right: $flag-img-padding
   > img
     display: block
 
   // Modifiers
 
   .flag--rev &
-    padding-left: rem($flag-img-padding)
+    padding-left: $flag-img-padding
     padding-right: 0
 
-// Flag Body
+// ----- Flag Body ----- //
 
 .flag-body
   width: 100%

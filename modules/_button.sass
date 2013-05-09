@@ -2,75 +2,76 @@
 //  Button
 //-------------------------------------
 
-// ----- Button Variables ----- //
+// ----- Button Default Variables ----- //
 
-$btn-border: 1px solid #999 !default
+$btn-background: #444 !default
 $btn-borderRadius: 2px !default
-$btn-color: #444 !default
-$btn-error-color: red !default
-$btn-fontFamily: sans-serif !default
+$btn--error-background: red !default
 $btn-fontSize: 16px !default
-$btn-link-color: blue !default
+$btn--success-background: green !default
+$btn--warning-background: yellow !default
 $btn-whitespace: 20px !default
 
 // ----- Base Button ----- //
 
 %btn, .btn
-  border-radius: rem($btn-borderRadius)
+  border-radius: $btn-borderRadius
   border: 0
   cursor: pointer
   display: inline-block
-  font-size: rem($btn-fontSize)
-  padding: rem($btn-whitespace / 2) rem($btn-whitespace + 10)
+  font-size: $btn-fontSize
+  padding: ($btn-whitespace / 2) ($btn-whitespace + 10)
   text-align: center
+  text-decoration: none
   &:focus,
   &:hover
     text-decoration: none
 
-// ----- Button A ----- //
+// ----- A Button ----- //
 
 .btn--a
   @extend %btn
-  background: $btn-color
+  background: $btn-background
   color: #fff
   &:focus,
   &:hover
-    background: lighten($btn-color, 10%)
+    background: lighten($btn-background, 10%)
 
-// ----- Button B ----- //
+// ----- B Button ----- //
 
 .btn--b
   @extend %btn
-  background: #fff
-  color: $btn-color
+  background: lighten($btn-background, 30%)
+  color: $btn-background
   &:focus,
   &:hover
-    background: darken(#fff, 10%)
+    background: lighten($btn-background, 40%)
 
-// ----- Button Block ----- //
+// ----- Block Button ----- //
 
 .btn--block
-  +box-sizing(border-box)
+  -moz-box-sizing: border-box
+  box-sizing: border-box
   display: block
   width: 100%
 
-// ----- Button Large ----- //
+// ----- Large Button ----- //
 
 .btn--large
   font-size: 150%
-  padding-left: rem(100px)
-  padding-right: rem(100px)
+  padding-left: 100px
+  padding-right: 100px
 
-// ----- Button Small ----- //
+// ----- Small Button ----- //
 
 .btn--small
   font-size: 90%
-  letter-spacing: rem(1px)
+  letter-spacing: 1px
   text-transform: uppercase
 
-// ----- Button Mini ----- //
+// ----- Mini Button ----- //
 
 .btn--mini
-  font-size: 80%
-  letter-spacing: rem(1px)
+  font-size: 70%
+  letter-spacing: 1px
   text-transform: uppercase
