@@ -17,7 +17,7 @@ $flag-img-padding: 10px !default
 
 // ----- Flag Submodules Base ----- //
 
-.flag-img,
+.flag-media,
 .flag-body
   display: table-cell
   vertical-align: middle
@@ -30,18 +30,21 @@ $flag-img-padding: 10px !default
   .flag--bottom &
     vertical-align: bottom
 
-// ----- Flag Image ----- //
+// ----- Flag Media ----- //
 
-.flag-img
+.flag-media
   padding-right: $flag-img-padding
-  > img
-    display: block
 
   // Modifiers
 
   .flag--rev &
     padding-left: $flag-img-padding
     padding-right: 0
+
+// Object
+
+.flag-media-obj
+  display: block
 
 // ----- Flag Body ----- //
 
