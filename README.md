@@ -14,4 +14,4 @@ Choose the JS components you want from `/components` to include in your [MVCSS](
 
 ## Documentation
 
-The documentation, for modules/components that require more full documentation, is included in `/docs`.
+The documentation, for anything that requires more full documentation than the source file, is included in `/docs`.
