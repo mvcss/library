@@ -1,0 +1,32 @@
+//-------------------------------------
+//  Mixins
+//-------------------------------------
+
+// ----- +caret() ----- //
+// Sample usage: +caret(bottom, 8px, #000)
+
+=caret($side, $size, $color)
+  $opposite: opposite-position($side)
+  +stretch(50%,auto,auto,50%)
+  border: $size solid transparent
+  border-#{$opposite}: $size solid $color
+  border-#{$side}: 0
+  content: ''
+  display: block
+  height: 0
+  margin: (-$size) 0 0 (-$size)
+  margin-#{$side}: 0
+  width: 0
+  #{$side}: -$size
+  #{$opposite}: auto
+
+// ----- +retina-image() ----- //
+// References the @2x image based on
+// the image that is passed in
+
+@import "compass"
+
+=retina-image($img)
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)
+    background-image: image-url($img)
+    background-size: image-width($img) / 2 image-height($img) / 2

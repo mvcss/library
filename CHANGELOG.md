@@ -1,6 +1,6 @@
 ## 1.0.0
 
-- Strip full application down to `modules` and `components`
+- Strip full application down to `modules`, `components`, and `helpers`
 - Remove placeholder modules
 - Add default variables to all modules
 - Add new flag module
