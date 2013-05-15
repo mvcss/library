@@ -2,7 +2,8 @@
 
 ## Basic Grid
 
-`index.haml`
+**Haml**
+
 ```haml
 .grid
   .grid-box.grid-box--1of1
@@ -18,6 +19,8 @@
 ### Silent Classes
 
 If you don't want to explicitly call any of the `.grid` classes in your HTML, you can set the `$grid-silent` variable to true to use Sass placeholder selectors, like so:
+
+**Sass**
 
 ```sass
 .main
@@ -35,7 +38,8 @@ If you don't want to explicitly call any of the `.grid` classes in your HTML, yo
 
 In order to set up breakpoints for the grid, you'll need to set the `$grid-defaults` variable for your specified breakpoints. Then, either in your HTML or through `@extends` (when using `$grid-silent`), you'll do something like this:
 
-`index.haml`
+**Haml**
+
 ```haml
 .grid
   .grid-box.grid-box--desk--1of2.grid-box--lap--1of1
