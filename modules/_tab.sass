@@ -8,6 +8,7 @@
 
 // ----- Tab Default Variables ----- //
 
+$tab-border: 1px solid #ccc !default
 $tab-borderRadius: 2px !default
 $tab-color: #444 !default
 $tab-fontSize: 16px !default
@@ -16,7 +17,9 @@ $tab-whitespace: 20px !default
 // ----- Tabs ----- //
 
 .tabs
+  border-bottom: $tab-border
   margin: 0 0 $tab-whitespace
+  padding: 0
   &:after
     clear: both
     content: ''
@@ -25,29 +28,25 @@ $tab-whitespace: 20px !default
 // ----- Tab ----- //
 
 .tab
+  list-style-type: none
   float: left
   font-size: $tab-fontSize
   a
+    background: lighten($tab-color, 65%)
+    border: $tab-border
     border-radius: $tab-borderRadius $tab-borderRadius 0 0
-    background: lighten($tab-color, 20%)
     color: $tab-color
     display: block
+    margin-bottom: -1px
     margin-right: ($tab-whitespace / 2)
     padding: 8px $tab-whitespace
+    text-decoration: none
+    &:hover,
+    &:focus,
+    &.is-active
+      background: #fff
 
     // States
 
     &.is-active
-      background: #fff
-
-// ----- Tab Content ----- //
-
-.tab-content
-  border-radius: 0 0 $tab-borderRadius $tab-borderRadius
-  display: none
-  margin-top: 0
-
-  // States
-
-  &.is-visible
-    display: block
+      border-bottom-color: transparent
