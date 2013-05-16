@@ -1,4 +1,18 @@
+## 1.1.0
+**May 16, 2013**
+
+- Better defaults for **Modules - Button**
+- Better defaults for **Modules - Flag**
+- Better defaults for **Modules - Form**
+- Add more modifiers to **Modules - Form**
+- Better defaults for **Modules - List**
+- Better defaults for **Modules - Tab**
+- Remove `.tab-content` from **Modules - Tab**
+- Better defaults for **Modules - Table**
+- Remove `border-collapse` and `border-spacing` from **Modules - Table** because those are set in `Normalize`
+
 ## 1.0.0
+**May 15, 2013**
 
 - Strip full application down to `modules`, `components`, and `helpers`
 - Remove placeholder modules
