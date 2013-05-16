@@ -4,47 +4,59 @@
 
 // ----- List Variables ----- //
 
-$list-border: 1px solid #999 !default
+$list--block-background: #4e4e5b !default
+$list-border-color: #9a9aa8 !default
+$list-border-size: 2px !default
 $list-borderRadius: 2px !default
 $list-color: #444 !default
 $list-fontSize: 16px !default
+$list-link-color: #ddd !default
+$list--nav-color: #4e4e5b !default
 $list-whitespace: 20px !default
 
 // ----- Base List ----- //
 
 .list
   margin: 0 0 $list-whitespace
+  padding-left: $list-whitespace
   li
     font-size: $list-fontSize
     margin-bottom: ($list-whitespace / 2)
+    &:last-child
+      margin-bottom: 0
 
 // ----- Standard List ----- //
 
-.list--bulleted
-  padding-left: $list-whitespace
-  li
-    list-style-type: square
+.list--bulleted li
+  list-style-type: square
 
 // ----- Numbered List ----- //
 
-.list--numbered
-  padding-left: $list-whitespace
-  li
-    list-style-type: decimal
+.list--numbered li
+  list-style-type: decimal
 
 // ----- Nav List ----- //
 
 .list--nav
+  padding-left: 0
   li
     display: inline
     margin-right: $list-whitespace
     &:last-child
       margin-right: 0
 
+    a
+      border-bottom: $list-border-size solid lighten($list-border-color, 10%)
+      color: $list--nav-color
+      &:hover
+        background: $list-link-color
+        border-bottom-color: $list-border-color
+        text-decoration: none
+
     // States
 
     &.is-active a
-      border-bottom: $list-border
+      border-bottom: $list-border-size solid $list-border-color
       color: $list-color
       font-weight: bold
       text-decoration: none
@@ -52,16 +64,21 @@ $list-whitespace: 20px !default
 // ----- Block List ----- //
 
 .list--block
+  padding-left: 0
   li
+    list-style-type: none
     margin-bottom: ($list-whitespace / 2)
-  a
-    background: lighten($list-color, 40%)
-    border-radius: $list-borderRadius
-    color: #fff
-    display: block
-    padding: 8px $list-whitespace
+    a
+      background: $list--block-background
+      border-radius: $list-borderRadius
+      color: #fff
+      display: block
+      padding: 8px $list-whitespace
+      &:hover
+        background: lighten($list--block-background, 10%)
+        text-decoration: none
 
-  // States
+    // States
 
-  .is-active a
-    background: $list-color
+    .is-active a
+      background: $list-color
