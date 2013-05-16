@@ -5,9 +5,11 @@
 // ----- +caret() ----- //
 // Sample usage: +caret(bottom, 8px, #000)
 
+// @import "compass" -> required
+
 =caret($side, $size, $color)
   $opposite: opposite-position($side)
-  +stretch(50%,auto,auto,50%)
+  +stretch(50%, auto, auto, 50%)
   border: $size solid transparent
   border-#{$opposite}: $size solid $color
   border-#{$side}: 0
@@ -24,7 +26,7 @@
 // References the @2x image based on
 // the image that is passed in
 
-@import "compass"
+// @import "compass" -> required
 
 =retina-image($img)
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)
