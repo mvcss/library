@@ -2,6 +2,8 @@
 
 ## Markup
 
+**Haml**
+
 ```haml
 %ul.sectionList
   %li
@@ -15,11 +17,25 @@
   %h2 Example 02
 ```
 
+## Styles
+
+**Sass**
+
+```sass
+.contentSection
+  display: none
+  &.is-active
+    display: block
+```
+
 ## How to call
 
 ```javascript
-$.hashURLs({
-  list: $('.sectionList a'),
-  content: $('.contentSection')
+$(function() {
+  options = {
+    list: $('.sectionList a'),
+    content: $('.contentSection')
+  };
+  new HashURLs(options);
 });
 ```

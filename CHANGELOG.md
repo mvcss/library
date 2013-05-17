@@ -1,3 +1,8 @@
+## 1.2.0
+**May 17, 2013**
+
+- Convert $.hashURLs to a HashURLs CoffeeScript class
+
 ## 1.1.0
 **May 16, 2013**
 
