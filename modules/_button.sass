@@ -1,8 +1,12 @@
-//-------------------------------------
-//  Button
-//-------------------------------------
+// *************************************
+//
+//   Button
+//
+// *************************************
 
-// ----- Button Default Variables ----- //
+// -------------------------------------
+//   Variables
+// -------------------------------------
 
 $btn-background: #4e4e5b !default
 $btn-borderRadius: 2px !default
@@ -10,7 +14,9 @@ $btn--error-background: red !default
 $btn-fontSize: 16px !default
 $btn-whitespace: 20px !default
 
-// ----- Base Button ----- //
+// -------------------------------------
+//   Base
+// -------------------------------------
 
 %btn, .btn
   border-radius: $btn-borderRadius
@@ -25,7 +31,9 @@ $btn-whitespace: 20px !default
   &:hover
     text-decoration: none
 
-// ----- A Button ----- //
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
 
 .btn--a
   @extend %btn
@@ -35,8 +43,6 @@ $btn-whitespace: 20px !default
   &:hover
     background: lighten($btn-background, 10%)
 
-// ----- B Button ----- //
-
 .btn--b
   @extend %btn
   background: lighten($btn-background, 30%)
@@ -45,29 +51,21 @@ $btn-whitespace: 20px !default
   &:hover
     background: lighten($btn-background, 40%)
 
-// ----- Block Button ----- //
-
 .btn--block
   -moz-box-sizing: border-box
   box-sizing: border-box
   display: block
   width: 100%
 
-// ----- Large Button ----- //
-
 .btn--large
   font-size: 150%
   padding-left: 100px
   padding-right: 100px
 
-// ----- Small Button ----- //
-
 .btn--small
   font-size: 90%
   letter-spacing: 1px
   text-transform: uppercase
-
-// ----- Mini Button ----- //
 
 .btn--mini
   font-size: 70%

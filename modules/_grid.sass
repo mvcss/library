@@ -1,23 +1,30 @@
-//------------------------------------------------------
-//  Grid
+// *************************************
 //
-//  Based on the following:
-//  * https://github.com/necolas/suit-grid
-//  * https://github.com/csswizardry/csswizardry-grids
-//------------------------------------------------------
+//   Grid
+//   -> Based on the following:
+//      * https://github.com/necolas/suit-grid
+//      * https://github.com/csswizardry/csswizardry-grids
+//
+// *************************************
 
-// ----- Grid Default Variables ----- //
+// -------------------------------------
+//   Variables
+// -------------------------------------
 
 $grid-columns: 12 !default
 $grid-defaults: "lap" 480px, "desk" 800px !default
 $grid-gutter: 20px !default
 $grid-silent: false !default
 
-// ----- Grid Selector Type ----- //
+// -------------------------------------
+//   Selector Type
+// -------------------------------------
 
 $grid-selector: if($grid-silent, unquote("%"), unquote("."))
 
-// ----- Grid Base ----- //
+// -------------------------------------
+//   Base
+// -------------------------------------
 
 #{$grid-selector}grid
   @extend %group
@@ -34,28 +41,32 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
   padding-right: $grid-gutter / 2
   width: 100%
 
-// ----- Grid Modifiers ----- //
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
 
 #{$grid-selector}grid-box--center
   display: block
   float: none
   margin: 0 auto
 
-// ----- Grid Setup ----- //
+// -------------------------------------
+//   Setup
+// -------------------------------------
 
 =device-type($namespace: '')
 
-  // One Part
+  // ----- One Part ----- //
 
   #{$grid-selector}grid-box--#{$namespace}1of1
     width: 100%
 
-  // Two Parts
+  // ----- Two Parts ----- //
 
   #{$grid-selector}grid-box--#{$namespace}1of2
     width: 50%
 
-  // Three Parts
+  // ----- Three Parts ----- //
 
   @if $grid-columns >= 3
     #{$grid-selector}grid-box--#{$namespace}1of3
@@ -63,7 +74,7 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
     #{$grid-selector}grid-box--#{$namespace}2of3
       width: 66.666%
 
-  // Four Parts
+  // ----- Four Parts ----- //
 
   @if $grid-columns >= 4
     #{$grid-selector}grid-box--#{$namespace}1of4
@@ -73,7 +84,7 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
     #{$grid-selector}grid-box--#{$namespace}3of4
       width: 75%
 
-  // Five Parts
+  // ----- Five Parts ----- //
 
   @if $grid-columns >= 5
     #{$grid-selector}grid-box--#{$namespace}1of5
@@ -85,7 +96,7 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
     #{$grid-selector}grid-box--#{$namespace}4of5
       width: 80%
 
-  // Six Parts
+  // ----- Six Parts ----- //
 
   @if $grid-columns >= 6
     #{$grid-selector}grid-box--#{$namespace}1of6
@@ -99,7 +110,7 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
     #{$grid-selector}grid-box--#{$namespace}5of6
       width: 83.333%
 
-  // Eight Parts
+  // ----- Eight Parts ----- //
 
   @if $grid-columns >= 8
     #{$grid-selector}grid-box--#{$namespace}1of8
@@ -117,7 +128,7 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
     #{$grid-selector}grid-box--#{$namespace}7of8
       width: 87.5%
 
-  // Ten Parts
+  // ----- Ten Parts ----- //
 
   @if $grid-columns >= 10
     #{$grid-selector}grid-box--#{$namespace}1of10
@@ -139,7 +150,7 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
     #{$grid-selector}grid-box--#{$namespace}9of10
       width: 90%
 
-  // Twelve Parts
+  // ----- Twelve Parts ----- //
 
   @if $grid-columns >= 12
     #{$grid-selector}grid-box--#{$namespace}1of12
@@ -165,7 +176,9 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
     #{$grid-selector}grid-box--#{$namespace}11of12
       width: 91.666%
 
-// ----- Grid Creation ----- //
+// -------------------------------------
+//   Creation
+// -------------------------------------
 
 +device-type()
 

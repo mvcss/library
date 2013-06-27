@@ -1,52 +1,58 @@
-//-------------------------------------
-//  Flag
+// *************************************
 //
-//  Based on the following:
-//  * http://csswizardry.com/2013/05/the-flag-object/
-//-------------------------------------
+//   Flag
+//   -> Based on the following:
+//      * http://csswizardry.com/2013/05/the-flag-object/
+//
+// *************************************
 
-// ----- Flag Default Variables ----- //
+// -------------------------------------
+//   Variables
+// -------------------------------------
 
 $flag-img-padding: 20px !default
 
-// ----- Base Flag ----- //
+// -------------------------------------
+//   Base
+// -------------------------------------
 
 .flag
   display: table
   width: 100%
 
-// ----- Flag Submodules Base ----- //
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.flag--top
+  .flag-media,
+  .flag-body
+    vertical-align: top
+
+.flag--bottom
+  .flag-media,
+  .flag-body
+    vertical-align: bottom
+
+.flag--rev
+  .flag-media
+    padding-left: $flag-img-padding
+    padding-right: 0
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
 
 .flag-media,
 .flag-body
   display: table-cell
   vertical-align: middle
 
-  // Modifiers
-
-  .flag--top &
-    vertical-align: top
-
-  .flag--bottom &
-    vertical-align: bottom
-
-// ----- Flag Media ----- //
-
 .flag-media
   padding-right: $flag-img-padding
 
-  // Modifiers
-
-  .flag--rev &
-    padding-left: $flag-img-padding
-    padding-right: 0
-
-// Object
-
 .flag-media-obj
   display: block
-
-// ----- Flag Body ----- //
 
 .flag-body
   width: 100%

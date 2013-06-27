@@ -1,15 +1,21 @@
-//-------------------------------------
-//  Table
-//-------------------------------------
+// *************************************
+//
+//   Table
+//
+// *************************************
 
-// ----- Table Default Variables ----- //
+// -------------------------------------
+//   Variables
+// -------------------------------------
 
 $table-border: 1px solid #999 !default
 $table-color: #444 !default
 $table-fontSize: 14px !default
 $table-whitespace: 20px !default
 
-// ----- Base Table ----- //
+// -------------------------------------
+//   Base
+// -------------------------------------
 
 .table
   -moz-box-sizing: border-box
@@ -18,22 +24,22 @@ $table-whitespace: 20px !default
   margin: 0 0 $table-whitespace
   width: 100%
 
-// ----- Striped Table ----- //
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
 
 .table--striped
   .table-body tr:nth-child(odd)
     background: lighten($table-color, 65%)
 
-// ----- Table Row ----- //
+// -------------------------------------
+//   Submodules
+// -------------------------------------
 
 .table-row
   border-bottom: $table-border
-
-  // Table Header
-
   th, td
     padding: ($table-whitespace / 2)
-
   th
     font-weight: bold
     text-align: left

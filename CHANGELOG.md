@@ -1,3 +1,8 @@
+## 1.2.1
+**June 27, 2013**
+
+- Update to MVCSS v3.0.1 (new comment hierarchy)
+
 ## 1.2.0
 **May 17, 2013**
 

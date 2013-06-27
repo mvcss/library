@@ -1,8 +1,12 @@
-//-------------------------------------
-//  Form
-//-------------------------------------
+// *************************************
+//
+//   Form
+//
+// *************************************
 
-// ----- Form Default Variables ----- //
+// -------------------------------------
+//   Variables
+// -------------------------------------
 
 $form-border: 1px solid #ccc !default
 $form-borderRadius: 2px !default
@@ -14,7 +18,9 @@ $form-highlight-color: #4e4e5b !default
 $form-input-background: #fff !default
 $form-whitespace: 10px !default
 
-// ----- Base Form ----- //
+// -------------------------------------
+//   Base
+// -------------------------------------
 
 .form
   margin: 0 0 $form-whitespace
@@ -27,12 +33,16 @@ $form-whitespace: 10px !default
     &:last-child
       padding-bottom: 0
 
-// ----- Form Header ----- //
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// ----- Header ----- //
 
 .form-header
   margin-bottom: $form-whitespace
 
-// ----- Form Field ----- //
+// ----- Field ----- //
 
 .form-field
   border: 0
@@ -44,7 +54,7 @@ $form-whitespace: 10px !default
 .form-field--submit
   margin-top: ($form-whitespace * 4)
 
-// ----- Form Label ----- //
+// ----- Label ----- //
 
 .form-label
   display: block
@@ -61,14 +71,14 @@ $form-whitespace: 10px !default
   font-size: 90%
   font-weight: normal
 
-// ----- Form Note ----- //
+// ----- Note ----- //
 
 .form-note
   color: lighten($form-color, 40%)
   font-size: 90%
   margin-top: 5px
 
-// ----- Form Input ----- //
+// ----- Input ----- //
 
 .form-input
   background: $form-input-background
@@ -90,7 +100,7 @@ $form-whitespace: 10px !default
 .form-input--radio
   margin-right: $form-whitespace
 
-// ----- Form Select ----- //
+// ----- Select ----- //
 
 .form-select
   width: 30%
