@@ -1,0 +1,47 @@
+// *************************************
+//
+//   Bucket
+//   -> Based on:
+//      * http://jsfiddle.net/necolas/rZvEF/
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$bucket-media-margin: 15px !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.bucket
+  @extend %group
+  position: relative
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.bucket--bottom,
+.bucket--middle
+  display: table
+
+.bucket--bottom .bucket-content
+  vertical-align: bottom
+
+.bucket--middle .bucket-content
+  vertical-align: middle
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+.bucket-media
+  float: left
+  margin-right: $bucket-media-margin
+
+.bucket-content
+  display: table-cell
+  max-width: 10000px
