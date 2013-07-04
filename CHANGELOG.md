@@ -1,3 +1,8 @@
+## 1.3.0
+**July 4, 2013**
+
+- Add new bucket module
+
 ## 1.2.1
 **June 27, 2013**
 
