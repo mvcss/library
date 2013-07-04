@@ -1,3 +1,8 @@
+## 1.3.1
+**July 4, 2013**
+
+- Refactor hash URL component
+
 ## 1.3.0
 **July 4, 2013**
 

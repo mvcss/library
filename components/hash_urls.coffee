@@ -1,22 +1,19 @@
-class HashURLs
-  constructor: (options) ->
-    @setup(options)
+class @HashURLs
+  constructor: (@options) ->
+    @setup(@options)
 
-  setup: (options) ->
-    @list = options.list
-    @content = options.content
+  setup: (@options) ->
     @getOrSetHash()
     @showContent()
 
-    that = this
-    @list.on 'click', (e) ->
+    @options.list.on 'click', (e) =>
       e.preventDefault()
-      elem = $(@)
+      elem = $(e.currentTarget)
       hash = elem.attr('href')
       window.location.hash = hash
 
-      that.list.removeClass('is-active')
-      that.content.removeClass('is-active')
+      @options.list.removeClass('is-active')
+      @options.content.removeClass('is-active')
 
       elem.addClass('is-active')
       $(hash).addClass('is-active')
@@ -25,10 +22,8 @@ class HashURLs
     if window.location.hash
       @hash = window.location.hash
     else
-      @hash = @list.first().attr('href')
+      @hash = @options.list.first().attr('href')
 
   showContent: ->
-    @content.not(@hash).removeClass('is-active')
+    @options.content.not(@hash).removeClass('is-active')
     $("[data-hash=#{@hash}], #{@hash}").addClass('is-active')
-
-window.HashURLs = HashURLs
