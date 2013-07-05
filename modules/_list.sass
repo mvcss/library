@@ -35,17 +35,34 @@ $list-whitespace: 20px !default
 //   Modifiers
 // -------------------------------------
 
-// ----- Standard List ----- //
+// ----- Block ----- //
+
+.list--block
+  padding-left: 0
+  li
+    list-style-type: none
+    margin-bottom: ($list-whitespace / 2)
+    a
+      background: $list--block-background
+      border-radius: $list-borderRadius
+      color: #fff
+      display: block
+      padding: 8px $list-whitespace
+      &:hover
+        background: lighten($list--block-background, 10%)
+        text-decoration: none
+
+    // States
+
+    .is-active a
+      background: $list-color
+
+// ----- Bulleted ----- //
 
 .list--bulleted li
   list-style-type: square
 
-// ----- Numbered List ----- //
-
-.list--numbered li
-  list-style-type: decimal
-
-// ----- Nav List ----- //
+// ----- Nav ----- //
 
 .list--nav
   padding-left: 0
@@ -71,24 +88,7 @@ $list-whitespace: 20px !default
       font-weight: bold
       text-decoration: none
 
-// ----- Block List ----- //
+// ----- Numbered ----- //
 
-.list--block
-  padding-left: 0
-  li
-    list-style-type: none
-    margin-bottom: ($list-whitespace / 2)
-    a
-      background: $list--block-background
-      border-radius: $list-borderRadius
-      color: #fff
-      display: block
-      padding: 8px $list-whitespace
-      &:hover
-        background: lighten($list--block-background, 10%)
-        text-decoration: none
-
-    // States
-
-    .is-active a
-      background: $list-color
+.list--numbered li
+  list-style-type: decimal

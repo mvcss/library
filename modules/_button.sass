@@ -35,6 +35,8 @@ $btn-whitespace: 20px !default
 //   Modifiers
 // -------------------------------------
 
+// ----- A ----- //
+
 .btn--a
   @extend %btn
   background: $btn-background
@@ -42,6 +44,8 @@ $btn-whitespace: 20px !default
   &:focus,
   &:hover
     background: lighten($btn-background, 10%)
+
+// ----- B ----- //
 
 .btn--b
   @extend %btn
@@ -51,23 +55,31 @@ $btn-whitespace: 20px !default
   &:hover
     background: lighten($btn-background, 40%)
 
+// ----- Block ----- //
+
 .btn--block
   -moz-box-sizing: border-box
   box-sizing: border-box
   display: block
   width: 100%
 
+// ----- Large ----- //
+
 .btn--large
   font-size: 150%
   padding-left: 100px
   padding-right: 100px
 
-.btn--small
-  font-size: 90%
-  letter-spacing: 1px
-  text-transform: uppercase
+// ----- Mini ----- //
 
 .btn--mini
   font-size: 70%
+  letter-spacing: 1px
+  text-transform: uppercase
+
+// ----- Small ----- //
+
+.btn--small
+  font-size: 90%
   letter-spacing: 1px
   text-transform: uppercase

@@ -37,11 +37,6 @@ $form-whitespace: 10px !default
 //   Submodules
 // -------------------------------------
 
-// ----- Header ----- //
-
-.form-header
-  margin-bottom: $form-whitespace
-
 // ----- Field ----- //
 
 .form-field
@@ -53,6 +48,33 @@ $form-whitespace: 10px !default
 
 .form-field--submit
   margin-top: ($form-whitespace * 4)
+
+// ----- Header ----- //
+
+.form-header
+  margin-bottom: $form-whitespace
+
+// ----- Input ----- //
+
+.form-input
+  background: $form-input-background
+  border: $form-border
+  border-radius: $form-borderRadius
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  font-family: $form-fontFamily
+  font-size: $form-fontSize
+  padding: $form-whitespace
+  width: 100%
+  &:focus
+    border-color: $form-highlight-color
+    outline: none
+
+// Modifiers
+
+.form-input--check,
+.form-input--radio
+  margin-right: $form-whitespace
 
 // ----- Label ----- //
 
@@ -77,28 +99,6 @@ $form-whitespace: 10px !default
   color: lighten($form-color, 40%)
   font-size: 90%
   margin-top: 5px
-
-// ----- Input ----- //
-
-.form-input
-  background: $form-input-background
-  border: $form-border
-  border-radius: $form-borderRadius
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-  font-family: $form-fontFamily
-  font-size: $form-fontSize
-  padding: $form-whitespace
-  width: 100%
-  &:focus
-    border-color: $form-highlight-color
-    outline: none
-
-// Modifiers
-
-.form-input--check,
-.form-input--radio
-  margin-right: $form-whitespace
 
 // ----- Select ----- //
 

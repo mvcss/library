@@ -18,20 +18,7 @@ $tab-fontSize: 16px !default
 $tab-whitespace: 20px !default
 
 // -------------------------------------
-//   Tabs
-// -------------------------------------
-
-.tabs
-  border-bottom: $tab-border
-  margin: 0 0 $tab-whitespace
-  padding: 0
-  &:after
-    clear: both
-    content: ''
-    display: table
-
-// -------------------------------------
-//   Tab
+//   Base
 // -------------------------------------
 
 .tab
@@ -57,3 +44,16 @@ $tab-whitespace: 20px !default
 
     &.is-active
       border-bottom-color: transparent
+
+// -------------------------------------
+//   Tabs
+// -------------------------------------
+
+.tabs
+  border-bottom: $tab-border
+  margin: 0 0 $tab-whitespace
+  padding: 0
+  &:after
+    clear: both
+    content: ''
+    display: table

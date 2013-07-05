@@ -24,15 +24,21 @@ $flag-img-padding: 20px !default
 //   Modifiers
 // -------------------------------------
 
+// ----- Shared ----- //
+
 .flag--top
   .flag-media,
   .flag-body
     vertical-align: top
 
+// ----- Bottom ----- //
+
 .flag--bottom
   .flag-media,
   .flag-body
     vertical-align: bottom
+
+// ----- Reverse ----- //
 
 .flag--rev
   .flag-media
@@ -43,16 +49,24 @@ $flag-img-padding: 20px !default
 //   Submodules
 // -------------------------------------
 
+// ----- Shared ----- //
+
 .flag-media,
 .flag-body
   display: table-cell
   vertical-align: middle
 
-.flag-media
-  padding-right: $flag-img-padding
-
-.flag-media-obj
-  display: block
+// ----- Body ----- //
 
 .flag-body
   width: 100%
+
+// ----- Media ----- //
+
+.flag-media
+  padding-right: $flag-img-padding
+
+// Object
+
+.flag-media-obj
+  display: block
