@@ -1,3 +1,8 @@
+## 1.4.0
+**July 10, 2013**
+
+- Add new **Helpers - Extends** file
+
 ## 1.3.1
 **July 4, 2013**
 
