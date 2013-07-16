@@ -23,12 +23,6 @@ $bucket-media-margin: 15px !default
 //   Modifiers
 // -------------------------------------
 
-// ----- Shared ----- //
-
-.bucket--bottom,
-.bucket--middle
-  display: table
-
 // ----- Bottom ----- //
 
 .bucket--bottom .bucket-content
@@ -39,18 +33,24 @@ $bucket-media-margin: 15px !default
 .bucket--middle .bucket-content
   vertical-align: middle
 
+// ----- Shared ----- //
+
+.bucket--bottom,
+.bucket--middle
+  display: table
+
 // -------------------------------------
 //   Submodules
 // -------------------------------------
-
-// ----- Media ----- //
-
-.bucket-media
-  float: left
-  margin-right: $bucket-media-margin
 
 // ----- Content ----- //
 
 .bucket-content
   display: table-cell
   max-width: 10000px
+
+// ----- Media ----- //
+
+.bucket-media
+  float: left
+  margin-right: $bucket-media-margin
