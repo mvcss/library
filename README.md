@@ -10,7 +10,7 @@ Choose the Sass extends, functions, mixins, and general helpers from `/helpers` 
 
 ## Components
 
-Choose the JS components you want from `/components` to include in your [MVCSS](http://mvcss.github.io/) project.
+Choose the JS components you want from `/components` to include in your [MVCSS](http://mvcss.github.io/) project. There are CoffeeScript files (`.coffee`) and minified JS files for each component.
 
 ## Documentation
 
