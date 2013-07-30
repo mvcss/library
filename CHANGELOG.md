@@ -1,3 +1,8 @@
+## 1.4.1
+**July 30, 2013**
+
+- Fix security vulnerability in hash URLs component by sanitizing `window.location.hash`
+
 ## 1.4.0
 **July 10, 2013**
 
