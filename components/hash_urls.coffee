@@ -20,10 +20,14 @@ class @HashURLs
 
   getOrSetHash: ->
     if window.location.hash
-      @hash = window.location.hash
+      @hash = @sanitizeHash(window.location.hash)
     else
       @hash = @options.list.first().attr('href')
+
+  sanitizeHash: (str) ->
+    str.replace(/(<([^>]+)>)/ig,"")
 
   showContent: ->
     @options.content.not(@hash).removeClass('is-active')
     $("[data-hash=#{@hash}], #{@hash}").addClass('is-active')
+
