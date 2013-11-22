@@ -26,6 +26,25 @@
   #{$opposite}: auto
 
 // -------------------------------------
+//   Module Padding
+// -------------------------------------
+
+=mod-padding($padding)
+  padding: 0 $padding
+
+  &::before,
+  &::after
+    content: ''
+    display: block
+    height: 1px
+
+  &::before
+    margin-bottom: $padding - 1
+
+  &::after
+    margin-top: $padding - 1
+
+// -------------------------------------
 //   Retina-image
 // -------------------------------------
 
