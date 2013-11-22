@@ -3,6 +3,7 @@
 - Remove JS components
 - Remove the docs
 - Add additional helpers
+- Rename **Helpers** to **Foundation**
 - Rename **Modules** to **Structures**
 
 ## 1.4.1
