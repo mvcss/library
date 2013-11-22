@@ -1,3 +1,10 @@
+## 2.0.0
+
+- Remove JS components
+- Remove the docs
+- Add additional helpers
+- Rename **Modules** to **Structures**
+
 ## 1.4.1
 **July 30, 2013**
 
