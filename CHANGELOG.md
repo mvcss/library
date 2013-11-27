@@ -5,6 +5,7 @@
 - Add additional helpers
 - Rename **Helpers** to **Foundation**
 - Rename **Modules** to **Structures**
+- Add **Foundation** functions
 
 ## 1.4.1
 **July 30, 2013**
