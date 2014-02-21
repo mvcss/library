@@ -5,10 +5,27 @@
 // *************************************
 
 // -------------------------------------
+//
 //   Caret
+//   -> Returns the opposite side
+//
+// -------------------------------------
+//
+// $side - the side to return the opposite of
+//
 // -------------------------------------
 
-// @import "compass" -> required
+// Requires this function (replaces Compass)
+
+@function opposite-position($side)
+  @if $side == 'top'
+    @return 'bottom'
+  @if $side == 'bottom'
+    @return 'top'
+  @if $side == 'left'
+    @return 'right'
+  @if $side == 'right'
+    @return 'left'
 
 =caret($side, $size, $color)
   $opposite: opposite-position($side)
@@ -26,23 +43,24 @@
   #{$opposite}: auto
 
 // -------------------------------------
-//   Module Padding
+//
+//   Keyframe Animation
+//   -> Auto-prefixed keyframe-animation
+//
+// -------------------------------------
+//
+// $name - the name of the animation
+// @content - the generated content within the mixin
+//
 // -------------------------------------
 
-=mod-padding($padding)
-  padding: 0 $padding
-
-  &::before,
-  &::after
-    content: ''
-    display: block
-    height: 1px
-
-  &::before
-    margin-bottom: $padding - 1
-
-  &::after
-    margin-top: $padding - 1
+=keyframe-animation($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
 
 // -------------------------------------
 //   Retina-image
