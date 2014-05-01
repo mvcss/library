@@ -1,0 +1,54 @@
+// *************************************
+//
+//   Progress
+//   -> Progress bar
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .progress
+//   .progress-bar{style: 'width: 65%;'}
+//
+// *************************************
+
+// -------------------------------------
+//   Utilities
+// -------------------------------------
+
+.boxSizing
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$c-highlight: #4e4e5b !default
+$c-invert: #fff !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.progress
+  background: $c-invert
+  height: 10px
+  position: relative
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Bar ----- //
+
+.progress-bar
+  @extend .boxSizing
+  background: $c-highlight
+  bottom: 0
+  left: 0
+  max-width: 100%
+  position: absolute
+  top: 0
+  z-index: 1
+
