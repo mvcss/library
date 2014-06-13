@@ -8,12 +8,12 @@
 // -------------------------------------
 //
 // .progress
-//   .progress-bar{style: 'width: 65%;'}
+//   .progress-bar{ style: 'width: 65%;' }
 //
 // *************************************
 
 // -------------------------------------
-//   Utilities
+//   Tools
 // -------------------------------------
 
 .boxSizing
@@ -24,15 +24,15 @@
 //   Variables
 // -------------------------------------
 
-$c-highlight: #4e4e5b !default
-$c-invert: #fff !default
+$progress-background: #fff !default
+$progress-bar-background: #4e4e5b !default
 
 // -------------------------------------
 //   Base
 // -------------------------------------
 
 .progress
-  background: $c-invert
+  background: $progress-background
   height: 10px
   position: relative
 
@@ -44,7 +44,7 @@ $c-invert: #fff !default
 
 .progress-bar
   @extend .boxSizing
-  background: $c-highlight
+  background: $progress-bar-background
   bottom: 0
   left: 0
   max-width: 100%
