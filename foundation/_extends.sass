@@ -25,6 +25,32 @@
   visibility: visible
 
 // -------------------------------------
+//   Vertical/Horizontal Center
+// -------------------------------------
+
+.middle
+  left: 50%
+  position: absolute
+  top: 50%
+  -webkit-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+
+// -------------------------------------
+//   Semantic Hide
+// -------------------------------------
+
+.srt
+  border: 0
+  clip: rect(0 0 0 0)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px
+
+// -------------------------------------
 //   Stretch
 // -------------------------------------
 
@@ -34,4 +60,13 @@
   position: absolute
   right: 0
   top: 0
+
+// -------------------------------------
+//   Vertical Align
+// -------------------------------------
+
+.valign
+  +transform(translateY(-50%))
+  position: relative
+  top: 50%
 
