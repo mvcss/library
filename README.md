@@ -4,7 +4,7 @@ MVCSS Library
 Foundation
 ----------
 
-Choose the Sass extends, functions, mixins, and general helpers from `/foundation` to include in your [MVCSS](http://mvcss.github.io/) project.
+Choose the Sass extends, functions, and mixins from `/foundation` to include in your [MVCSS](http://mvcss.github.io/) project.
 
 Components
 ----------
