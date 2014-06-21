@@ -1,0 +1,98 @@
+// *************************************
+//
+//   List
+//   -> Enumeration of items
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %ul.list[.list--inline|object|object--single|styled|styled--numbered]
+//   %li.list-item List Item
+//   %li.list-item List Item
+//
+// *************************************
+
+// -------------------------------------
+//   Tools
+// -------------------------------------
+
+.group::after
+  clear: both
+  content: ''
+  display: table
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$list-whitespace: 1.25em
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.list
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Inline ----- //
+
+.list--inline
+
+  .list-item
+    display: inline
+    margin-right: $list-whitespace
+    &:last-child
+      margin-right: 0
+
+// ----- Object ----- //
+
+.list--object
+  @extend .group
+
+  .list-item
+    float: left
+    margin-right: $list-whitespace
+    &:last-child
+      margin-right: 0
+
+// Single
+
+.list--object--single
+
+  .list-item
+    margin-bottom: 0
+
+// ----- Styled ----- //
+
+.list--styled
+  padding-left: $list-whitespace
+
+  .list-item
+    display: list-item
+    list-style-type: disc
+
+// Numbered
+
+.list--styled--numbered
+
+  .list-item
+    list-style-type: decimal
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Item ----- //
+
+.list-item
+  display: block
+  margin-bottom: $list-whitespace
+  &:last-child
+    margin-bottom: 0
