@@ -1,0 +1,131 @@
+// *************************************
+//
+//   Panel
+//   -> Sticky panels
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .panel[.panel--scroll|top--1of4|top--tablet--1of2|etc.]
+//   .panel-content
+//
+// *************************************
+
+// -------------------------------------
+//   Tools
+// -------------------------------------
+
+// ----- Box Sizing ----- //
+
+.boxSizing
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+// ----- Stretch ----- //
+
+.stretch
+  bottom: 0
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Sizes ----- //
+
+$panel-s: 56em !default
+$panel-m: 64em !default
+$panel-l: 82em !default
+
+// ----- Settings ----- //
+
+$panel-defaults: 'tablet' $panel-s, 'desk' $panel-m, 'wide' $panel-l !default
+$panel-columns: 5 !default
+$panel-whitespace: 1.25em !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.panel
+  @extend .boxSizing
+  @extend .stretch
+  overflow: hidden
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Scroll ----- //
+
+.panel--scroll
+  overflow: auto
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Content ----- //
+
+.panel-content
+  padding: $panel-whitespace
+
+// -------------------------------------
+//   Setup
+// -------------------------------------
+
+=panel-setup($side, $namespace: '')
+
+  // ----- One Part ----- //
+
+  .panel--#{$side}--#{$namespace}1of1
+    #{opposite-position($side)}: 0
+
+  // ----- Two Parts ----- //
+
+  .panel--#{$side}--#{$namespace}1of2
+    #{opposite-position($side)}: 50%
+
+  // ----- Three Parts ----- //
+
+  @if $panel-columns >= 3
+    .panel--#{$side}--#{$namespace}1of3
+      #{opposite-position($side)}: 66.666%
+    .panel--#{$side}--#{$namespace}2of3
+      #{opposite-position($side)}: 33.333%
+
+  // ----- Four Parts ----- //
+
+  @if $panel-columns >= 4
+    .panel--#{$side}--#{$namespace}1of4
+      #{opposite-position($side)}: 75%
+    .panel--#{$side}--#{$namespace}3of4
+      #{opposite-position($side)}: 25%
+
+  @if $panel-columns >= 5
+    .panel--#{$side}--#{$namespace}1of5
+      #{opposite-position($side)}: 80%
+    .panel--#{$side}--#{$namespace}2of5
+      #{opposite-position($side)}: 60%
+    .panel--#{$side}--#{$namespace}3of5
+      #{opposite-position($side)}: 40%
+    .panel--#{$side}--#{$namespace}4of5
+      #{opposite-position($side)}: 20%
+
+// -------------------------------------
+//   Creation
+// -------------------------------------
+
+$panel-sides: top, right, bottom, left
+
+@each $side in $panel-sides
+  +panel-setup($side)
+
+@each $device in $panel-defaults
+  @media screen and (min-width: nth($device, 2))
+    @each $side in $panel-sides
+      +panel-setup($side, "#{nth($device, 1)}--")
