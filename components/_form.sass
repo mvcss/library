@@ -1,0 +1,104 @@
+// *************************************
+//
+//   Form
+//   -> Fields, selects, & such
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %form.form
+//   %fieldset.form-field
+//     %label.form-label(for="email") Email
+//     %input.form-input(type="email" id="email")
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$form-borderRadius: 2px !default
+$form-fontSize-m: 90% !default
+$form-input-background: #fff !default
+$form-input-border: 2px solid #ddd !default
+$form-input-focus-borderColor: #4e4e5b !default
+$form-space: 1.25em !default
+$form-space-xs: 0.25 * $form-space !default
+$form-space-s: 0.5 * $form-space !default
+
+// -------------------------------------
+//   Tools
+// -------------------------------------
+
+.boxSizing
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.form
+  margin-bottom: $form-space
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Condensed ----- //
+
+.form--condensed
+
+  .form-field
+    margin-bottom: $form-space-s
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Field ----- //
+
+.form-field
+  border: 0
+  margin-bottom: $form-space
+  padding: 0
+
+// Inline
+
+.form-field--inline
+
+  .form-btn
+    display: block
+    line-height: 2.9
+    min-width: 100%
+
+// ----- Input ----- //
+
+.form-input
+  @extend .boxSizing
+  background: $form-input-background
+  border: $form-input-border
+  border-radius: $form-borderRadius
+  font-size: 100%
+  padding: $form-space-s
+  position: relative
+  transition: border-color 0.2s ease-in-out
+  width: 100%
+  &:focus
+    border-color: $form-input-focus-borderColor
+    outline: none
+
+// ----- Label ----- //
+
+.form-label
+  display: block
+  font-size: $form-fontSize-m
+  font-weight: bold
+  margin-bottom: $form-space-xs
+
+// ----- Select ----- //
+
+.form-select
+  min-width: 12.5em // ~200px
+
