@@ -1,0 +1,88 @@
+// *************************************
+//
+//   Table
+//   -> Tabular data
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %table.table[.table--striped]
+//   %thead.table-header
+//     %tr.table-row
+//       %th.table-head Heading
+//       %th.table-head Heading
+//   %tbody.table-body
+//     %tr.table-row
+//       %td.table-data Data
+//       %td.table-data Data
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$table-border: 2px solid #ddd !default
+$table-data-borderWidth: 1px !default
+$table-fontSize-s: 75% !default
+$table-fontSize-m: 90% !default
+$table-lineHeight: 1.5 !default
+$table--striped-row-background: #eee !default
+$table-space: 1.25em !default
+$table-space-s: 0.5 * $table-space !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.table
+  width: 100%
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Striped ----- //
+
+.table--striped
+
+  .table-body .table-row:nth-child(odd)
+    background: $table--striped-row-background
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Shared ----- //
+
+.table-data,
+.table-header
+  border-top: $table-border
+  line-height: $table-lineHeight
+  padding: $table-space-s $table-space
+  vertical-align: top
+
+// ----- Data ----- //
+
+.table-data
+  border-top-width: $table-data-borderWidth
+  font-size: $table-fontSize-m
+  vertical-align: middle
+
+// ----- Header ----- //
+
+.table-header
+  border-top: 0
+  text-align: left
+
+// ----- Head ----- //
+
+.table-head
+  border-bottom: $table-border
+  border-top: 0
+  font-size: $table-fontSize-s
+  padding: $table-space-s $table-space
+  text-transform: uppercase
+  vertical-align: bottom
+
