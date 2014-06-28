@@ -6,9 +6,13 @@
 
 // -------------------------------------
 //   Em
+//   -> Converts a pixel value into an em
+//
+//   $target - the target pixel size
+//   $context - the context pixel size
 // -------------------------------------
 
-@function em($target, $context: $base-fontSize)
+@function em($target, $context: $b-fontSize)
   @if ($target == 0)
     @return 0
   @else
@@ -16,8 +20,11 @@
 
 // -------------------------------------
 //   Rem
+//   -> Converts a pixel value into a rem
+//
+//   $size - the pixel size
 // -------------------------------------
 
 @function rem($size)
-  @return #{$size / $base-fontSize}rem
+  @return #{$size / $b-fontSize}rem
 
