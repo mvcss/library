@@ -7,7 +7,7 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .btn[.btn--a]
+// .btn[.btn--a|b|l]
 //
 // *************************************
 
@@ -18,9 +18,11 @@
 $btn--a-background: #4e4e5b !default
 $btn--a-color: #fff !default
 $btn--b-background: lighten($btn--a-background, 45%) !default
-$btn--b-color: #fff !default
+$btn--b-color: #4e4e5b !default
 $btn-borderRadius: 3px !default
 $btn-fontSize: 100% !default
+$btn--s-fontSize: 90% !default
+$btn--l-fontSize: 110% !default
 $btn-lineHeight: 2.5 !default
 $btn-space: 2.5em !default
 
@@ -62,4 +64,14 @@ $btn-space: 2.5em !default
   &:active
     background: lighten($btn--b-background, 5%)
     color: $btn--b-color
+
+// ----- Sizes ----- //
+
+.btn--s
+  font-size: $btn--s-fontSize
+  padding: 0 (0.5 * $btn-space)
+
+.btn--l
+  font-size: $btn--l-fontSize
+  padding: 0 (2 * $btn-space)
 
