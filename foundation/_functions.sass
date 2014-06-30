@@ -16,7 +16,7 @@
   @if ($target == 0)
     @return 0
   @else
-    @return #{$target / $context}em
+    @return ($target / $context) * 1em
 
 // -------------------------------------
 //   Rem
@@ -26,5 +26,5 @@
 // -------------------------------------
 
 @function rem($size)
-  @return #{$size / $b-fontSize}rem
+  @return ($size / $b-fontSize) * 1rem
 
