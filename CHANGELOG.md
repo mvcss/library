@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.0.1 - 2014-07-01
+-------------------
+
+### Added
+
+- Bordered list style to the list component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 v2.0.0 - 2014-07-01
 -------------------
 
