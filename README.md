@@ -23,7 +23,7 @@ Choose the Sass extends, functions, and mixins from `/foundation` to include in 
 
 ```sass
 // -------------------------------------
-//   Funcation Name
+//   Function Name
 //   -> Description
 //
 //   $arg - the argument description
