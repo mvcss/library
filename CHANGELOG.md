@@ -1,44 +1,114 @@
-## 2.0.0
+v2.0.0 - 2014-07-01
+-------------------
 
-- Remove JS components
-- Remove the docs
-- Add additional helpers
+### Added
+
+- **Foundation** functions, extends, helpers
+- Several **Components**
+
+### Removed
+
+- JS components
+
+### Fixed
+
 - Rename **Helpers** to **Foundation**
-- Rename **Modules** to **Structures**
-- Add **Foundation** functions
+- Rename **Modules** to **Components**
 
-## 1.4.1
-**July 30, 2013**
+v1.4.1 - 2014-07-30
+-------------------
 
-- Fix security vulnerability in hash URLs component by sanitizing `window.location.hash`
+### Added
 
-## 1.4.0
-**July 10, 2013**
+- Nothing
 
-- Add new **Helpers - Extends** file
+### Removed
 
-## 1.3.1
-**July 4, 2013**
+- Nothing
+
+### Fixed
+
+- Security vulnerability in hash URLs component by sanitizing `window.location.hash`
+
+v1.4.0 - 2014-07-10
+-------------------
+
+### Added
+
+- New **Helpers - Extends** file
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+v1.3.1 - 2014-07-04
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Refactor hash URL component
 
-## 1.3.0
-**July 4, 2013**
+v1.3.0 - 2014-07-04
+-------------------
+
+### Added
 
 - Add new bucket module
 
-## 1.2.1
-**June 27, 2013**
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+v1.3.0 - 2014-06-27
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Update to MVCSS v3.0.1 (new comment hierarchy)
 
-## 1.2.0
-**May 17, 2013**
+v1.2.0 - 2014-05-17
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Convert $.hashURLs to a HashURLs CoffeeScript class
 
-## 1.1.0
-**May 16, 2013**
+v1.1.0 - 2014-05-16
+-------------------
+
+### Added
 
 - Better defaults for **Modules - Button**
 - Better defaults for **Modules - Flag**
@@ -48,47 +118,121 @@
 - Better defaults for **Modules - Tab**
 - Remove `.tab-content` from **Modules - Tab**
 - Better defaults for **Modules - Table**
+
+### Removed
+
 - Remove `border-collapse` and `border-spacing` from **Modules - Table** because those are set in `Normalize`
 
-## 1.0.0
-**May 15, 2013**
+### Fixed
 
-- Strip full application down to `modules`, `components`, and `helpers`
-- Remove placeholder modules
+- Nothing
+
+v1.0.0 - 2014-05-16
+-------------------
+
+### Added
+
 - Add default variables to all modules
 - Add new flag module
 
-## 0.9.0
-**March 8, 2013**
+### Removed
+
+- Strip full application down to `modules`, `components`, and `helpers`
+- Remove placeholder modules
+
+### Fixed
+
+- Nothing
+
+v0.9.0 - 2014-03-08
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Fix incorrect version
 
-## 0.8.2
-**March 8, 2013**
+v0.8.2 - 2014-03-08
+-------------------
+
+### Added
 
 - Add `retina-image` mixin
 - Comment headings for the mixins
+
+### Removed
+
 - Remove unnecessary context font size on the base paragraphs
 
-## 0.8.1
-**March 6, 2013**
+### Fixed
+
+- Nothing
+
+v0.8.1 - 2014-03-08
+-------------------
+
+### Added
 
 - Add `.is-active` state to `.list--block` modifier
+
+### Removed
+
+- Nothing
+
+### Fixed
+
 - Update `.list` variables
 
-## 0.8.0
-**March 6, 2013**
+v0.8.1 - 2014-03-06
+-------------------
+
+### Added
 
 - Add a `.list--block` modifier to the `.list` module
 - Add a **Typography** module
-- Fix an incorrect comment heading
 
-## 0.7.1
-**March 1, 2013**
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Incorrect comment heading
+
+v0.7.1 - 2014-03-01
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Adjust the `.grid` module to account for a bug in WebKit
 
-## 0.7.0
-**February 22, 2013**
+v0.7.0 - 2014-02-22
+-------------------
+
+### Added
 
 - Initial version applied
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
