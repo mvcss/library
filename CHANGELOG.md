@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.0.4 - 2014-07-01
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Better defaults for the panel component
+
 v2.0.3 - 2014-07-01
 -------------------
 

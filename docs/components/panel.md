@@ -43,40 +43,40 @@ Responsiveness
 If you want your panels to adapt responsively, you just need to add additional modifiers. For example:
 
 ```html
-<div class="panel panel--left--1of4 panel--desk--left--1of2">
+<div class="panel panel--left--1of4 panel--m--left--1of2">
   <div class="panel-content">
     <!-- ... -->
   </div>
 </div>
 
-<div class="panel panel--right--3of4 panel--desk--right--1of2">
+<div class="panel panel--right--3of4 panel--m--right--1of2">
   <div class="panel-content">
     <!-- ... -->
   </div>
 </div>
 ```
 
-Now, at the `desk` breakpoint, which is defined in the variables (covered below), each `panel` will be sized at `50%` on their respective side.
+Now, at the `m` breakpoint, which is defined in the variables (covered below), each `panel` will be sized at `50%` on their respective side.
 
 ### Vertical & Horizontal Adjustments
 
 You can also make vertical and horizontal adjustments responsively.
 
 ```html
-<div class="panel panel--top--1of4 panel--top--desk--1of1 panel--left--desk--1of2">
+<div class="panel panel--top--1of4 panel--top--m--1of1 panel--left--m--1of2">
   <div class="panel-content">
     <!-- ... -->
   </div>
 </div>
 
-<div class="panel panel--bottom--3of4 panel--bottom--desk--1of1 panel--right--desk--1of2">
+<div class="panel panel--bottom--3of4 panel--bottom--m--1of1 panel--right--m--1of2">
   <div class="panel-content">
     <!-- ... -->
   </div>
 </div>
 ```
 
-Now we have a set of two panels that are 25/75 stacked horizontally until the `desk` size, and then they convert to vertical 50/50. Simple as that.
+Now we have a set of two panels that are 25/75 stacked horizontally until the `m` size, and then they convert to vertical 50/50. Simple as that.
 
 Customization
 -------------
@@ -88,16 +88,18 @@ There are variables at the top of the file that you can overwrite in your `_conf
 //   Variables
 // -------------------------------------
 
-// ----- Sizes ----- //
+// ----- Breakpoints ----- //
 
-$panel-s: 56em !default
+$panel-s: 44em !default
 $panel-m: 64em !default
-$panel-l: 82em !default
 
 // ----- Settings ----- //
 
-$panel-defaults: 'tablet' $panel-s, 'desk' $panel-m, 'wide' $panel-l !default
+$panel-defaults: 's' $panel-s, 'm' $panel-m !default
 $panel-columns: 5 !default
-$panel-whitespace: 1.25em !default
+
+// ----- Sizing ----- //
+
+$panel-space: 1.25em !default
 ```
 

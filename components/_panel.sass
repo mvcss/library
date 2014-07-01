@@ -7,7 +7,7 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .panel[.panel--scroll|top--1of4|top--tablet--1of2|etc.]
+// .panel[.panel--scroll|top--1of4|top--s--1of2|etc.]
 //   .panel-content
 //
 // *************************************
@@ -35,17 +35,19 @@
 //   Variables
 // -------------------------------------
 
-// ----- Sizing ----- //
+// ----- Breakpoint ----- //
 
-$panel-s: 56em !default
+$panel-s: 44em !default
 $panel-m: 64em !default
-$panel-l: 82em !default
-$panel-space: 1.25em !default
 
 // ----- Settings ----- //
 
-$panel-defaults: 'tablet' $panel-s, 'desk' $panel-m, 'wide' $panel-l !default
+$panel-defaults: 's' $panel-s, 'm' $panel-m !default
 $panel-columns: 5 !default
+
+// ----- Sizing ----- //
+
+$panel-space: 1.25em !default
 
 // -------------------------------------
 //   Base
