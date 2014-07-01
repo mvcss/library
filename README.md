@@ -6,6 +6,62 @@ Foundation
 
 Choose the Sass extends, functions, and mixins from `/foundation` to include in your [MVCSS](http://mvcss.github.io/) project.
 
+### Authoring Example
+
+**Extends**
+
+```sass
+// -------------------------------------
+//   Extend Name
+// -------------------------------------
+
+.extend
+  // ...
+```
+
+**Functions**
+
+```sass
+// -------------------------------------
+//   Funcation Name
+//   -> Description
+//
+//   $arg - the argument description
+// -------------------------------------
+
+@function name($arg)
+  // ...
+```
+
+**Mixins**
+
+```sass
+// -------------------------------------
+//
+//   Mixin Name
+//   -> Description
+//
+// -------------------------------------
+//
+// $arg - the argument description
+//
+// -------------------------------------
+
+=name($arg)
+  // ...
+```
+
+**Tools**
+
+```sass
+// -------------------------------------
+//   Tool Section Name
+// -------------------------------------
+
+.name
+  // ...
+```
+
 Components
 ----------
 
