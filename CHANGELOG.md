@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.0.2 - 2014-07-01
+-------------------
+
+### Added
+
+- Better comments for components
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 v2.0.1 - 2014-07-01
 -------------------
 
