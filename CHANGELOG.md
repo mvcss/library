@@ -1,6 +1,22 @@
 Changelog
 =========
 
+v2.1.0 - 2014-07-02
+-------------------
+
+### Added
+
+- Pillar Component
+- Split varialbes
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- `.list--bordered` now `.list-divided`
+
 v2.0.4 - 2014-07-01
 -------------------
 
