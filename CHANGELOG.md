@@ -7,7 +7,7 @@ v2.1.0 - 2014-07-02
 ### Added
 
 - Pillar Component
-- Split varialbes
+- Split variables
 
 ### Removed
 
