@@ -14,6 +14,28 @@
 //
 // *************************************
 
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+$split-borderColor: #9a9aa8 !default
+
+// ----- Borders & Box Shadow ----- //
+
+$split-borderStyle: solid !default
+$split-borderWidth: 2px !default
+$split-border: $split-borderWidth $split-borderStyle $split-borderColor !default
+
+// ----- Sizing ----- //
+
+$split-space: 0.75em !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
 .split
   list-style-type: none
   margin: 0
@@ -28,7 +50,7 @@
 .split--divided
 
   .split-item
-    border-bottom: $b-border
+    border-bottom: $split-border
     padding-bottom: $split-space
     &:last-child
       border-bottom: 0
@@ -46,7 +68,7 @@
   img
     max-width: none
 
-// ----- Split Item ----- //
+// ----- Split Cell ----- //
 
 .split-cell
   display: table-cell
