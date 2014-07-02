@@ -1,0 +1,41 @@
+// *************************************
+//
+//   Pillar
+//   -> Vertically capped container
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+//  .pillar
+//    / ...
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+$pillar-borderColor: #9a9aa8 !default
+
+// ----- Borders & Box Shadow ----- //
+
+$pillar-borderStyle: solid !default
+$pillar-borderWidth: 2px !default
+$pillar-border: $pillar-borderWidth $pillar-borderStyle $pillar-borderColor !default
+
+// ----- Sizing ----- //
+
+$pillar-space: 1.25em !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.pillar
+  border-bottom: $pillar-border
+  border-top: $pillar-border
+  padding-bottom: $pillar-space
+  padding-top: $pillar-space
