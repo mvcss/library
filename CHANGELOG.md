@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.1.1 - 2014-07-19
+-------------------
+
+### Added
+
+- `opposite-position()` function
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Added `opposite-position()` function to panel Component
+
 v2.1.0 - 2014-07-02
 -------------------
 
@@ -30,7 +45,7 @@ v2.0.4 - 2014-07-01
 
 ### Fixed
 
-- Better defaults for the panel component
+- Better defaults for the panel Component
 
 v2.0.3 - 2014-07-01
 -------------------
