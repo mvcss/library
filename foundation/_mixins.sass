@@ -63,12 +63,17 @@
     @content
 
 // -------------------------------------
-//   Retina-image
+//
+//   Size
+//   -> Outputs width/height properties
+//
+// -------------------------------------
+//
+// $width - the element width
+// $height - the element height
+//
 // -------------------------------------
 
-// @import "compass" -> required
-
-=retina-image($img)
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)
-    background-image: image-url($img)
-    background-size: image-width($img) / 2 image-height($img) / 2
+=size($width, $height: $width)
+  height: $height
+  width: $width

@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.2.0 - 2014-07-23
+-------------------
+
+### Added
+
+- `size` mixin
+
+### Removed
+
+- `retina-image` mixin
+
+### Fixed
+
+- Nothing
+
 v2.1.1 - 2014-07-19
 -------------------
 
