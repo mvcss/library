@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.2.1 - 2014-07-28
+-------------------
+
+### Added
+
+- First and last-child selectors to `split-cell`
+
+### Removed
+
+- `split-cell` modifiers
+
+### Fixed
+
+- Nothing
+
 v2.2.0 - 2014-07-23
 -------------------
 

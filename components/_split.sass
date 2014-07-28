@@ -9,8 +9,8 @@
 //
 // %[ul].split[.split--divided]
 //   %[li].split-item
-//     .split-cell[.split-cell--fluid]
-//     .split-cell[.split-cell--fixed]
+//     .split-cell
+//     .split-cell
 //
 // *************************************
 
@@ -72,13 +72,7 @@ $split-space: 0.75em !default
 
 .split-cell
   display: table-cell
-
-// Fixed width
-
-.split-cell--fixed
-  white-space: nowrap
-
-// Fluid width
-
-.split-cell--fluid
-  width: 10000px
+  &:first-child
+    width: 10000px
+  &:last-child
+    white-space: nowrap
