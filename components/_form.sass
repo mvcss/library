@@ -15,14 +15,6 @@
 // *************************************
 
 // -------------------------------------
-//   Helpers
-// -------------------------------------
-
-.boxSizing
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-
-// -------------------------------------
 //   Variables
 // -------------------------------------
 
@@ -88,10 +80,10 @@ $form-space-s: 0.5 * $form-space !default
 // ----- Input ----- //
 
 .form-input
-  @extend .boxSizing
   background: $form-input-background
   border: $form-input-border
   border-radius: $form-borderRadius
+  box-sizing: border-box
   font-size: 100%
   padding: $form-space-s
   position: relative

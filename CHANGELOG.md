@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.2.2 - 2014-07-28
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- `boxSizing` extend in Form Component
+
+### Fixed
+
+- Nothing
+
 v2.2.1 - 2014-07-28
 -------------------
 
