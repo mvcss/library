@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.2.3 - 2014-07-29
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- `boxSizing` extend in Panel Component
+
+### Fixed
+
+- Nothing
+
 v2.2.2 - 2014-07-28
 -------------------
 

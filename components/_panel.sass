@@ -32,12 +32,6 @@
 //   Helpers
 // -------------------------------------
 
-// ----- Box Sizing ----- //
-
-.boxSizing
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-
 // ----- Stretch ----- //
 
 .stretch
@@ -70,8 +64,8 @@ $panel-space: 1.25em !default
 // -------------------------------------
 
 .panel
-  @extend .boxSizing
   @extend .stretch
+  box-sizing: border-box
   overflow: hidden
 
 // -------------------------------------
