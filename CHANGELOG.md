@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.3.0 - 2014-07-29
+-------------------
+
+### Added
+
+- New Bar Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 v2.2.3 - 2014-07-29
 -------------------
 

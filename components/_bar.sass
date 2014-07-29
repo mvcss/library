@@ -1,0 +1,87 @@
+// *************************************
+//
+//   Bar
+//   -> Sticky bar
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// (.has-bar|bar--content)
+//
+// .bar[.bar--fixed|header|footer|n|s|e|w]
+//   / ...
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+$bar-background: #333 !default
+
+// ----- Sizing ----- //
+
+$bar-height: 50px !default
+$bar-space: 1.25em !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.bar
+  background: $bar-background
+  box-sizing: border-box
+  height: $bar-height
+  line-height: $bar-height
+  padding: 0 $bar-space
+  position: absolute
+  width: 100%
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Fixed ----- //
+
+.bar--fixed
+  position: fixed
+
+// ----- Positioning ----- //
+
+.bar--n
+  top: 0
+
+.bar--s
+  bottom: 0
+
+.bar--e
+  right: 0
+
+.bar--w
+  left: 0
+
+// ----- Types ----- //
+
+.bar--header
+  @extend .bar--n
+  @extend .bar--e
+  @extend .bar--w
+
+.bar--footer
+  @extend .bar--s
+  @extend .bar--e
+  @extend .bar--w
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.has-bar
+  padding-top: $bar-height
+
+.has-bar--content
+  margin-top: $bar-space
+
