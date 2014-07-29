@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.3.1 - 2014-07-29
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- The `line-height` from the Bar Component
+
+### Fixed
+
+- Nothing
+
 v2.3.0 - 2014-07-29
 -------------------
 
