@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.4.0 - 2014-07-30
+-------------------
+
+### Added
+
+- Card Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 v2.3.2 - 2014-07-30
 -------------------
 

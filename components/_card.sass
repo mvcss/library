@@ -1,0 +1,167 @@
+// *************************************
+//
+//   Card
+//   -> Individual style containers
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// (.has-card-item|card-row|card-section)
+//
+// .card[.card--xs|s|l|f]
+//   .card-row[.card-row--n|s]
+//   .card-section
+//
+//   %a.card-item.btn{href: '#'} Button
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+$card-background: #fff !default
+$card-borderColor: #dedede !default
+$card-row-background: #dedede !default
+
+// ----- Borders & Box Shadows ----- //
+
+$card-borderStyle: solid !default
+$card-borderWidth: 1px !default
+$card-border: $card-borderWidth $card-borderStyle $card-borderColor
+$card-borderRadius: 3px !default
+$card-boxShadow: 0 2px 0 rgba(#000, 0.15) !default
+
+// ----- Sizing ----- //
+
+$card-space: 1.25em !default
+$card-space-xs: 0.25 * $card-space !default
+$card-space-s: 0.5 * $card-space !default
+$card-space-l: 2 * $card-space !default
+
+$card-sizes: 'xs', 's', 'l' !default
+$card-size-vars: $card-space-xs, $card-space-s, $card-space-l !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.card
+  border-radius: $card-borderRadius
+  padding: $card-space
+  position: relative
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Sizes ----- //
+
+.card--f
+  padding: 0
+
+@for $i from 1 through length($card-sizes)
+  .card--#{nth($card-sizes, $i)}
+    padding: nth($card-size-vars, $i)
+
+    > .card-row
+      margin-left: -#{nth($card-size-vars, $i)}
+      margin-right: -#{nth($card-size-vars, $i)}
+
+    > .card-row--n
+      margin-top: -#{nth($card-size-vars, $i)}
+
+    > .card-row--s
+      margin-bottom: -#{nth($card-size-vars, $i)}
+
+    > .card-section
+      margin-bottom: nth($card-size-vars, $i)
+      padding-top: nth($card-size-vars, $i)
+      &::after
+        left: -#{nth($card-size-vars, $i)}
+        right: -#{nth($card-size-vars, $i)}
+
+// ----- Theme ----- //
+
+.card--a
+  background: $card-background
+  box-shadow: $card-boxShadow
+
+.card--b
+  background: none
+  border: $card-border
+  box-shadow: none
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// ----- Item ----- //
+
+.has-card-item
+  padding-bottom: 3 * $card-space
+
+// ----- Row ----- //
+
+.has-card-row
+  overflow: hidden
+
+// ----- Section ----- //
+
+.has-card-section
+  padding-top: 0
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Item ----- //
+
+.card-item
+  bottom: $card-space
+  left: $card-space
+  position: absolute
+  right: $card-space
+
+// ----- Row ----- //
+
+.card-row
+  background: $card-row-background
+  margin-bottom: $card-space
+  margin-left: -$card-space
+  margin-right: -$card-space
+  padding: $card-space-s $card-space
+
+.card-row--n
+  border-bottom: $card-border
+  margin-bottom: $card-space
+  margin-top: -$card-space
+
+.card-row--s
+  border-top: $card-border
+  margin-bottom: -$card-space
+  margin-top: $card-space
+
+// ----- Section ----- //
+
+.card-section
+  margin-bottom: $card-space
+  padding-top: $card-space
+  position: relative
+  &:first-child
+    padding: 0
+  &:last-child
+    margin: 0
+    &::after
+      background: none
+  &::after
+    background: $card-borderColor
+    bottom: -$card-space
+    content: ''
+    height: $card-borderWidth
+    left: -$card-space
+    position: absolute
+    right: -$card-space
