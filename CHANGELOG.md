@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.4.1 - 2014-07-30
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Duplicate property on `.card-row`
+
+### Fixed
+
+- Nothing
+
 v2.4.0 - 2014-07-30
 -------------------
 
