@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.3.2 - 2014-07-30
+-------------------
+
+### Added
+
+- `position: relative` to Bar Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 v2.3.1 - 2014-07-29
 -------------------
 
