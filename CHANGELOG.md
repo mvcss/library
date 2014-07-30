@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.5.0 - 2014-07-30
+-------------------
+
+### Added
+
+- `.lr` Extend (list reset)
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 v2.4.1 - 2014-07-30
 -------------------
 
