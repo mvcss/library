@@ -1,6 +1,22 @@
 Changelog
 =========
 
+v2.5.1 - 2014-08-06
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Comments for the `+caret` Mixin
+- Replace need for `+stretch` Compass Mixin in `+caret` Mixin
+
 v2.5.0 - 2014-07-30
 -------------------
 
