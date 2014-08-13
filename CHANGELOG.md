@@ -1,6 +1,22 @@
 Changelog
 =========
 
+v2.5.2 - 2014-08-13
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Better variable setup for Button Component
+- Better comments for Components
+
 v2.5.1 - 2014-08-06
 -------------------
 

@@ -1,7 +1,7 @@
 // *************************************
 //
 //   Button
-//   -> Clickable controls
+//   -> Clickable control
 //
 // -------------------------------------
 //   Template (Haml)
@@ -36,6 +36,8 @@ $btn-lineHeight: 2.5 !default
 // ----- Sizing ----- //
 
 $btn-space: 2.5em !default
+$btn-space-s: 0.5 * $btn-space !default
+$btn-space-l: 2 * $btn-space !default
 
 // -------------------------------------
 //   Base
@@ -80,9 +82,9 @@ $btn-space: 2.5em !default
 
 .btn--s
   font-size: $btn--s-fontSize
-  padding: 0 (0.5 * $btn-space)
+  padding: 0 $btn-space-s
 
 .btn--l
   font-size: $btn--l-fontSize
-  padding: 0 (2 * $btn-space)
+  padding: 0 $btn-space-l
 
