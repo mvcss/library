@@ -128,6 +128,78 @@ Choose the Sass components from `/components` to include in your [MVCSS](http://
   // ...
 ```
 
+Structures
+----------
+
+Choose the Sass structures from `/structures` to include in your [MVCSS](http://mvcss.github.io/) project.
+
+### Authoring Example
+
+```sass
+// *************************************
+//
+//   Structure
+//   -> Description
+//
+// -------------------------------------
+//   Dependencies
+// -------------------------------------
+//
+//   - components/grid
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .structure[.structure--modifier](.is-state)(.has-context)
+//   .structure-scaffolding
+//
+// *************************************
+
+// -------------------------------------
+//   Helpers
+// -------------------------------------
+
+// ...
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+// ... (with the !default flag)
+
+// ----- Sizing ----- //
+
+// ... (with the !default flag)
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.component
+  // ...
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Modifier Name ----- //
+
+.component--modifier
+  // ...
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Scaffolding Name ----- //
+
+.structure-scaffolding
+  // ...
+```
+
 Documentation
 -------------
 
