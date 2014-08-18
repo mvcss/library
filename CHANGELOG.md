@@ -1,6 +1,24 @@
 Changelog
 =========
 
+v2.6.0 - 2014-08-18
+-------------------
+
+### Added
+
+- Column Component
+- `structures` directory
+- Collection Structure
+- `respond-within` mixin
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 v2.5.2 - 2014-08-13
 -------------------
 
