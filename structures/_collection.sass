@@ -1,0 +1,69 @@
+// *************************************
+//
+//   Collection
+//   -> Accumulation of items
+//
+// -------------------------------------
+//   Dependencies
+// -------------------------------------
+//
+//   - components/grid
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .g.collection[.collection--s|m|l--1of1|1of2|1of3|...]
+//   .g-b[.g-b--s|m|l--1of1|1of2|1of3|...].collection-item
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$collection-columns: 3 !default
+$collection-defaults: 's' 30em, 'm' 50em, 'l' 64em !default
+$collection-space: 1.25em !default
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.collection-item
+  margin-bottom: $collection-space
+
+// -------------------------------------
+//   Setup
+// -------------------------------------
+
+=collection-device-type($namespace: '', $breakpoint: null)
+
+  @if $namespace != ''
+    [class*='collection#{$namespace}']
+
+      > .collection-item:nth-child(n)
+        clear: none
+
+  %collection-clear#{$namespace}
+    @if $breakpoint == null
+      clear: left
+    @else
+      @media screen and (min-width: #{$breakpoint})
+        clear: left
+
+  @for $i from 1 through $collection-columns
+
+    .collection#{$namespace}--1of#{$i}
+
+      > .collection-item:nth-child(#{$i}n + 1)
+        @extend %collection-clear#{$namespace}
+
+// -------------------------------------
+//   Creation
+// -------------------------------------
+
++collection-device-type()
+
+@each $device in $collection-defaults
+  +collection-device-type("--#{nth($device, 1)}", nth($device, 2))

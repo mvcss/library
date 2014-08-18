@@ -1,0 +1,47 @@
+// *************************************
+//
+//   Column
+//   -> Adjacent vertical blocks
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .column[.column--|1|2|3|...]
+//   / ...
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$column-columns: 4 !default
+$column-defaults: 's' 30em, 'm' 50em, 'l' 64em !default
+$column-space: 1.25em !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.column
+  column-gap: $column-space
+
+// -------------------------------------
+//   Setup
+// -------------------------------------
+
+=column-device-type($namespace: '')
+  @for $i from 1 through $column-columns
+    .column--#{$namespace}#{$i}
+      columns: $i
+
+// -------------------------------------
+//   Creation
+// -------------------------------------
+
++column-device-type()
+
+@each $device in $column-defaults
+  @media screen and (min-width: nth($device, 2))
+    +column-device-type("#{nth($device, 1)}--")
