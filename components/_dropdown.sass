@@ -1,0 +1,188 @@
+// *************************************
+//
+//   Dropdown
+//   -> Revealing menu
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .dropdown[.dropdown--floating|center](.is-active)
+//   %ul.dropdown-menu
+//     %li.dropdown-menu-item
+//       %a.dropdown-menu-item-link{ href: '#' } Menu Item
+//     %li.dropdown-menu-item
+//       %a.dropdown-menu-item-link{ href: '#' } Menu Item
+//
+// *************************************
+
+// -------------------------------------
+//   Helpers
+// -------------------------------------
+
+// ----- Functions ----- //
+
+@function opposite-position($side)
+  @if $side == 'top'
+    @return 'bottom'
+  @if $side == 'bottom'
+    @return 'top'
+  @if $side == 'left'
+    @return 'right'
+  @if $side == 'right'
+    @return 'left'
+
+// ----- Mixins ----- //
+
+=caret($side, $size, $color)
+  $opposite: opposite-position($side)
+  border: $size solid transparent
+  border-#{$opposite}: $size solid $color
+  border-#{$side}: 0
+  bottom: auto
+  content: ''
+  display: block
+  height: 0
+  left: 50%
+  margin: (-$size) 0 0 (-$size)
+  margin-#{$side}: 0
+  position: absolute
+  right: auto
+  width: 0
+  #{$side}: -$size
+  #{$opposite}: auto
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+$dropdown-menu-background: #333 !default
+$dropdown-menu-item-link-hover-background: #555 !default
+$dropdown-text-invert: #fff !default
+
+// ----- Borders ----- //
+
+$dropdown-borderColor: #555 !default
+$dropdown-borderStyle: solid !default
+$dropdown-borderWidth: 1px !default
+$dropdown-border: $dropdown-borderWidth $dropdown-borderStyle $dropdown-borderColor !default
+$dropdown-borderRadius: 3px !default
+
+// ----- Typography ----- //
+
+$dropdown-menu-item-fontSize: 85% !default
+
+// ----- Sizing ----- //
+
+$dropdown-space: 1.25em !default
+$dropdown-space-s: 0.5 * $dropdown-space !default
+$dropdown-space-l: 2 * $dropdown-space !default
+$dropdown-width: 250px !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.dropdown
+  position: relative
+
+  .dropdown-menu
+    height: 0
+    opacity: 0
+    overflow: hidden
+    transition: none
+    visibility: hidden
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Floating ----- //
+
+.dropdown--floating
+
+  .dropdown-menu
+    border-radius: $b-borderRadius
+    margin-top: $b-space
+    transition: opacity 0.2s ease-in-out, top 0.3s ease-in-out
+    top: 65%
+    &::before
+      +caret(top, 10px, $dropdown-menu-background)
+      left: $b-space-l
+      z-index: 10
+
+  .dropdown-menu-item:first-child
+
+    .dropdown-menu-item-link
+      border-top-left-radius: $dropdown-borderRadius
+      border-top-right-radius: $dropdown-borderRadius
+
+// ----- Position ----- //
+
+// Center
+
+.dropdown--center
+  display: inline-block
+
+  .dropdown-menu
+    left: 50%
+    margin-left: -($dropdown-width * 0.5)
+    &::before
+      left: 50%
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// ----- Active ----- //
+
+.dropdown.is-active
+
+  .dropdown-menu
+    height: auto
+    opacity: 1
+    overflow: visible
+    top: 100%
+    visibility: visible
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Menu ----- //
+
+.dropdown-menu
+  background: $dropdown-menu-background
+  border-bottom-left-radius: $dropdown-borderRadius
+  border-bottom-right-radius: $dropdown-borderRadius
+  list-style-type: none
+  margin: 0
+  padding: 0
+  position: absolute
+  top: 100%
+  width: $dropdown-width
+
+// Scaffolding
+
+.dropdown-menu-item
+  font-size: $dropdown-menu-item-fontSize
+  margin: 0
+  &:not(:last-child)
+    border-bottom: $dropdown-border
+  &:last-child
+    .dropdown-menu-item-link
+      border-bottom-left-radius: $dropdown-borderRadius
+      border-bottom-right-radius: $dropdown-borderRadius
+
+.dropdown-menu-item-link
+  border: 0
+  color: $dropdown-text-invert
+  display: block
+  padding: $dropdown-space-s
+  transition: all 0.2s ease-in-out
+  &:hover,
+  &:focus
+    background: $dropdown-menu-item-link-hover-background
+    color: $dropdown-text-invert
