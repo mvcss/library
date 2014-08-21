@@ -60,6 +60,7 @@ In CoffeeScript, you can use the following JavaScript to trigger your dropdown:
 
 ```coffeescript
 $('.js-dropdown-btn').on 'click', (e) ->
+  e.preventDefault()
   e.stopPropagation()
   $(@).closest('.js-dropdown').toggleClass('is-active')
 
