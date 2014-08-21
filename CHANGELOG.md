@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.7.1 - 2014-08-21
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- `z-index` on Dropdown Component
+
 v2.7.0 - 2014-08-20
 -------------------
 
