@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.7.2 - 2014-08-21
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Minor cleanup of Dropdown Component
+
 v2.7.1 - 2014-08-21
 -------------------
 

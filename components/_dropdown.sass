@@ -88,13 +88,6 @@ $dropdown-width: 250px !default
 .dropdown
   position: relative
 
-  .dropdown-menu
-    height: 0
-    opacity: 0
-    overflow: hidden
-    transition: none
-    visibility: hidden
-
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
@@ -104,13 +97,13 @@ $dropdown-width: 250px !default
 .dropdown--floating
 
   .dropdown-menu
-    border-radius: $b-borderRadius
-    margin-top: $b-space
+    border-radius: $dropdown-borderRadius
+    margin-top: $dropdown-space
     transition: opacity 0.2s ease-in-out, top 0.3s ease-in-out
     top: 65%
     &::before
       +caret(top, 10px, $dropdown-menu-background)
-      left: $b-space-l
+      left: $dropdown-space-l
       z-index: 10
 
   .dropdown-menu-item:first-child
@@ -157,11 +150,16 @@ $dropdown-width: 250px !default
   background: $dropdown-menu-background
   border-bottom-left-radius: $dropdown-borderRadius
   border-bottom-right-radius: $dropdown-borderRadius
+  height: 0
   list-style-type: none
   margin: 0
+  opacity: 0
+  overflow: hidden
   padding: 0
   position: absolute
   top: 100%
+  transition: none
+  visibility: hidden
   width: $dropdown-width
   z-index: 10
 
