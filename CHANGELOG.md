@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.7.3 - 2014-08-25
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Missing `!default` flag in Card Component
+
 v2.7.2 - 2014-08-21
 -------------------
 
