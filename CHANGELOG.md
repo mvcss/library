@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.7.4 - 2014-08-28
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Table Component heading alignment in IE
+
 v2.7.3 - 2014-08-25
 -------------------
 
