@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.7.5 - 2014-09-03
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- `docs/patterns/bash-mvcss.md` file
+
+### Fixed
+
+- Nothing
+
 v2.7.4 - 2014-08-28
 -------------------
 
