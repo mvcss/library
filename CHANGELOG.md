@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.7.6 - 2014-09-13
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Collection Structure clearfixing when using multiple modifiers
+
 v2.7.5 - 2014-09-03
 -------------------
 

@@ -40,10 +40,11 @@ $collection-space: 1.25em !default
 =collection-device-type($namespace: '', $breakpoint: null)
 
   @if $namespace != ''
-    [class*='collection#{$namespace}']
+    @media screen and (min-width: #{$breakpoint})
+      [class*='collection#{$namespace}']
 
-      > .collection-item:nth-child(n)
-        clear: none
+        > .collection-item:nth-child(n)
+          clear: none
 
   %collection-clear#{$namespace}
     @if $breakpoint == null
