@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.8.0 - 2014-10-08
+-------------------
+
+### Added
+
+- State mixin
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 v2.7.6 - 2014-09-13
 -------------------
 
