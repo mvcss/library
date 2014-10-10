@@ -1,6 +1,22 @@
 Changelog
 =========
 
+v2.9.0 - 2014-10-10
+-------------------
+
+### Added
+
+- Sector Component
+- Flex Sector Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 v2.8.0 - 2014-10-08
 -------------------
 

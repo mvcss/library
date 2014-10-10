@@ -1,0 +1,53 @@
+// *************************************
+//
+//   Flex Sector
+//   -> Adjacent bleed divisions (requires flexbox)
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .has-sector
+//   .sector
+//     .sector-item[.sector-item--a|b|...]
+//     .sector-item[.sector-item--a|b|...]
+//
+// *************************************
+
+.sector
+  display: flex
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.has-sector
+  overflow: hidden
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.sector-item
+  position: relative
+
+  &::before
+    bottom: 0
+    content: ''
+    left: 0
+    position: absolute
+    top: 0
+    width: 9999px
+    z-index: -1
+
+  &:first-child::before
+    left: auto
+    right: 0
+
+// Hierarchy
+
+.sector-item--a::before
+  background: #ecf0f1
+
+.sector-item--b::before
+  background: #cfd9db
