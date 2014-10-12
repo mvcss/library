@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.10.0 - 2014-10-12
+-------------------
+
+### Added
+
+- Base (Foundation) starter
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 v2.9.0 - 2014-10-10
 -------------------
 

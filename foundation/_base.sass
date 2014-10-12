@@ -1,0 +1,176 @@
+// *************************************
+//
+//   Base
+//   -> Tag-level settings
+//
+// *************************************
+
+// -------------------------------------
+//   Helpers
+// -------------------------------------
+
+// ----- Functions ----- //
+
+@function em($target, $context: $b-fontSize)
+  @if ($target == 0)
+    @return 0
+  @else
+    @return ($target / $context) * 1em
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Palette ----- //
+
+$plum: #4e4e5b !default
+
+// ----- Base ----- //
+
+$c-background: #ecf0f1 !default
+$c-border: lighten($plum, 30%) !default
+$c-highlight: $plum !default
+$c-selection: lighten( $plum, 50% ) !default
+$c-subdue: lighten($plum, 40%) !default
+$c-text-invert: #fff !default
+$c-text: #444 !default
+
+// ----- Borders & Box Shadow ----- //
+
+$b-borderStyle: solid !default
+$b-borderWidth: 2px !default
+$b-border: $b-borderWidth $b-borderStyle $c-border !default
+
+// ----- Transitions ----- //
+
+$b-transition: 0.2s ease-in-out !default
+
+// ----- Typography ----- //
+
+$b-fontFamily-heading: sans-serif !default
+$b-fontFamily-mono: monospace !default
+$b-fontFamily: sans-serif !default
+$b-fontSize: 16px !default
+$b-lineHeight: 1.5 !default
+
+// ----- Sizing ----- //
+
+$b-space: em(20px) !default
+$b-space-xs: 0.25 * $b-space !default
+$b-space-s: 0.5 * $b-space !default
+
+// -------------------------------------
+//   Document
+// -------------------------------------
+
+html
+  background: $c-background
+  color: $c-text
+  font-family: $b-fontFamily
+  font-size: $b-fontSize
+  line-height: $b-lineHeight
+
+body
+  font-size: 100%
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+// ----- Lists, Paragraphs ----- //
+
+dl, ol, ul, p
+  margin-bottom: $b-space
+  margin-top: 0
+
+dd, li
+  margin-bottom: $b-space-s
+  margin-top: 0
+
+dd
+  margin-left: 0
+
+dt
+  font-weight: bold
+
+// ----- Headings ----- //
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4
+  font-family: $b-fontFamily-heading
+  font-weight: bold
+  line-height: 1.2
+  margin-bottom: $b-space-xs
+  margin-top: 0
+
+h1, .h1
+  font-size: 200%
+
+h2, .h2
+  font-size: 150%
+
+h3, .h3
+  font-size: 125%
+
+h4, .h4
+  font-size: 110%
+
+// ----- Preformatted Text ----- //
+
+pre
+  font-family: $b-fontFamily-mono
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+// ----- Links ----- //
+
+a
+  border-bottom: $b-border
+  color: $c-highlight
+  text-decoration: none
+  transition: $b-transition
+  &:active,
+  &:focus,
+  &:hover
+    border-bottom-color: $c-highlight
+    color: $c-subdue
+
+// ----- Images ----- //
+
+img
+  height: auto
+  max-width: 100%
+
+// ----- Inputs ----- //
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='text'],
+textarea
+  -webkit-appearance: none
+  box-sizing: border-box
+
+  &::placeholder
+    color: $c-subdue
+
+// ----- Text ----- //
+
+strong, b
+  font-weight: bold
+
+em, i
+  font-style: italic
+
+code
+  font-family: $b-fontFamily-mono
+
+// ----- Selection ----- //
+
+::selection
+  background: $c-selection
