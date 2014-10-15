@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.11.0 - 2014-10-15
+-------------------
+
+### Added
+
+- Sticker Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 v2.10.0 - 2014-10-12
 -------------------
 

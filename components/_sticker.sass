@@ -1,0 +1,81 @@
+// *************************************
+//
+//   Sticker
+//   -> Enclosed icon
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// Colors
+
+$sticker-background: #eee !default
+$sticker-color: #278998 !default
+
+// Borders
+
+$sticker-borderRadius: 50% !default
+$sticker-border: 2px solid #278998 !default
+
+// Sizes
+
+$sticker-fontSize: 100% !default
+$sticker-fontSize-s: $sticker-fontSize * 0.65 !default
+$sticker-fontSize-m: $sticker-fontSize * 0.8 !default
+$sticker-fontSize-l: $sticker-fontSize * 1.5 !default
+$sticker-size: 3em !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.sticker
+  background: $sticker-background
+  border-radius: $sticker-borderRadius
+  border: 0
+  box-sizing: border-box
+  color: $sticker-color
+  display: inline-block
+  font-size: $sticker-fontSize
+  height: $sticker-size
+  position: relative
+  vertical-align: middle
+  width: $sticker-size
+
+  &::before
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate( -50%, -50% )
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Bordered ----- //
+
+.sticker--bordered
+  border: $sticker-border
+
+// ----- Numbers ----- //
+
+@for $index from 0 through 10
+
+  .sticker--#{$index}
+    font-weight: bold
+
+    &::before
+      content: "#{$index}"
+
+// ----- Sizes ----- //
+
+.sticker--s
+  font-size: $sticker-fontSize-s
+
+.sticker--m
+  font-size: $sticker-fontSize-m
+
+.sticker--l
+  font-size: $sticker-fontSize-l
