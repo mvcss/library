@@ -81,6 +81,7 @@ $card-size-vars: $card-space-xs, $card-space-s, $card-space-l !default
       margin-bottom: nth($card-size-vars, $i)
       padding-top: nth($card-size-vars, $i)
       &::after
+        bottom: -#{nth($card-size-vars, $i)}
         left: -#{nth($card-size-vars, $i)}
         right: -#{nth($card-size-vars, $i)}
 
@@ -150,8 +151,6 @@ $card-size-vars: $card-space-xs, $card-space-s, $card-space-l !default
   margin-bottom: $card-space
   padding-top: $card-space
   position: relative
-  &:first-child
-    padding: 0
   &:last-child
     margin: 0
     &::after
