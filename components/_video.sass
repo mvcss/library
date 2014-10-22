@@ -1,0 +1,66 @@
+// *************************************
+//
+//   Video
+//   -> Responsive media embed
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .video
+//   %embed|iframe|object|video.video-item
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+$video-background: #000 !default
+
+// ----- Ratios ----- //
+
+$video-ratios: ( 16, 9 ), ( 4, 3 ) !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.video
+  background: $video-background
+  display: block
+  height: 0
+  overflow: hidden
+  padding: 0
+  position: relative
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Ratios ----- //
+
+@each $ratio in $video-ratios
+
+  .video--#{ nth( $ratio, 1 ) }by#{ nth( $ratio, 2 ) }
+    padding-bottom: percentage( nth( $ratio, 2 ) / nth( $ratio, 1 ) )
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Item ----- //
+
+embed,
+iframe,
+object,
+video,
+.video-item
+  bottom: 0
+  height: 100%
+  left: 0
+  position: absolute
+  top: 0
+  width: 100%
