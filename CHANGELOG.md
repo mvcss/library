@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.12.0 - 2014-10-22
+-------------------
+
+### Added
+
+- Video Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 v2.11.2 - 2014-10-22
 -------------------
 
