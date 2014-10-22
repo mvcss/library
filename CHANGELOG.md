@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.11.2 - 2014-10-22
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Moved `components/_flexSector.sass` to new `components/flexbox` directory.
+
 v2.11.1 - 2014-10-21
 -------------------
 
