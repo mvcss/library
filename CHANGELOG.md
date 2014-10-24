@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.12.2 - 2014-10-24
+-------------------
+
+### Added
+
+- Sticker Component Haml template
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 v2.12.1 - 2014-10-23
 --------------------
 
