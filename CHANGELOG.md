@@ -1,6 +1,22 @@
 Changelog
 =========
 
+v2.12.3 - 2014-10-31
+-------------------
+
+### Added
+
+- CodePen comments to relevant modules
+- Sticker component `authored` modifier
+
+### Removed
+
+- Sticker Component number modifiers
+
+### Fixed
+
+- Moved Sector and Flexbox Sector Component colors to variables
+
 v2.12.2 - 2014-10-24
 -------------------
 
