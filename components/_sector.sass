@@ -14,6 +14,17 @@
 //
 // *************************************
 
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$sector--a-background: #ecf0f1 !default
+$sector--b-background: #cfd9db !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
 .sector
   position: relative
 
@@ -37,10 +48,10 @@
 // ----- Hierarchy----- //
 
 .sector--a::before
-  background: #ecf0f1
+  background: $sector--a-background
 
 .sector--b::before
-  background: #cfd9db
+  background: $sector--b-background
 
 // -------------------------------------
 //   Context
