@@ -8,7 +8,7 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .sticker--[bordered|s|m|l|1|2|3|...]
+// .sticker--[authored|bordered|s|m|l]{ data: { sticker: '...' } }
 //
 // *************************************
 
@@ -62,20 +62,17 @@ $sticker-size: 3em !default
 //   Modifiers
 // -------------------------------------
 
+// ----- Authored ----- //
+
+.sticker--authored
+
+  &::before
+    content: attr(data-sticker)
+
 // ----- Bordered ----- //
 
 .sticker--bordered
   border: $sticker-border
-
-// ----- Numbers ----- //
-
-@for $index from 0 through 10
-
-  .sticker--#{$index}
-    font-weight: bold
-
-    &::before
-      content: "#{$index}"
 
 // ----- Sizes ----- //
 
