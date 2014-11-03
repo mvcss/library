@@ -1,0 +1,57 @@
+// *************************************
+//
+//   Bucket
+//   -> Media-supported content
+//      CodePen: http://codepen.io/johndjameson/pen/saEDx
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .bucket[.bucket--flag]
+//   .bucket-media
+//     / ...
+//   .bucket-content
+//     / ...
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$bucket-space: 1.25em !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.bucket
+  display: flex
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Flag ----- //
+
+.bucket--flag
+  align-items: center
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Content ----- //
+
+.bucket-content
+  flex-grow: 1
+
+// ----- Media ----- //
+
+.bucket-media
+  flex-shrink: 0
+  margin-right: $bucket-space
+
+  > img
+    display: block
