@@ -1,6 +1,23 @@
 Changelog
 =========
 
+v2.13.0 - 2014-11-03
+-------------------
+
+### Added
+
+- Flexbox Bucket Component
+- Flexbox Split Component
+
+### Removed
+
+- Split Component `img` element handling
+
+### Fixed
+
+- Split Component `.split--divided` modifier top padding
+
+
 v2.12.3 - 2014-10-31
 -------------------
 
