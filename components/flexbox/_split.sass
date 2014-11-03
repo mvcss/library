@@ -1,0 +1,32 @@
+// *************************************
+//
+//   Split
+//   -> Horizontally repellent content
+//      CodePen: http://codepen.io/johndjameson/pen/nKcep
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .split
+//   .split-cell Split cell
+//   .split-cell Split cell
+//
+// *************************************
+
+.split
+  display: flex
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Cell ----- //
+
+.split-cell
+
+  &:first-child
+    flex-grow: 1
+
+  &:last-child
+    flex-shrink: 0
