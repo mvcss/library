@@ -1,6 +1,21 @@
 Changelog
 =========
 
+v2.13.1 - 2014-11-07
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Flexbox Split Component vertical alignment
+
 v2.13.0 - 2014-11-03
 -------------------
 
