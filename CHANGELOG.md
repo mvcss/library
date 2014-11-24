@@ -1,6 +1,22 @@
 Changelog
 =========
 
+v2.13.2 - 2014-11-24
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Changed inline operations to use trailing figures
+- Changed Card Rows to use verbose `north` and `south` modifiers
+
 v2.13.1 - 2014-11-07
 -------------------
 

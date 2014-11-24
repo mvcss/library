@@ -11,7 +11,7 @@
 // (.has-card-item|card-row|card-section)
 //
 // .card[.card--a|b|xs|s|l|f]
-//   .card-row[.card-row--n|s]
+//   .card-row[.card-row--north|south]
 //   .card-section
 //
 //   %a.card-item.btn{href: '#'} Button
@@ -39,9 +39,9 @@ $card-boxShadow: 0 2px 0 rgba(#000, 0.15) !default
 // ----- Sizing ----- //
 
 $card-space: 1.25em !default
-$card-space-xs: 0.25 * $card-space !default
-$card-space-s: 0.5 * $card-space !default
-$card-space-l: 2 * $card-space !default
+$card-space-xs: $card-space * 0.25 !default
+$card-space-s: $card-space * 0.5 !default
+$card-space-l: $card-space * 2 !default
 
 $card-sizes: 'xs', 's', 'l' !default
 $card-size-vars: $card-space-xs, $card-space-s, $card-space-l !default
@@ -72,10 +72,10 @@ $card-size-vars: $card-space-xs, $card-space-s, $card-space-l !default
       margin-left: -#{nth($card-size-vars, $i)}
       margin-right: -#{nth($card-size-vars, $i)}
 
-    > .card-row--n
+    > .card-row--north
       margin-top: -#{nth($card-size-vars, $i)}
 
-    > .card-row--s
+    > .card-row--south
       margin-bottom: -#{nth($card-size-vars, $i)}
 
     > .card-section
@@ -104,7 +104,7 @@ $card-size-vars: $card-space-xs, $card-space-s, $card-space-l !default
 // ----- Item ----- //
 
 .has-card-item
-  padding-bottom: 3 * $card-space
+  padding-bottom: $card-space * 3
 
 // ----- Row ----- //
 
@@ -137,11 +137,11 @@ $card-size-vars: $card-space-xs, $card-space-s, $card-space-l !default
   margin-right: -$card-space
   padding: $card-space-s $card-space
 
-.card-row--n
+.card-row--north
   border-bottom: $card-border
   margin-top: -$card-space
 
-.card-row--s
+.card-row--south
   border-top: $card-border
   margin-bottom: -$card-space
   margin-top: $card-space
