@@ -50,26 +50,6 @@
 
 // -------------------------------------
 //
-//   Keyframe Animation
-//   -> Auto-prefixed keyframe-animation
-//
-// -------------------------------------
-//
-// $name - the name of the animation
-// @content - the generated content within the mixin
-//
-// -------------------------------------
-
-=keyframe-animation($name)
-  @-webkit-keyframes #{$name}
-    @content
-  @-moz-keyframes #{$name}
-    @content
-  @keyframes #{$name}
-    @content
-
-// -------------------------------------
-//
 //   Respond-within
 //   -> Generates a media query within a range
 //

@@ -1,6 +1,23 @@
 Changelog
 =========
 
+v2.14.0 - 2014-12-03
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Progress Component `boxSizing` helper
+- `keyframe-animation` mixin
+- `middle` extend vendor prefixes
+
+### Fixed
+
+- Nothing
+
 v2.13.2 - 2014-11-24
 -------------------
 
