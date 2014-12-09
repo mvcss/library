@@ -205,7 +205,11 @@ Documentation
 
 The documentation, for anything that requires more full documentation than the source file, is included in `/docs`.
 
-Versioning
-----------
+Contributing
+------------
 
-We use [Semantic Versioning](http://semver.org) for all versioning.
+We use [Semantic Versioning](http://semver.org) for all versioning. When you make a **Major**, **Minor**, or **Patch** update, you'll need to the do the following:
+
+- Update the `CHANGELOG.md` file
+- Add the new tag locally
+- Push the tag (along with your commit(s))
