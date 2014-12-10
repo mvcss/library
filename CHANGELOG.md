@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.14.2 - 2014-12-10
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Remove accidental code duplication in Flex Sector
+
 2.14.1 - 2014-12-09
 -------------------
 
