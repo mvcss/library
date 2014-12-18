@@ -79,7 +79,9 @@ Choose the Sass components from `/components` to include in your [MVCSS](http://
 //   Template (Haml)
 // -------------------------------------
 //
-// .component[.component--modifier](.is-state)(.has-context)
+// (.has-context)
+//
+// .component[.component--modifier](.is-state)
 //   .component-scaffolding
 //
 // *************************************
@@ -151,7 +153,9 @@ Choose the Sass structures from `/structures` to include in your [MVCSS](http://
 //   Template (Haml)
 // -------------------------------------
 //
-// .structure[.structure--modifier](.is-state)(.has-context)
+// (.has-context)
+//
+// .structure[.structure--modifier](.is-state)
 //   .structure-scaffolding
 //
 // *************************************
