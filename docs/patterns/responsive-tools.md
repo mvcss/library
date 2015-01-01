@@ -72,12 +72,12 @@ Now, in your markup, you can utilize these responsive tools, like so:
 
 ```html
 <div class="element fr--m">
-  <!--- ... --->
+  <!-- ... -->
 </div>
 ```
 
 ```html
 <div class="element dn db--m">
-  <!--- ... --->
+  <!-- ... -->
 </div>
 ```
