@@ -81,6 +81,7 @@ $card-size-vars: $card-space-xs, $card-space-s, $card-space-l !default
     > .card-section
       margin-bottom: nth($card-size-vars, $i)
       padding-top: nth($card-size-vars, $i)
+
       &::after
         bottom: -#{nth($card-size-vars, $i)}
         left: -#{nth($card-size-vars, $i)}
@@ -152,10 +153,13 @@ $card-size-vars: $card-space-xs, $card-space-s, $card-space-l !default
   margin-bottom: $card-space
   padding-top: $card-space
   position: relative
+
   &:last-child
     margin: 0
+
     &::after
       background: none
+
   &::after
     background: $card-borderColor
     bottom: -$card-space

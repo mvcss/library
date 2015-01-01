@@ -101,6 +101,7 @@ $dropdown-width: 250px !default
     margin-top: $dropdown-space
     transition: opacity 0.2s ease-in-out, top 0.3s ease-in-out
     top: 65%
+
     &::before
       +caret(top, 10px, $dropdown-menu-background)
       left: $dropdown-space-l
@@ -122,6 +123,7 @@ $dropdown-width: 250px !default
   .dropdown-menu
     left: 50%
     margin-left: -($dropdown-width * 0.5)
+
     &::before
       left: 50%
 
@@ -168,8 +170,10 @@ $dropdown-width: 250px !default
 .dropdown-menu-item
   font-size: $dropdown-menu-item-fontSize
   margin: 0
+
   &:not(:last-child)
     border-bottom: $dropdown-border
+
   &:last-child
     .dropdown-menu-item-link
       border-bottom-left-radius: $dropdown-borderRadius
@@ -181,6 +185,7 @@ $dropdown-width: 250px !default
   display: block
   padding: $dropdown-space-s
   transition: all 0.2s ease-in-out
+
   &:hover,
   &:focus
     background: $dropdown-menu-item-link-hover-background

@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.14.3 - 2015-01-01
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update spacing across files
+
 2.14.2 - 2014-12-10
 -------------------
 
