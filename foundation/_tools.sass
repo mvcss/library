@@ -13,6 +13,13 @@
 
 $b-border: 2px solid #ddd !default
 
+// ----- Typography ----- //
+
+$b-fontSize-h1: 200%
+$b-fontSize-h2: 150%
+$b-fontSize-h3: 125%
+$b-fontSize-h4: 110%
+
 // ----- Sizing ----- //
 
 $b-space: 1.25em !default
@@ -47,6 +54,15 @@ $b-space: 1.25em !default
   opacity: 0.5
 .opf
   opacity: 1
+
+// -------------------------------------
+//   Overflow
+// -------------------------------------
+
+.ovh
+  overflow: hidden
+.ovv
+  overflow: visible
 
 // -------------------------------------
 //   Positioning
@@ -120,3 +136,39 @@ $b-space: 1.25em !default
 .potln
   top: -$b-space-l
 
+// -------------------------------------
+//   Text
+// -------------------------------------
+
+// ----- Size ----- //
+
+// Headings
+
+.tsh1
+  font-size: $b-fontSize-h1
+.tsh2
+  font-size: $b-fontSize-h2
+.tsh3
+  font-size: $b-fontSize-h3
+.tsh4
+  font-size: $b-fontSize-h4
+
+// -------------------------------------
+//   Vertical Align
+// -------------------------------------
+
+.vab
+  vertical-align: baseline
+.vam
+  vertical-align: middle
+.vat
+  vertical-align: top
+
+// -------------------------------------
+//   Visibility
+// -------------------------------------
+
+.vih
+  visibility: hidden
+.viv
+  visibility: visible
