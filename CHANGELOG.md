@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.15.1 - 2015-01-13
+-------------------
+
+### Added
+
+- Additional variables to Foundation Base
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.15.0 - 2015-01-13
 -------------------
 

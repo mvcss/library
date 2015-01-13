@@ -51,7 +51,12 @@ $b-fontFamily-heading: sans-serif !default
 $b-fontFamily-mono: monospace !default
 $b-fontFamily: sans-serif !default
 $b-fontSize: 16px !default
+$b-fontSize-h1: 200% !default
+$b-fontSize-h2: 150% !default
+$b-fontSize-h3: 125% !default
+$b-fontSize-h4: 110% !default
 $b-lineHeight: 1.5 !default
+$b-lineHeight-heading: 1.2 !default
 
 // ----- Sizing ----- //
 
@@ -101,21 +106,21 @@ h3, .h3,
 h4, .h4
   font-family: $b-fontFamily-heading
   font-weight: bold
-  line-height: 1.2
+  line-height: $b-lineHeight-heading
   margin-bottom: $b-space-xs
   margin-top: 0
 
 h1, .h1
-  font-size: 200%
+  font-size: $b-fontSize-h1
 
 h2, .h2
-  font-size: 150%
+  font-size: $b-fontSize-h2
 
 h3, .h3
-  font-size: 125%
+  font-size: $b-fontSize-h3
 
 h4, .h4
-  font-size: 110%
+  font-size: $b-fontSize-h4
 
 // ----- Preformatted Text ----- //
 
