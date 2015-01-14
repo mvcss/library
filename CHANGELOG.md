@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.16.0 - 2015-01-14
+-------------------
+
+### Added
+
+- Additional Foundation Tools
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.15.2 - 2015-01-14
 -------------------
 
