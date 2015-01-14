@@ -92,11 +92,9 @@
 // -------------------------------------
 
 =state($class: false)
-
   @if $class
     &:active, &:focus, &:hover, &.#{$class}
       @content
-
   @else
     &:active, &:focus, &:hover
       @content

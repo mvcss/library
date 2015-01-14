@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.15.2 - 2015-01-14
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update spacing of `+state` mixin
+
 2.15.1 - 2015-01-13
 -------------------
 
