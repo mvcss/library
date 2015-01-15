@@ -9,6 +9,13 @@
 //   Variables
 // -------------------------------------
 
+// ----- Palette ----- //
+
+$black: black
+$blue: blue
+$green: green
+$yellow: yellow
+
 // ----- Borders ----- //
 
 $b-border: 2px solid #ddd !default
@@ -23,6 +30,30 @@ $b-fontSize-h4: 110%
 // ----- Sizing ----- //
 
 $b-space: 1.25em !default
+
+// ----- Tools ----- //
+
+// Text
+
+$tool-background-names: 'black', 'green' !default
+$tool-background-vars: $black, $green !default
+$tool-color-names: 'blue', 'yellow' !default
+$tool-color-vars: $blue, $yellow !default
+
+// Positioning
+
+$tool-position-values: 1, 2, 3, 4, 5 !default
+
+// -------------------------------------
+//   Background
+// -------------------------------------
+
+// ----- Palette ----- //
+
+@for $i from 1 through length($tool-background-vars)
+
+  .bc-#{nth($tool-background-names, $i)}
+    background: nth($tool-color-vars, $i)
 
 // -------------------------------------
 //   Borders
@@ -85,6 +116,13 @@ $b-space: 1.25em !default
 .pobln
   bottom: -$b-space-l
 
+@each $value in $tool-position-values
+
+  .pob#{$value}
+    bottom: #{$value}px
+  .pobn#{$value}
+    bottom: -#{$value}px
+
 // ----- Left ----- //
 
 .polxs
@@ -101,6 +139,13 @@ $b-space: 1.25em !default
   left: -$b-space
 .polln
   left: -$b-space-l
+
+@each $value in $tool-position-values
+
+  .pol#{$value}
+    left: #{$value}px
+  .poln#{$value}
+    left: -#{$value}px
 
 // ----- Right ----- //
 
@@ -119,6 +164,13 @@ $b-space: 1.25em !default
 .porln
   right: -$b-space-l
 
+@each $value in $tool-position-values
+
+  .por#{$value}
+    right: #{$value}px
+  .porn#{$value}
+    right: -#{$value}px
+
 // ----- Top ----- //
 
 .potxs
@@ -136,6 +188,13 @@ $b-space: 1.25em !default
 .potln
   top: -$b-space-l
 
+@each $value in $tool-position-values
+
+  .pot#{$value}
+    top: #{$value}px
+  .potn#{$value}
+    top: -#{$value}px
+
 // -------------------------------------
 //   Text
 // -------------------------------------
@@ -146,6 +205,15 @@ $b-space: 1.25em !default
   text-align: left
 .tar
   text-align: right
+
+// ----- Color ----- //
+
+// Palette
+
+@for $i from 1 through length($tool-color-vars)
+
+  .tc-#{nth($tool-color-names, $i)}
+    color: nth($tool-color-vars, $i)
 
 // ----- Size ----- //
 
@@ -161,7 +229,7 @@ $b-space: 1.25em !default
   font-size: $b-fontSize-h4
 
 // -------------------------------------
-//   Vertical Align
+//   Vertical Alignnment
 // -------------------------------------
 
 .vab

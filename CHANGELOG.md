@@ -1,6 +1,23 @@
 Changelog
 =========
 
+2.17.0 - 2015-01-15
+-------------------
+
+### Added
+
+- Foundation Tools for small-number pixel positioning values
+- Foundation Tools for setting background colors based on palette
+- Foundation Tools for setting text colors based on palette
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update Foundation Tools comment heading to 'Vertical Alignment'
+
 2.16.0 - 2015-01-14
 -------------------
 
