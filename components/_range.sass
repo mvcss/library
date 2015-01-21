@@ -1,0 +1,132 @@
+// *************************************
+//
+//   Range
+//   -> Sliding user input
+//   CodePen: http://codepen.io/johndjameson/pen/MYmzGR/
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %input.range{ type: 'range', min: 0, max: 100 }
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+$range-thumb-background: #ddd !default
+$range-track-background: #ccc !default
+
+// ----- Track ----- //
+
+// Borders & Box Shadows
+
+$range-track-border: 0 !default
+$range-track-borderRadius: 0 !default
+$range-track-boxShadow: inset 0 1px 1px rgba( #000, 0.3 ) !default
+
+// Sizing
+
+$range-track-height: 10px !default
+
+// ----- Range ----- //
+
+// Borders & Box Shadows
+
+$range-thumb-border: 0 !default
+$range-thumb-borderRadius: 0 !default
+$range-thumb-boxShadow: 0 1px 1px rgba( #000, 0.3 ) !default
+
+// Sizing
+
+$range-thumb-height: 30px !default
+$range-thumb-width: $range-thumb-height !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.range
+  -webkit-appearance: none
+  background: transparent
+  display: block
+  margin: 0
+  width: 100%
+
+  &:focus
+    outline: 0
+
+// ----- Webkit ----- //
+
+.range::-webkit-slider-runnable-track
+  background: $range-track-background
+  border-radius: $range-track-borderRadius
+  border: $range-track-border
+  box-shadow: $range-track-boxShadow
+  cursor: pointer
+  height: $range-track-height
+  width: 100%
+
+.range::-webkit-slider-thumb
+  -webkit-appearance: none
+  background: $range-thumb-background
+  border-radius: $range-thumb-borderRadius
+  border: $range-thumb-border
+  box-shadow: $range-thumb-boxShadow
+  cursor: pointer
+  height: $range-thumb-height
+  margin-top: ( $range-track-height - $range-thumb-height ) * 0.5
+  width: $range-thumb-width
+
+// ----- Firefox ----- //
+
+.range::-moz-range-track
+  background: $range-track-background
+  border-radius: $range-track-borderRadius
+  border: $range-track-border
+  box-shadow: $range-track-boxShadow
+  cursor: pointer
+  height: $range-track-height
+  width: 100%
+
+.range::-moz-range-thumb
+  background: $range-thumb-background
+  border-radius: $range-thumb-borderRadius
+  border: $range-thumb-border
+  box-shadow: $range-thumb-boxShadow
+  cursor: pointer
+  height: $range-thumb-height
+  width: $range-thumb-width
+
+.range::-moz-focus-outer
+  border: 0
+
+// ----- Internet Explorer ----- //
+
+.range::-ms-track
+  background: transparent
+  border-color: transparent
+  color: transparent
+  cursor: pointer
+  height: $range-track-height
+  width: 100%
+
+.range::-ms-fill-lower,
+.range::-ms-fill-upper
+  background: $range-track-background
+  border-radius: $range-track-borderRadius
+  border: $range-track-border
+  box-shadow: $range-track-boxShadow
+
+.range::-ms-thumb
+  background: $range-thumb-background
+  border-radius: $range-thumb-borderRadius
+  border: $range-thumb-border
+  box-shadow: $range-thumb-boxShadow
+  cursor: pointer
+  height: $range-thumb-height
+  width: $range-thumb-width
