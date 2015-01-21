@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.18.1 - 2015-01-21
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- More consistent comment structure across Extends, Functions, and Mixins
+
 2.18.0 - 2015-01-21
 -------------------
 

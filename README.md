@@ -11,9 +11,7 @@ Choose the Sass extends, functions, and mixins from `/foundation` to include in 
 **Extends**
 
 ```sass
-// -------------------------------------
-//   Extend Name
-// -------------------------------------
+// ----- Extend Name ----- //
 
 .extend
   // ...
@@ -22,12 +20,10 @@ Choose the Sass extends, functions, and mixins from `/foundation` to include in 
 **Functions**
 
 ```sass
-// -------------------------------------
-//   Function Name
-//   -> Description
+// ----- Function Name ----- //
+// -> Description
 //
-//   $arg - the argument description
-// -------------------------------------
+// $arg - the argument description
 
 @function name($arg)
   // ...
@@ -36,16 +32,10 @@ Choose the Sass extends, functions, and mixins from `/foundation` to include in 
 **Mixins**
 
 ```sass
-// -------------------------------------
-//
-//   Mixin Name
-//   -> Description
-//
-// -------------------------------------
+// ----- Mixin Name ----- //
+// -> Description
 //
 // $arg - the argument description
-//
-// -------------------------------------
 
 =name($arg)
   // ...

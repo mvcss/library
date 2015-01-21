@@ -4,18 +4,12 @@
 //
 // *************************************
 
-// -------------------------------------
-//
-//   Caret
-//   -> Creates a caret (arrow) icon
-//
-// -------------------------------------
+// ----- Caret ----- //
+// -> Creates a caret (arrow) icon
 //
 // $side - the side the caret is on
 // $size - the caret size
 // $color - the caret color
-//
-// -------------------------------------
 
 // Requires this function (replaces Compass)
 
@@ -48,12 +42,8 @@
   #{$side}: -$size
   #{$opposite}: auto
 
-// -------------------------------------
-//
-//   Respond-within
-//   -> Generates a media query within a range
-//
-// -------------------------------------
+// ----- Respond-within ----- //
+// -> Generates a media query within a range
 //
 // $min - the initial breakpoint size
 // $max - the larger breakpoint size
@@ -64,32 +54,20 @@
   @media #{$media} and (min-width: $min) and (max-width: $max)
     @content
 
-// -------------------------------------
-//
-//   Size
-//   -> Outputs width/height properties
-//
-// -------------------------------------
+// ----- Size ----- //
+// -> Outputs width/height properties
 //
 // $width - the element width
 // $height - the element height
-//
-// -------------------------------------
 
 =size($width, $height: $width)
   height: $height
   width: $width
 
-// -------------------------------------
-//
-//   State
-//   -> Combines state-related pseudo-classes
-//
-// -------------------------------------
+// ----- State ----- //
+// -> Combines state-related pseudo-classes
 //
 // $class - an optional state class ('is-active')
-//
-// -------------------------------------
 
 =state($class: false)
   @if $class
