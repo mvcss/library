@@ -1,7 +1,22 @@
 Changelog
 =========
 
-2.18.0 - 2015-01-21
+2.20.0 - 2015-01-21
+-------------------
+
+### Added
+
+- Range Component
+
+### Removed
+
+- `.form-field` horizontal margins when used on `fieldset` elements
+
+### Fixed
+
+- Encapsulate Video Structure descendant elements
+
+2.19.0 - 2015-01-21
 -------------------
 
 ### Added
