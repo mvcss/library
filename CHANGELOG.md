@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.18.0 - 2015-01-21
+-------------------
+
+### Added
+
+- `shade` and `tint` Functions
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.17.0 - 2015-01-15
 -------------------
 
