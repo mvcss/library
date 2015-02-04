@@ -8,7 +8,7 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .btn[.btn--a|b|l|s]
+// .btn[a|b s|l]
 //
 // *************************************
 
@@ -61,6 +61,8 @@ $btn-space-l: $btn-space * 2 !default
 
 // ----- Hierarchy ----- //
 
+// Primary
+
 .btn--a
   background: $btn--a-background
   color: $btn--a-color
@@ -70,6 +72,8 @@ $btn-space-l: $btn-space * 2 !default
   &:active
     background: lighten($btn--a-background, 10%)
     color: $btn--a-color
+
+// Secondary
 
 .btn--b
   background: $btn--b-background
@@ -83,11 +87,14 @@ $btn-space-l: $btn-space * 2 !default
 
 // ----- Sizes ----- //
 
+// Small
+
 .btn--s
   font-size: $btn--s-fontSize
   padding: 0 $btn-space-s
 
+// Large
+
 .btn--l
   font-size: $btn--l-fontSize
   padding: 0 $btn-space-l
-
