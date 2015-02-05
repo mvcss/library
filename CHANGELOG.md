@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.20.2 - 2015-02-05
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Spacing standards
+
 2.20.1 - 2015-02-04
 -------------------
 
