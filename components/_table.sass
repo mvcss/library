@@ -38,9 +38,10 @@ $table-data-borderWidth: 1px !default
 
 // ----- Typography ----- //
 
-$table-fontSize-s: 75% !default
-$table-fontSize-m: 90% !default
+$table-fontSize-s: 90% !default
+$table-fontSize: 16px !default
 $table-lineHeight: 1.5 !default
+$table-lineHeight-s: 1.2 !default
 
 // ----- Sizing ----- //
 
@@ -58,6 +59,17 @@ $table-space-s: $table-space * 0.5 !default
 //   Modifiers
 // -------------------------------------
 
+// ----- Sizes ----- //
+
+.table--s
+  
+  .table-data,
+  .table-header,
+  .table-head
+    font-size: $table-fontSize-s
+    line-height: $table-lineHeight-s
+    padding: $table-space-s
+
 // ----- Striped ----- //
 
 .table--striped
@@ -74,6 +86,7 @@ $table-space-s: $table-space * 0.5 !default
 .table-data,
 .table-header
   border-top: $table-border
+  font-size: $table-fontSize
   line-height: $table-lineHeight
   padding: $table-space-s $table-space
   vertical-align: top
@@ -82,8 +95,6 @@ $table-space-s: $table-space * 0.5 !default
 
 .table-data
   border-top-width: $table-data-borderWidth
-  font-size: $table-fontSize-m
-  vertical-align: middle
 
 // ----- Header ----- //
 
@@ -96,8 +107,5 @@ $table-space-s: $table-space * 0.5 !default
 .table-head
   border-bottom: $table-border
   border-top: 0
-  font-size: $table-fontSize-s
   padding: $table-space-s $table-space
   text-align: left
-  text-transform: uppercase
-  vertical-align: bottom

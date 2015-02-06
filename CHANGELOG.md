@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.21.0 - 2015-02-06
+-------------------
+
+### Added
+
+- Small modifier to the Table Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Style update to the Table Component
+
 2.20.2 - 2015-02-05
 -------------------
 
