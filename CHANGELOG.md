@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.21.1 - 2015-02-19
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Typo in Foundation Tools list name
+
 2.21.0 - 2015-02-06
 -------------------
 
