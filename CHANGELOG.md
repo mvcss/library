@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.22.0 - 2015-02-25
+-------------------
+
+### Added
+
+- Animate Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.21.1 - 2015-02-19
 -------------------
 
