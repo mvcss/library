@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.22.1 - 2015-02-26
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Tool negative position values should end with `n`
+
 2.22.0 - 2015-02-25
 -------------------
 
