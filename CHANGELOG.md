@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.24.1 - 2015-03-05
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- `$b-fontSize-m` in Form Component
+
 2.24.0 - 2015-03-05
 -------------------
 

@@ -39,7 +39,8 @@ $form-input-border: 2px solid $form-input-borderColor !default
 
 // ----- Typography ----- //
 
-$form-fontSize-m: 90% !default
+$form-fontSize: 100% !default
+$form-fontSize-s: 90% !default
 
 // ----- Sizing ----- //
 
@@ -123,7 +124,7 @@ $form-space-l: $form-space * 2 !default
   border: $form-input-border
   border-radius: $form-borderRadius
   box-sizing: border-box
-  font-size: 100%
+  font-size: $form-fontSize
   padding: $form-space-s
   position: relative
   transition: border-color 0.2s ease-in-out
@@ -137,7 +138,7 @@ $form-space-l: $form-space * 2 !default
 
 .form-label
   display: block
-  font-size: $form-fontSize-m
+  font-size: $form-fontSize-s
   font-weight: bold
   margin-bottom: $form-space-xs
 
