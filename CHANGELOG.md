@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.24.0 - 2015-03-05
+-------------------
+
+### Added
+
+- Additional scaffolding to Form Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.23.0 - 2015-03-05
 -------------------
 

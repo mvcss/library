@@ -8,11 +8,16 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// %form.form[condensed]
+// %form.form[s|l]
 //
-//   %fieldset.form-field[inline]
+//   %fieldset.form-field[checkbox|inline|radio]
+//
+//     .form-field-item
+//
 //     %label.form-label
+//
 //     %input.form-input
+//
 //     %select.form-select
 //
 // *************************************
@@ -41,6 +46,7 @@ $form-fontSize-m: 90% !default
 $form-space: 1.25em !default
 $form-space-xs: $form-space * 0.25 !default
 $form-space-s: $form-space * 0.5 !default
+$form-space-l: $form-space * 2 !default
 
 // -------------------------------------
 //   Base
@@ -53,12 +59,21 @@ $form-space-s: $form-space * 0.5 !default
 //   Modifiers
 // -------------------------------------
 
-// ----- Condensed ----- //
+// ----- Sizes ----- //
 
-.form--condensed
+// Small
+
+.form--s
 
   .form-field
     margin-bottom: $form-space-s
+
+// Large
+
+.form--l
+
+  .form-field
+    margin-bottom: $form-space-l
 
 // -------------------------------------
 //   Scaffolding
@@ -71,6 +86,19 @@ $form-space-s: $form-space * 0.5 !default
   margin: 0 0 $form-space
   padding: 0
 
+// Checkbox & Radio
+
+.form-field--checkbox,
+.form-field--radio
+
+  .form-input
+    display: inline-block
+    margin-right: $form-space-xs
+    width: auto
+
+  .form-label
+    display: inline-block
+
 // Inline
 
 .form-field--inline
@@ -79,6 +107,14 @@ $form-space-s: $form-space * 0.5 !default
     display: block
     line-height: 2.9
     min-width: 100%
+
+// Item
+
+.form-field-item
+  margin-bottom: $form-space-s
+
+  &:last-child
+    margin-bottom: 0
 
 // ----- Input ----- //
 
