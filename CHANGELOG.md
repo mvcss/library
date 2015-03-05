@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.23.0 - 2015-03-05
+-------------------
+
+### Added
+
+- `table--enclosed` modifier to the Table Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.22.1 - 2015-02-26
 -------------------
 

@@ -8,7 +8,7 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// %table.table[striped]
+// %table.table[s enclosed|striped]
 //
 //   %thead.table-header
 //
@@ -33,8 +33,11 @@ $table--striped-row-background: #eee !default
 
 // ----- Borders ----- //
 
-$table-border: 2px solid $table-borderColor !default
-$table-data-borderWidth: 1px !default
+$table-borderStyle: solid !default
+$table-borderWidth: 1px !default
+$table-borderWidth-l: 2px !default
+$table-border: $table-borderWidth $table-borderStyle $table-borderColor !default
+$table-border-l: $table-borderWidth-l $table-borderStyle $table-borderColor !default
 
 // ----- Typography ----- //
 
@@ -59,10 +62,23 @@ $table-space-s: $table-space * 0.5 !default
 //   Modifiers
 // -------------------------------------
 
+// ----- Enclosed ----- //
+
+.table--enclosed
+  border: $table-border
+
+  .table-data,
+  .table-head
+    border-right: $table-border
+
+  .table-head
+    background: $table--striped-row-background
+    border-width: $table-borderWidth
+
 // ----- Sizes ----- //
 
 .table--s
-  
+
   .table-data,
   .table-header,
   .table-head
@@ -94,7 +110,7 @@ $table-space-s: $table-space * 0.5 !default
 // ----- Data ----- //
 
 .table-data
-  border-top-width: $table-data-borderWidth
+  border-top-width: $table-borderWidth
 
 // ----- Header ----- //
 
@@ -105,7 +121,7 @@ $table-space-s: $table-space * 0.5 !default
 // ----- Head ----- //
 
 .table-head
-  border-bottom: $table-border
+  border-bottom: $table-border-l
   border-top: 0
   padding: $table-space-s $table-space
   text-align: left
