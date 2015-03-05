@@ -1,6 +1,24 @@
 Changelog
 =========
 
+2.24.0 - 2015-03-05
+-------------------
+
+### Added
+
+- `+font-face` mixin
+- `.debug` extend
+- `.ellipsis` extend
+- `.ir` extend
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.23.0 - 2015-03-05
 -------------------
 

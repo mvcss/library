@@ -4,6 +4,18 @@
 //
 // *************************************
 
+// ----- Debug ----- //
+
+.debug
+  background-color: pink !important
+
+// ----- Ellipsis ----- //
+
+.ellipsis
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
 // ----- Faux Hide ----- //
 
 .fauxHide
@@ -19,6 +31,19 @@
   opacity: 1
   overflow: visible
   visibility: visible
+
+// ----- Image Replacement ----- //
+
+.ir
+  background-color: transparent
+  border: 0
+  overflow: hidden
+
+  &::before
+    content: ''
+    display: block
+    height: 150%
+    width: 0
 
 // ----- List Reset ----- //
 
