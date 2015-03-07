@@ -1,6 +1,22 @@
 Changelog
 =========
 
+2.25.0 - 2015-03-07
+-------------------
+
+### Added
+
+- `+action` mixin
+- Better Button Component (additional variants, better organization)
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.24.1 - 2015-03-05
 -------------------
 
