@@ -8,24 +8,91 @@
 //   Template (Haml)
 // -------------------------------------
 //
-// .btn[a|b s|l]
+// .btn[a|b s|l block bordered|rounded danger|success|error]
 //
 // *************************************
+
+// -------------------------------------
+//   Helpers
+// -------------------------------------
+
+// ----- Mixins ----- //
+
+// ----- Action ----- //
+// -> Sets clickable element defaults
+
+=action
+  border: 1px solid transparent
+  cursor: pointer
+  display: inline-block
+  text-align: center
+  text-decoration: none
+  white-space: nowrap
+
+// ----- Button Variant ----- //
+// -> Creates button variations (modifiers)
+//
+// $background - background-color value
+// $color - color value
+// $borderColor - border-color value
+// $bordered - bordered button (boolean)
+// $scale-type - 'darken' or 'lighten'
+// $scale-percent - 'darken' or 'lighten' percentage
+
+=btn-variant($background, $color, $borderColor, $bordered: false, $scale-type: 'darken', $scale-percent: 10%)
+  background-color: $background
+  border: $btn-borderWidth $btn-borderStyle $borderColor
+  color: $color
+
+  &:hover,
+  &:focus,
+  &:active
+    @if $scale-type == 'darken'
+      background-color: darken($background, $scale-percent)
+      border-color: darken($borderColor, $scale-percent)
+    @if $scale-type == 'lighten'
+      background-color: lighten($background, $scale-percent)
+      border-color: lighten($borderColor, $scale-percent)
+    @if $bordered
+      @if $scale-type == 'darken'
+        color: darken($color, $scale-percent)
+      @if $scale-type == 'lighten'
+        color: lighten($color, $scale-percent)
+    @else
+      color: $color
+
+// ----- Button Size ----- //
+// -> Creates button size variations (modifiers)
+//
+// $fontSize - font-size value
+// $lineHeihgt - line-height value
+// $padding - padding value
+
+=btn-size($fontSize: $btn-fontSize, $lineHeight: $btn-lineHeight, $padding: $btn-space)
+  font-size: $fontSize
+  line-height: $lineHeight
+  padding: 0 $padding
 
 // -------------------------------------
 //   Variables
 // -------------------------------------
 
-// ----- Colors ----- //
+// ----- Palette ----- //
 
-$btn--a-background: #4e4e5b !default
-$btn--a-color: #fff !default
-$btn--b-background: lighten($btn--a-background, 45%) !default
-$btn--b-color: #4e4e5b !default
+$brandy: #c6b781
+$leaf: #84b582
+$plum: #4e4e5b
+$pearl: #c3c3cc
+$rose: #bc6f82
+$white: #fff
 
 // ----- Borders ----- //
 
+$btn-borderWidth: 2px !default
+$btn-borderStyle: solid !default
+$btn-border: $btn-borderWidth $btn-borderStyle $plum !default
 $btn-borderRadius: 3px !default
+$btn-borderRadius-l: 20px !default
 
 // ----- Typography ----- //
 
@@ -37,64 +104,135 @@ $btn-lineHeight: 2.5 !default
 // ----- Sizing ----- //
 
 $btn-space: 2.5em !default
+$btn-space-xs: $btn-space * 0.25 !default
 $btn-space-s: $btn-space * 0.5 !default
 $btn-space-l: $btn-space * 2 !default
+
+// ----- Variants ----- //
+
+// Primary
+
+$btn--a-background: $plum !default
+$btn--a-color: $white !default
+$btn--a-border: transparent !default
+
+// Secondary
+
+$btn--b-background: $pearl !default
+$btn--b-color: $plum !default
+$btn--b-border: transparent !default
+
+// States: Danger
+
+$btn--danger-background: $rose !default
+$btn--danger-color: $white !default
+$btn--danger-border: $rose !default
+
+// States: Success
+
+$btn--success-background: $leaf !default
+$btn--success-color: $white !default
+$btn--success-border: $leaf !default
+
+// States: Warning
+
+$btn--warning-background: $brandy !default
+$btn--warning-color: $white !default
+$btn--warning-border: $brandy !default
 
 // -------------------------------------
 //   Base
 // -------------------------------------
 
 .btn
+  +action
+  +btn-size
   border-radius: $btn-borderRadius
-  border: 0
-  cursor: pointer
-  display: inline-block
-  font-size: $btn-fontSize
-  line-height: $btn-lineHeight
-  padding: 0 $btn-space
-  text-align: center
-  text-decoration: none
+  transition: 0.2s ease-in-out
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
+
+// ----- Behavior ----- //
+
+.btn--block
+  display: block
 
 // ----- Hierarchy ----- //
 
 // Primary
 
 .btn--a
-  background: $btn--a-background
-  color: $btn--a-color
+  +btn-variant($btn--a-background, $btn--a-color, $btn--a-border)
 
-  &:hover,
-  &:focus,
-  &:active
-    background: lighten($btn--a-background, 10%)
-    color: $btn--a-color
+  &.btn--bordered
+    +btn-variant(transparent, $btn--a-background, $btn--a-background, true, 'lighten', 30%)
 
 // Secondary
 
 .btn--b
-  background: $btn--b-background
-  color: $btn--b-color
+  +btn-variant($btn--b-background, $btn--b-color, $btn--b-border)
 
-  &:hover,
-  &:focus,
-  &:active
-    background: lighten($btn--b-background, 5%)
-    color: $btn--b-color
+  &.btn--bordered
+    +btn-variant(transparent, $btn--b-background, $btn--b-background, true, 'darken', 20%)
 
 // ----- Sizes ----- //
 
 // Small
 
 .btn--s
-  font-size: $btn--s-fontSize
-  padding: 0 $btn-space-s
+  +btn-size($btn--s-fontSize, $btn-lineHeight, $btn-space-s)
 
 // Large
 
 .btn--l
-  font-size: $btn--l-fontSize
-  padding: 0 $btn-space-l
+  +btn-size($btn--l-fontSize, $btn-lineHeight, $btn-space-l)
+
+// ----- Theme ----- //
+
+// Bordered
+
+.btn--bordered
+  +btn-variant(transparent, inherit, $plum)
+
+// Rounded
+
+.btn--rounded
+  border-radius: $btn-borderRadius-l
+
+// States: Danger
+
+.btn--danger
+  +btn-variant($btn--danger-background, $btn--danger-color, transparent)
+
+  &.btn--bordered
+    +btn-variant(transparent, $btn--danger-background, $btn--danger-background, true, 'darken', 20%)
+
+// States: Success
+
+.btn--success
+  +btn-variant($btn--success-background, $btn--success-color, transparent)
+
+  &.btn--bordered
+    +btn-variant(transparent, $btn--success-background, $btn--success-background, true, 'darken', 20%)
+
+// States: Warning
+
+.btn--warning
+  +btn-variant($btn--warning-background, $btn--warning-color, transparent)
+
+  &.btn--bordered
+    +btn-variant(transparent, $btn--warning-background, $btn--warning-background, true, 'darken', 20%)
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.has-btn
+
+  .btn
+    margin-right: $btn-space-xs
+
+    &:last-child
+      margin-right: 0
