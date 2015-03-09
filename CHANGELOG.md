@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.25.1 - 2015-03-09
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Button Component `--borderd` modifier classes
+
 2.25.0 - 2015-03-07
 -------------------
 

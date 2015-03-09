@@ -166,16 +166,20 @@ $btn--warning-border: $brandy !default
 .btn--a
   +btn-variant($btn--a-background, $btn--a-color, $btn--a-border)
 
-  &.btn--bordered
-    +btn-variant(transparent, $btn--a-background, $btn--a-background, true, 'lighten', 30%)
+// Primary: Bordered
+
+.btn--a--bordered
+  +btn-variant(transparent, $btn--a-background, $btn--a-background, true, 'lighten', 30%)
 
 // Secondary
 
 .btn--b
   +btn-variant($btn--b-background, $btn--b-color, $btn--b-border)
 
-  &.btn--bordered
-    +btn-variant(transparent, $btn--b-background, $btn--b-background, true, 'darken', 20%)
+// Secondary: Bordered
+
+.btn--b--bordered
+  +btn-variant(transparent, $btn--b-background, $btn--b-background, true, 'darken', 20%)
 
 // ----- Sizes ----- //
 
@@ -206,24 +210,30 @@ $btn--warning-border: $brandy !default
 .btn--danger
   +btn-variant($btn--danger-background, $btn--danger-color, transparent)
 
-  &.btn--bordered
-    +btn-variant(transparent, $btn--danger-background, $btn--danger-background, true, 'darken', 20%)
+// States: Danger: Bordered
+
+.btn--danger--bordered
+  +btn-variant(transparent, $btn--danger-background, $btn--danger-background, true, 'darken', 20%)
 
 // States: Success
 
 .btn--success
   +btn-variant($btn--success-background, $btn--success-color, transparent)
 
-  &.btn--bordered
-    +btn-variant(transparent, $btn--success-background, $btn--success-background, true, 'darken', 20%)
+// States: Success: Bordered
+
+.btn--success--bordered
+  +btn-variant(transparent, $btn--success-background, $btn--success-background, true, 'darken', 20%)
 
 // States: Warning
 
 .btn--warning
   +btn-variant($btn--warning-background, $btn--warning-color, transparent)
 
-  &.btn--bordered
-    +btn-variant(transparent, $btn--warning-background, $btn--warning-background, true, 'darken', 20%)
+// States: Warning: Bordered
+
+.btn--bordered
+  +btn-variant(transparent, $btn--warning-background, $btn--warning-background, true, 'darken', 20%)
 
 // -------------------------------------
 //   Context
