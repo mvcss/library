@@ -2,12 +2,9 @@
 //
 //   Collection
 //   -> Accumulation of items
+//      CodePen: http://codepen.io/johndjameson/pen/EaeBZd
 //
-// -------------------------------------
-//   Dependencies
-// -------------------------------------
-//
-//   - components/grid
+//   Dependencies: .g
 //
 // -------------------------------------
 //   Template (Haml)
@@ -29,11 +26,20 @@ $collection-defaults: 's' 30em, 'm' 50em, 'l' 64em !default
 $collection-space: 1.25em !default
 
 // -------------------------------------
+//   Base
+// -------------------------------------
+
+.collection
+  margin-left: -$collection-space * 0.5
+
+// -------------------------------------
 //   Scaffolding
 // -------------------------------------
 
 .collection-item
   margin-bottom: $collection-space
+  padding-left: $collection-space * 0.5
+  padding-left: $collection-space * 0.5
 
 // -------------------------------------
 //   Setup
