@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.27.1 - 2015-03-10
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- `.btn--warning--bordered` class
+
 2.27.0 - 2015-03-10
 -------------------
 
