@@ -44,6 +44,10 @@ $tool-color-vars: $blue, $yellow !default
 
 $tool-position-values: 1, 2, 3, 4, 5 !default
 
+// Widths
+
+$tool-widths-max: 4 !default
+
 // -------------------------------------
 //   Background
 // -------------------------------------
@@ -247,3 +251,12 @@ $tool-position-values: 1, 2, 3, 4, 5 !default
   visibility: hidden
 .viv
   visibility: visible
+
+// -------------------------------------
+//   Widths
+// -------------------------------------
+
+@for $i from 1 through $tool-widths-max
+
+  .w-1of#{$i}
+    width: percentage(1 / $i)
