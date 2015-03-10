@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.26.1 - 2015-03-10
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Collection structure `padding-right` property name
+
 2.26.0 - 2015-03-10
 -------------------
 
