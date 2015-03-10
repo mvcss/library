@@ -1,6 +1,24 @@
 Changelog
 =========
 
+2.26.0 - 2015-03-10
+-------------------
+
+### Added
+
+- Collection gutter and margin standarization
+- Collection CodePen link
+- Flexbox Collection structure
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Flexbox Sector width magic number
+- Collection dependency syntax
+
 2.25.1 - 2015-03-09
 -------------------
 
