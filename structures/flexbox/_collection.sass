@@ -1,0 +1,42 @@
+// *************************************
+//
+//   Collection
+//   -> Accumulation of items
+//      CodePen: http://codepen.io/johndjameson/pen/dPqBjy
+//
+//   Dependencies: .g
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .g.collection[s|m|l--1of1|...]
+//
+//   .g-b[s|m|l--1of1|...].collection-item
+//     / ...
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$collection-space: 1.25em !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.collection
+  display: flex
+  flex-wrap: wrap
+  margin-left: -$collection-space * 0.5
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.collection-item
+  margin-bottom: $collection-space
+  padding-left: $collection-space * 0.5
+  padding-right: $collection-space * 0.5
