@@ -37,6 +37,15 @@
 @function shade($color, $percentage)
   @return mix(black, $color, $percentage)
 
+// ----- Strip Unit ----- //
+// -> Remove unit from number
+//    via: http://hugogiraudel.com/2013/08/12/sass-functions/
+//
+// $value - the value to remove the unit from
+
+@function strip-unit($value)
+  @return $value / ($value * 0 + 1)
+
 // ----- Tint ----- //
 // -> Slightly lighten a color
 //    Via: http://sass-guidelin.es/#lightening-and-darkening-colors (modified)

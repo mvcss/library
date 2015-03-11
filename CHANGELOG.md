@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.29.0 - 2015-03-11
+-------------------
+
+### Added
+
+- `strip-unit` function
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.28.1 - 2015-03-11
 -------------------
 
