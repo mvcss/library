@@ -46,3 +46,18 @@
 
 @function tint($color, $percentage)
   @return mix(white, $color, $percentage)
+
+// ----- z-index ----- //
+// -> http://www.smashingmagazine.com/2014/06/12/sassy-z-index-management-for-complex-layouts/
+//
+// $element - the name of the element in the list
+// $list - the name of the list (defaults to `$zi-global`)
+
+@function zi($element, $list: $zi-global)
+  $index: index($list, $element)
+
+  @if $index
+    @return $index
+
+  @warn 'There is no item "#{$element}" in this list; choose one of: #{$list}'
+  @return null

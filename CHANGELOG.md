@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.28.1 - 2015-03-11
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Move `z-index` function to `_functions.sass`
+
 2.28.0 - 2015-03-11
 -------------------
 
