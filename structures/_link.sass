@@ -1,0 +1,85 @@
+// *************************************
+//
+//   Link
+//   -> Actionable text
+//      CodePen: http://codepen.io/drewbarontini/pen/qEJNPv
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .link[bordered|inverted|muted]
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Base ----- //
+
+$link-color: #4a4ab5 !default
+$link-hover-color: lighten($link-color, 20%) !default
+$link--inverted-color: #fff !default
+$link--inverted-hover-color: rgba(#fff, 0.65) !default
+$link--muted-color: #999 !default
+$link--muted-hover-color: #777 !default
+
+// ----- Borders ----- //
+
+$link-borderWidth: 2px !default
+$link-borderStyle: solid !default
+$link-border: $link-borderWidth $link-borderStyle !default
+
+// ----- Settings ----- //
+
+$link-transition: all 0.3s ease-in-out
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.link
+  // Either use a placeholder selector to extend your base `a` tag
+  // styles, or create a mixin for the shared styling on your links.
+  // For this exampled, the styles will be inline, but you should use
+  // the global `a` tag styles you're using elsewhere.
+  // Ex: @extend %a
+  // Ex: +link
+  color: $link-color
+  text-decoration: none
+  transition: $link-transition
+
+  &:active,
+  &:focus,
+  &:hover
+    color: $link-hover-color
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Bordered ----- //
+
+.link--bordered
+  border-bottom: $link-border currentColor
+
+// ----- Inverted ----- //
+
+.link--inverted
+  color: $link--inverted-color
+
+  &:active,
+  &:focus,
+  &:hover
+    color: $link--inverted-hover-color
+
+// ----- Muted ----- //
+
+.link--muted
+  color: $link--muted-color
+
+  &:active,
+  &:focus,
+  &:hover
+    color: $link--muted-hover-color

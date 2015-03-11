@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.28.0 - 2015-03-11
+-------------------
+
+### Added
+
+- Link Structure
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.27.1 - 2015-03-10
 -------------------
 
