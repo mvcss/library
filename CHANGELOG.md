@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.29.1 - 2015-03-20
+-------------------
+
+### Added
+
+- `.form-help` flush margin
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.29.0 - 2015-03-11
 -------------------
 
