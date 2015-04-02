@@ -1,6 +1,22 @@
 Changelog
 =========
 
+2.29.2 - 2015-04-02
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Collection structure margin right
+- Flexbox Collection structure margin right
+
 2.29.1 - 2015-03-20
 -------------------
 
