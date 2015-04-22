@@ -20,10 +20,12 @@
 // ----- Borders ----- //
 
 $highlight-border: 0 !default
+$highlight--bordered-borderWidth: 4px !default
 
 // ----- Colors ----- //
 
 $highlight-background: #f1c40f !default
+$highlight--bordered-cover-background: white !default
 $highlight-color: black !default
 
 // ----- Settings ----- //
@@ -51,4 +53,38 @@ $highlight-textDecoration: none !default
   &:focus,
   &:hover
     background-position: -100% 0
-    color: $highlight-color
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Bordered ----- //
+
+.highlight--bordered
+  position: relative
+
+  &::after,
+  &::before
+    content: ''
+    height: $highlight--bordered-borderWidth
+    left: 0
+    position: absolute
+    top: 100%
+    width: 100%
+
+  &::after
+    background: $highlight-background
+
+  &::before
+    background: $highlight--bordered-cover-background
+    transform: translateX(0)
+    transition: transform $highlight-color-speed ease-in-out
+    z-index: 1
+
+  &:active,
+  &:focus,
+  &:hover
+    background: none
+
+    &::before
+      transform: translateX(100%)

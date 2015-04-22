@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.31.0 - 2015-04-22
+-------------------
+
+### Added
+
+- `highlight--bordered` variant to Highlight Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.30.2 - 2015-04-22
 -------------------
 
