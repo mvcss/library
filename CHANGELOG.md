@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.31.1 - 2015-04-22
+-------------------
+
+### Added
+
+- Additional variable for the Highlight Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.31.0 - 2015-04-22
 -------------------
 

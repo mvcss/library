@@ -25,6 +25,7 @@ $highlight--bordered-borderWidth: 4px !default
 // ----- Colors ----- //
 
 $highlight-background: #f1c40f !default
+$highlight--bordered-borderColor: $highlight-background !default
 $highlight--bordered-cover-background: white !default
 $highlight-color: black !default
 
@@ -73,7 +74,7 @@ $highlight-textDecoration: none !default
     width: 100%
 
   &::after
-    background: $highlight-background
+    background: $highlight--bordered-borderColor
 
   &::before
     background: $highlight--bordered-cover-background
