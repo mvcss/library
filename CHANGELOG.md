@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.30.0 - 2015-04-22
+-------------------
+
+### Added
+
+- Highlight Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 2.29.2 - 2015-04-02
 -------------------
 

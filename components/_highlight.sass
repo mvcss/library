@@ -1,0 +1,53 @@
+// *************************************
+//
+//   Highlight
+//   -> Highly stylized link
+//      Credit: http://www.webdesignerdepot.com/
+//      CodePen: http://codepen.io/drewbarontini/pen/vOYgwE
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %a.highlight
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Borders ----- //
+
+$highlight-border: 0 !default
+
+// ----- Colors ----- //
+
+$highlight-background: #f1c40f !default
+$highlight-color: black !default
+
+// ----- Settings ----- //
+
+$highlight-color-speed: 0.5s !default
+
+// ----- Text ----- //
+
+$highlight-textDecoration: none !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.highlight
+  background-image: linear-gradient(to right, rgba(white, 0) 50%, $highlight-background 50%)
+  background-position: 0 0
+  background-size: 200% auto
+  border: $highlight-border
+  color: $highlight-color
+  text-decoration: $highlight-textDecoration
+  transition: background-position $highlight-color-speed ease-in-out
+
+  &:active,
+  &:focus,
+  &:hover
+    background-position: -100% 0
