@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.30.1 - 2015-04-22
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- The Highlight Component hover color
+
 2.30.0 - 2015-04-22
 -------------------
 
