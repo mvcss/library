@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.30.2 - 2015-04-22
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Set the `border-bottom` instead of `border` on the Highlight Component
+
 2.30.1 - 2015-04-22
 -------------------
 
