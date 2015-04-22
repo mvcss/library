@@ -1,6 +1,21 @@
 Changelog
 =========
 
+3.0.0 - 2015-04-22
+------------------
+
+### Added
+
+- Underline Component
+
+### Removed
+
+- `highlight--bordered` modifier
+
+### Fixed
+
+- Nothing
+
 2.31.2 - 2015-04-22
 -------------------
 

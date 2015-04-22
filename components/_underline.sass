@@ -1,0 +1,68 @@
+// *************************************
+//
+//   Underline
+//   -> Highly stylized link border
+//      CodePen: http://codepen.io/drewbarontini/pen/oXNWYw
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %a.underline
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Colors ----- //
+
+$underline-borderColor: currentColor !default
+$underline-cover-background: white !default
+$underline-color: black !default
+
+// ----- Borders ----- //
+
+$underline-borderStyle: solid !default
+$underline-borderWidth: 4px !default
+$underline-border: $underline-borderWidth $underline-borderStyle $underline-borderColor !default
+
+// ----- Settings ----- //
+
+$underline-color-transition-speed: 0.5s !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.underline
+  border-bottom: $underline-border
+  position: relative
+  text-decoration: none
+
+  &::after,
+  &::before
+    content: ''
+    height: $underline-borderWidth
+    left: 0
+    position: absolute
+    top: 100%
+    width: 100%
+
+  &::after
+    background: $underline-borderColor
+
+  &::before
+    background: $underline-cover-background
+    transform: translateX(0)
+    transition: transform $underline-color-transition-speed ease-in-out
+    z-index: 1
+
+  &:active,
+  &:focus,
+  &:hover
+    background: none
+
+    &::before
+      transform: translateX(100%)
