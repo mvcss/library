@@ -1,6 +1,21 @@
 Changelog
 =========
 
+3.0.1 - 2015-04-29
+------------------
+
+### Added
+
+- Pin Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 3.0.0 - 2015-04-22
 ------------------
 

@@ -1,0 +1,80 @@
+// *************************************
+//
+//   Pin
+//   -> Fastened element
+//      CodePen: http://codepen.io/drewbarontini/pen/jPPNdo
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// (.has-pin)
+//
+// .pin[
+//   north|south|east|west
+//   north--s|south--s|east--s|west--s
+//   north--f|south--f|east--f|west--f
+//   north--out|south--out|east--out|west--out
+//   north--out--l|south--out--l|east--out--l|west--out--l
+// ]
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Settings ----- //
+
+$pin-keys: 'north', 'south', 'east', 'west' !default
+$pin-values: 'top', 'bottom', 'right', 'left' !default
+
+// ----- Sizing ----- //
+
+$pin-space: 20px !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.pin
+  position: absolute
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+@for $i from 1 through length($pin-keys)
+  $side: nth($pin-values, $i)
+
+  // ----- Base ----- //
+
+  .pin--#{nth($pin-keys, $i)}
+    #{$side}: $pin-space
+
+  // ----- Small ----- //
+
+  .pin--#{nth($pin-keys, $i)}--s
+    #{$side}: ($pin-space / 2)
+
+  // ----- Flush ----- //
+
+  .pin--#{nth($pin-keys, $i)}--f
+    #{$side}: 0
+
+  // ----- Out ----- //
+
+  .pin--#{nth($pin-keys, $i)}--out
+    #{$side}: -$pin-space
+
+  // ----- Out Large ----- //
+
+  .pin--#{nth($pin-keys, $i)}--out--l
+    #{$side}: -($pin-space * 2)
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.has-pin
+  position: relative
