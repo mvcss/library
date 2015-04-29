@@ -1,7 +1,22 @@
 Changelog
 =========
 
-3.0.1 - 2015-04-29
+3.1.1 - 2015-04-29
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Better opacity tool class names
+
+3.1.0 - 2015-04-29
 ------------------
 
 ### Added
