@@ -1,6 +1,21 @@
 Changelog
 =========
 
+3.2.0 - 2015-04-29
+------------------
+
+### Added
+
+- Opacity tool
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 3.1.1 - 2015-04-29
 ------------------
 
