@@ -1,7 +1,7 @@
 Changelog
 =========
 
-3.2.0 - 2015-04-29
+3.2.1 - 2015-04-29
 ------------------
 
 ### Added
@@ -14,7 +14,7 @@ Changelog
 
 ### Fixed
 
-- Nothing
+- Sector Component dimensions
 
 3.1.1 - 2015-04-29
 ------------------
