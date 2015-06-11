@@ -1,6 +1,22 @@
 Changelog
 =========
 
+3.3.0 - 2015-06-05
+-------------------
+
+### Added
+
+- Handle Component
+- Select Component
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 3.2.1 - 2015-04-29
 ------------------
 
