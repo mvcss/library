@@ -1,0 +1,132 @@
+// *************************************
+//
+//   Select
+//   -> Menu input
+//      CodePen: http://codepen.io/johndjameson/pen/rVmaJq/
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .select
+//   %select.select-input
+//     %option.select-input-option
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Color ----- //
+
+$select-background: #eee
+$select-borderColor: #bbb
+$select-focus-borderColor: #888
+$select-color: #333
+
+// Caret
+
+$select-caret-color: rgba($select-color, 0.5)
+
+// ----- Borders ----- //
+
+$select-borderRadius: 6px
+$select-borderStyle: solid
+$select-borderWidth: 1px
+$select-border: $select-borderWidth $select-borderStyle $select-borderColor
+
+// ----- Sizing ----- //
+
+$select-horizontalSpace: 1.25em
+$select-verticalSpace: 0.625em
+
+// Caret
+
+$select-caret-size: 6px
+
+// ----- Typography ----- //
+
+$select-fontFamily: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+$select-fontSize: 16px
+$select-lineHeight: 1.5
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.select
+  color: $select-color
+  display: inline-block
+  font-family: $select-fontFamily
+  font-size: $select-fontSize
+  position: relative
+
+  &::after
+    border-bottom: $select-caret-size solid transparent
+    border-left: $select-caret-size solid transparent
+    border-right: $select-caret-size solid transparent
+    border-top: $select-caret-size solid $select-caret-color
+    content: ''
+    display: inline-block
+    height: 0
+    pointer-events: none
+    position: absolute
+    right: $select-horizontalSpace
+    top: calc(50% - #{$select-caret-size / 3})
+    width: 0
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Input ----- //
+
+.select-input
+  -moz-appearance: none
+  -webkit-appearance: none
+  appearance: none
+  background-color: $select-background
+  border-radius: $select-borderRadius
+  border: $select-border
+  box-shadow: none
+  color: $select-color
+  cursor: pointer
+  display: inline-block
+  line-height: $select-lineHeight
+  margin: 0
+  outline: 0
+  padding-bottom: $select-verticalSpace
+  padding-left: $select-horizontalSpace
+  padding-right: calc(#{$select-horizontalSpace * 2} + #{$select-caret-size})
+  padding-top: $select-verticalSpace
+
+  &:focus
+    border-color: $select-focus-borderColor
+
+    &:-moz-focusring
+      color: transparent
+      text-shadow: 0 0 0 $select-color
+
+// -------------------------------------
+//   Browser Support
+// -------------------------------------
+
+// ----- Internet Explorer ----- //
+
+// IE9+
+
+@media screen and (min-width:0\0)
+
+  .select::after
+    display: none
+
+// IE10+
+
+.select-input::-ms-expand
+  display: none
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+
+  .select::after
+    display: inline-block
