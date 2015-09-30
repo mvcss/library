@@ -11,11 +11,12 @@
 // (.has-pin)
 //
 // .pin[
-//   north|south|east|west
-//   north--s|south--s|east--s|west--s
-//   north--f|south--f|east--f|west--f
-//   north--out|south--out|east--out|west--out
-//   north--out--l|south--out--l|east--out--l|west--out--l
+//   top|bottom|right|left
+//   top--s|bottom--s|right--s|left--s
+//   top--f|bottom--f|right--f|left--f
+//   top--out|bottom--out|right--out|left--out
+//   top--out--l|bottom--out--l|right--out--l|left--out--l
+//   xcenter|ycenter
 // ]
 //
 // *************************************
@@ -26,7 +27,6 @@
 
 // ----- Settings ----- //
 
-$pin-keys: 'north', 'south', 'east', 'west' !default
 $pin-values: 'top', 'bottom', 'right', 'left' !default
 
 // ----- Sizing ----- //
@@ -44,33 +44,43 @@ $pin-space: 20px !default
 //   Modifiers
 // -------------------------------------
 
-@for $i from 1 through length($pin-keys)
+@for $i from 1 through length($pin-values)
   $side: nth($pin-values, $i)
 
   // ----- Base ----- //
 
-  .pin--#{nth($pin-keys, $i)}
+  .pin--#{nth($pin-values, $i)}
     #{$side}: $pin-space
 
   // ----- Small ----- //
 
-  .pin--#{nth($pin-keys, $i)}--s
+  .pin--#{nth($pin-values, $i)}--s
     #{$side}: ($pin-space / 2)
 
   // ----- Flush ----- //
 
-  .pin--#{nth($pin-keys, $i)}--f
+  .pin--#{nth($pin-values, $i)}--f
     #{$side}: 0
 
   // ----- Out ----- //
 
-  .pin--#{nth($pin-keys, $i)}--out
+  .pin--#{nth($pin-values, $i)}--out
     #{$side}: -$pin-space
 
   // ----- Out Large ----- //
 
-  .pin--#{nth($pin-keys, $i)}--out--l
+  .pin--#{nth($pin-values, $i)}--out--l
     #{$side}: -($pin-space * 2)
+
+// ----- Axis Alignment ----- //
+
+.pin--xcenter
+  left: 50%
+  transform: translateX(-50%)
+
+.pin--ycenter
+  top: 50%
+  transform: translateY(-50%)
 
 // -------------------------------------
 //   Context
