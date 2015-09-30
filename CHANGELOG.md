@@ -1,6 +1,21 @@
 Changelog
 =========
 
+3.4.0 - 2015-09-30
+------------------
+
+### Added
+
+- `pin--xcenter` and `pin--ycenter`
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Updated Pin Component position modifier names
+
 3.3.0 - 2015-06-05
 -------------------
 
