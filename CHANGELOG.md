@@ -1,6 +1,22 @@
 Changelog
 =========
 
+3.5.0 - 2016-04-05
+-------------------
+
+### Added
+
+- List Reset mixin
+- Stretch mixin
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 3.4.0 - 2015-09-30
 ------------------
 
