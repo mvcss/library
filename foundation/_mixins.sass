@@ -87,3 +87,15 @@
   @else
     &:active, &:focus, &:hover
       @content
+
+// ----- Stretch ----- //
+// -> Fill container element
+//
+// $position - position property value (absolute, fixed, etc.)
+
+=stretch($position: absolute)
+  bottom: 0
+  left: 0
+  position: $position
+  right: 0
+  top: 0
